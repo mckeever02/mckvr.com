@@ -1,9 +1,186 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Github test</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Michael Mckeever | Interactive Designer from Belfast">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Hello, I am Michael Mckeever</title>
+
+<!-- FAVICON -->
+    <link rel="shortcut icon" href="http://helloiammichael.co.uk/favicon.ico" />
+
+<!-- TYPEKIT -->
+		<script src="//use.typekit.net/gfx2dsc.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+
+<!-- JQUERY -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<!-- PAPER JS -->
+
+	<script type="text/javascript" src="js/min/paper-ck.js"></script>
+	<script type="text/paperscript" canvas="canvas">
+		// Code ported to Paper.js from http://the389.com/9/1/
+		// with permission.
+
+			var values = {
+				friction: 0.8,
+				timeStep: 0.01,
+				amount: 15,
+				mass: 2,
+				count: 0
+			};
+			values.invMass = 1 / values.mass;
+
+			var path, springs;
+			var size = view.size * [1.2, 1];
+
+			var Spring = function(a, b, strength, restLength) {
+				this.a = a;
+				this.b = b;
+				this.restLength = restLength || 80;
+				this.strength = strength ? strength : 0.55;
+				this.mamb = values.invMass * values.invMass;
+			};
+
+			Spring.prototype.update = function() {
+				var delta = this.b - this.a;
+				var dist = delta.length;
+				var normDistStrength = (dist - this.restLength) /
+						(dist * this.mamb) * this.strength;
+				delta.y *= normDistStrength * values.invMass * 0.2;
+				if (!this.a.fixed)
+					this.a.y += delta.y;
+				if (!this.b.fixed)
+					this.b.y -= delta.y;
+			};
+
+
+			function createPath(strength) {
+				var path = new Path({
+					fillColor: '#243248'
+				});
+				springs = [];
+				for (var i = 0; i <= values.amount; i++) {
+					var segment = path.add(new Point(i / values.amount, 0.01) * size);
+					var point = segment.point;
+					if (i == 0 || i == values.amount)
+						point.y += size.height;
+					point.px = point.x;
+					point.py = point.y;
+					// The first two and last two points are fixed:
+					point.fixed = i < 2 || i > values.amount - 2;
+					if (i > 0) {
+						var spring = new Spring(segment.previous.point, point, strength);
+						springs.push(spring);
+					}
+				}
+				path.position.x -= size.width / 4;
+				return path;
+			}
+
+			function onResize() {
+
+				if (path)
+					path.remove();
+				size = view.bounds.size * [2, 1];
+				path = createPath(0.1);
+			}
+
+			$.support.touch = 'ontouchstart' in window;
+			if( !$.support.touch ) {
+			    // this should only run if on a non-touch device, and it does now :)
+			    onMouseMove = function(event) {
+    				var location = path.getNearestLocation(event.point);
+    				var segment = location.segment;
+    				var point = segment.point;
+
+    				if (!point.fixed && location.distance < size.height / 4) {
+    					var y = event.point.y;
+    					point.y += (y - point.y) / 6;
+    					if (segment.previous && !segment.previous.fixed) {
+    						var previous = segment.previous.point;
+    						previous.y += (y - previous.y) / 24;
+    					}
+    					if (segment.next && !segment.next.fixed) {
+    						var next = segment.next.point;
+    						next.y += (y - next.y) / 24;
+    					}
+    				}
+    			}
+			}
+
+
+
+			function onFrame(event) {
+				updateWave(path);
+			}
+
+			function updateWave(path) {
+				var force = 1 - values.friction * values.timeStep * values.timeStep;
+				for (var i = 0, l = path.segments.length; i < l; i++) {
+					var point = path.segments[i].point;
+					var dy = (point.y - point.py) * force;
+					point.py = point.y;
+					point.y = Math.max(point.y + dy, 0);
+				}
+
+				for (var j = 0, l = springs.length; j < l; j++) {
+					springs[j].update();
+				}
+				path.smooth();
+			}
+
+			function onKeyDown(event) {
+				if (event.key == 'space') {
+					path.fullySelected = !path.fullySelected;
+					path.fillColor = path.fullySelected ? null : 'black';
+				}
+			}
+	</script>
 </head>
 <body>
-<h1>Hello world!!!</h1>
+
+
+		<div class="container">
+				<img class="logo animated bounceIn" src="images/logo.svg" onerror="this.onerror=null; this.src='logo.png'" alt="Hi there">
+				<h1 class="fittext animated bounceInDown">Hello, I am Michael.</h1>
+			<div class="content-container">
+				<p class="description1 animated bounceInUp">My name is <a href="https://twitter.com/Mick_Mckeever">Michael Mckeever</a>. I'm an interactive designer from Belfast with a keen eye for designing smart, user-centric interfaces for the web. Currently, I'm a final year <a href="https://twitter.com/search?q=%23uuimd&src=tyah">#UUIMD</a> design student at the University of Ulster. Previously, I was interning with the talented duo at <a href="http://littlethunder.co">Little Thunder Co.</a></p>
+				<p class="description2 animated bounceInUp">You'll often spot me at <a href="http://refreshbelfast.com/">local talks</a> &amp; conferences. I enjoy a good film, binge watching on Netflix and the odd <a href="http://i.imgur.com/Es11C4i.gifv">beer</a> or &infin;. I tolerate going to the gym, <a href="http://i.imgur.com/mE7aYmD.jpg">sometimes</a>.</p>
+
+				<p class="description3 animated bounceInUp"><a href="mailto:hello@helloiammichael.co.uk">Email me</a> or <a href="https://twitter.com/Mick_Mckeever">Tweet me</a></p>
+			</div>
+		</div>
+
+
+		<canvas id="canvas" resize></canvas>
+
+<!-- google analytics -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39366656-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- FITTEXT -->
+	<script type="text/javascript" src="js/min/jquery.fittext-ck.js"></script>
+	<script>
+  		jQuery(".fittext").fitText(1.2, { minFontSize: '60px', maxFontSize: '140px' });
+	</script>
+
 </body>
 </html>
