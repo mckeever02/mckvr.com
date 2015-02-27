@@ -1,0 +1,98 @@
+body {
+	background: #eee !important;	
+}
+
+.login-form{
+	margin:4% auto 0;
+	max-width:380px;
+}
+
+.login-form h1{
+	font-size: 30pt;
+	font-weight: 700;
+    letter-spacing: -1px;
+    font-style: oblique;
+}
+
+.form-header,.form-footer{
+	background-color: rgba(255, 255, 255, .8);
+  	border: 1px solid rgba(0,0,0,0.1);
+}
+
+.form-signin{
+	padding: 45px 35px 45px;
+  	background-color: #fff;
+  	border: 1px solid rgba(0,0,0,0.1);  
+  	border-bottom: 0px; 
+  	border-top: 0px;  
+}
+
+.form-register{
+	padding: 45px 35px 45px;
+  	background-color: #fff;
+  	border: 1px solid rgba(0,0,0,0.1);  
+  	border-bottom: 0px; 
+  	border-top: 0px; 
+}
+
+.form-header{
+	text-align: center;
+	padding: 15px 40px;
+	border-radius: 10px 10px 0 0;
+}
+.form-header i{font-size:60px;}
+.form-footer {
+	padding: 15px 40px;	
+}
+.form-signin-heading{
+	margin-bottom: 30px;
+}
+.bt-login{
+	background-color: #ff8627;
+    color: #ffffff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: background-color 300ms linear 0s;
+}
+.form-signin .form-control, .form-register .form-control{
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus, .form-register .form-control:focus {
+  z-index: 2;
+}
+.form-register input{
+	border: 1px solid #ddd;
+    border-radius: 0;
+    color: #333;
+    height: 43px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 30px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+i{margin-right: 4%;}
+a{text-decoration: none;color:#333;}
+
+.has-error{color:#ff0000 !important;}
+.has-success{color:#78b310 !important;}
+.has-error input{border:1px solid red !important;}
+.has-success input{border:1px solid #78b310 !important;}
+
+.message_success{background-color: #78b310; color:#fff;padding: 5px;}
+.message_error{background-color: #e74c3c; color:#fff;padding: 5px;}
+h1{font-family: Pacifico;}
