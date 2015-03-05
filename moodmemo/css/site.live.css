@@ -390,11 +390,13 @@ h6 {
 .one-page__heading {
   padding: 5rem 0;
   text-align: center;
-  margin: 0 auto;
-  width: 60%; }
+  margin: 0 auto; }
   .one-page__heading h1 {
     margin-bottom: 2rem; }
 
+@media (min-width: 760px) {
+  .one-page__heading {
+    width: 60%; } }
 .small-heading {
   text-transform: uppercase;
   font-size: 2.2rem;
@@ -470,7 +472,7 @@ span.small-heading__subtitle {
     font-weight: normal;
     padding: 0;
     display: block;
-    margin-bottom: 1rem; }
+    margin-bottom: 2.5rem; }
 
 .styleguide__typography-box {
   background: #f2f2f2;

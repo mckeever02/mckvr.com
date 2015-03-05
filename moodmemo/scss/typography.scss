@@ -44,9 +44,15 @@ h6 {
   padding: 5rem 0;
   text-align: center;
   margin: 0 auto;
-  width: 60%;
+
   h1 {
     margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .one-page__heading {
+    width: 60%;
   }
 }
 
@@ -131,7 +137,7 @@ span {
     font-weight: normal;
     padding: 0;
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
   }
 }
 
