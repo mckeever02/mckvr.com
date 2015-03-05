@@ -28,22 +28,37 @@
   </head>
 
   <body class="dark styleguide">
-    <div class="gradient-border"></div>
-    <header class="header header__dark">
-      <div class="container u-cf">
-        <nav class="primary-nav">
-          <ul>
+    <section class="styleguide__intro">
+        <div class="container">
+          <div class="styleguide__intro--content">
+            <div class="row">
+              <h1 class="text-hide logo logo__white center">Moodmemo</h1>
+              <h2 class="small-heading">Styleguide v1.0</h2>
+            </div><!-- end row -->
+          </div><!-- end styleguide__intro-content -->
+        </div><!-- end container -->
+    </section><!-- end intro section -->
 
-          </ul>
-        </nav>
-
+    <header class="header header__dark gradient-border styleguide__header sticky-nav">
+      <div class="container">
+        <div class="row">
+          <nav class="primary-nav">
+            <ul>
+              <li><a href="#colour">Colour</a></li>
+              <li><a href="#typography">Typography</a></li>
+              <li><a href="#icons">Icons</a></li>
+              <li><a href="#grid">Grid</a></li>
+              <li><a href="#elements">Elements</a></li>
+            </ul>
+          </nav>
+        </div><!-- end row -->
       </div><!-- end container -->
     </header>
     <div class="container">
       <section class="one-page dark colour">
         <div class="one-page__heading">
           <h1 class="center small-heading">Colour</h1>
-          <p class="center">The Modomemo colour palette was developed around the brand colours consisting of blue.</p>
+          <p class="center">The Moodmemo colour scheme is predominantly based around a blue colour palette to reinforce the brand. Orange acts as a contrasting colour for visual cues.</p>
         </div><!-- end one-page__heading -->
         <h3 class="section__title">Primary palette</h3>
         <div class="row">
@@ -144,14 +159,52 @@
         <div class="container">
           <div class="one-page__heading">
             <h1 class="center small-heading">Typography</h1>
+            <p>All typography is set in the font family <strong>Proxima Nova Soft</strong>. This is to help compliment the friendly tone used throughout the web app.</p>
           </div><!-- end one-page__heading -->
-          <div class="">
-            <h1 class="styleguide__typography">The quick brown fox jumped over the lazy dog<span><code>h1 { font-size: 5rem; }</code></span></h1>
-            <h2 class="styleguide__typography">The quick brown fox jumped over the lazy dog<span><code>h2 { font-size: 4.2rem; }</code></span></h2>
-            <h3 class="styleguide__typography">The quick brown fox jumped over the lazy dog<span><code>h3 { font-size: 3.6rem; }</code></span></h3>
-            <h4 class="styleguide__typography">The quick brown fox jumped over the lazy dog<span><code>h4 { font-size: 3.0rem; }</code></span></h4>
-            <h5 class="styleguide__typography">The quick brown fox jumped over the lazy dog<span><code>h5 { font-size: 2.4rem; }</code></span></h5>
-          </div><!-- end center -->
+            <div class="row">
+              <h1 class="styleguide__typography">The quick brown fox jumped over the lazy dog<span><code>h1 { font-size: 5rem; }</code></span></h1>
+              <h2 class="styleguide__typography">The quick brown fox jumped over the lazy dog<span><code>h2 { font-size: 4.2rem; }</code></span></h2>
+              <h3 class="styleguide__typography">The quick brown fox jumped over the lazy dog<span><code>h3 { font-size: 3.6rem; }</code></span></h3>
+              <h4 class="styleguide__typography">The quick brown fox jumped over the lazy dog<span><code>h4 { font-size: 3.0rem; }</code></span></h4>
+              <h5 class="styleguide__typography">The quick brown fox jumped over the lazy dog<span><code>h5 { font-size: 2.4rem; }</code></span></h5>
+            </div><!-- end row -->
+            <div class="row">
+              <div class="three columns">
+                <div class="styleguide__typography-box">
+                  <span class="type-element regular-element">Aa</span>
+                  <p><span>Regular</span><br>
+                  <code>font-weight: 400;</code>
+                  </p>
+                </div><!-- end styleguide__element-container -->
+              </div><!-- end columns -->
+
+              <div class="three columns">
+                <div class="styleguide__typography-box">
+                  <span class="type-element medium-element">Aa</span>
+                  <p><span>Medium</span><br>
+                  <code>font-weight: 500;</code>
+                  </p>
+                </div><!-- end styleguide__element-container -->
+              </div><!-- end columns -->
+
+              <div class="three columns">
+                <div class="styleguide__typography-box">
+                  <span class="type-element semibold-element">Aa</span>
+                  <p><span>Semibold</span><br>
+                  <code>font-weight: 600;</code>
+                  </p>
+                </div><!-- end styleguide__element-container -->
+              </div><!-- end columns -->
+
+              <div class="three columns">
+                <div class="styleguide__typography-box">
+                  <span class="type-element bold-element">Aa</span>
+                  <p><span>Bold</span><br>
+                  <code>font-weight: 700;</code>
+                  </p>
+                </div><!-- end styleguide__element-container -->
+              </div><!-- end columns -->
+            </div><!-- end row -->
         </div><!-- end container -->
       </section> <!-- end typography section -->
 
@@ -159,45 +212,47 @@
         <div class="container">
           <div class="one-page__heading">
            <h1 class="center small-heading">Icon font</h1>
+           <p>Icons are used throughout the web app to reinforce user interface actions and draw the eye. The <strong>SS Pika</strong> icon font is used due to its versatility and friendly tone.</p>
+           <p></p>
           </div><!-- end one-page__heading -->
              <div class="row styleguide__icon-row">
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                    <i class="ss-icon styleguide__icon">star</i>
                    <p>Favourite</p>
                  </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">trash</i>
                  <p>Delete</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">user</i>
                  <p>User</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">businessuser</i>
                  <p>Admin</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">mail</i>
                  <p>Email</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">question</i>
                  <p>FAQs</p>
                 </div><!-- end styleguide__icon -->
@@ -206,42 +261,42 @@
             <div class="row">
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">lock</i>
                  <p>Password</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">ban</i>
                  <p>Restricted</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">search</i>
                  <p>Search</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">piechart</i>
                  <p>Statistics</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">home</i>
                  <p>Home</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">location</i>
                  <p>Location</p>
                 </div><!-- end styleguide__icon -->
@@ -251,42 +306,42 @@
             <div class="row">
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">Download</i>
                  <p>Download</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">Upload</i>
                  <p>Upload</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">Logout</i>
                  <p>Logout</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">time</i>
                  <p>Time</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">add</i>
                  <p>Add</p>
                 </div><!-- end styleguide__icon -->
                </div><!-- end columns -->
 
                <div class="two columns">
-                <div class="styleguide__icon-container">
+                <div class="styleguide__element-container">
                  <i class="ss-icon styleguide__icon">settings</i>
                  <p>Settings</p>
                 </div><!-- end styleguide__icon -->
@@ -299,11 +354,12 @@
         <div class="container">
           <div class="one-page__heading">
            <h1 class="center small-heading">Custom Icons</h1>
+           <p>Custom icons and emoticons are used in relation with interactions unique to the web app, such as posting a Moodmemo.</p>
           </div><!-- end one-page__heading -->
 
           <div class="row">
             <div class="two columns">
-             <div class="styleguide__icon-container">
+             <div class="styleguide__element-container">
               <div class="styleguide__custom-icon">
                 <img src="images/very-sad.svg" alt="very sad">
               </div>
@@ -311,7 +367,7 @@
             </div><!-- end columns -->
 
             <div class="two columns">
-             <div class="styleguide__icon-container">
+             <div class="styleguide__element-container">
               <div class="styleguide__custom-icon">
                 <img src="images/sad.svg" alt="sad">
               </div>
@@ -319,7 +375,7 @@
             </div><!-- end columns -->
 
             <div class="two columns">
-             <div class="styleguide__icon-container">
+             <div class="styleguide__element-container">
               <div class="styleguide__custom-icon">
                 <img src="images/ok.svg" alt="Ok">
               </div>
@@ -327,7 +383,7 @@
             </div><!-- end columns -->
 
             <div class="two columns">
-             <div class="styleguide__icon-container">
+             <div class="styleguide__element-container">
               <div class="styleguide__custom-icon">
                 <img src="images/happy.svg" alt="Happy">
               </div>
@@ -336,7 +392,7 @@
 
 
             <div class="two columns">
-             <div class="styleguide__icon-container">
+             <div class="styleguide__element-container">
               <div class="styleguide__custom-icon">
                 <img src="images/very-happy.svg" alt="very happy">
               </div>
@@ -344,7 +400,7 @@
             </div><!-- end columns -->
 
             <div class="two columns">
-             <div class="styleguide__icon-container">
+             <div class="styleguide__element-container">
               <div class="styleguide__custom-icon">
                 <img src="images/very-sad-marker.svg" alt="very sad marker">
               </div>
@@ -353,9 +409,8 @@
           </div><!-- end row -->
 
           <div class="row">
-
             <div class="two columns">
-             <div class="styleguide__icon-container">
+             <div class="styleguide__element-container">
               <div class="styleguide__custom-icon">
                 <img src="images/sad-marker.svg" alt="sad marker">
               </div>
@@ -363,7 +418,7 @@
             </div><!-- end columns -->
 
             <div class="two columns">
-             <div class="styleguide__icon-container">
+             <div class="styleguide__element-container">
               <div class="styleguide__custom-icon">
                 <img src="images/ok-marker.svg" alt="ok marker">
               </div>
@@ -371,7 +426,7 @@
             </div><!-- end columns -->
 
             <div class="two columns">
-             <div class="styleguide__icon-container">
+             <div class="styleguide__element-container">
               <div class="styleguide__custom-icon">
                 <img src="images/happy-marker.svg" alt="happy marker">
               </div>
@@ -379,7 +434,7 @@
             </div><!-- end columns -->
 
             <div class="two columns">
-             <div class="styleguide__icon-container">
+             <div class="styleguide__element-container">
               <div class="styleguide__custom-icon">
                 <img src="images/very-happy-marker.svg" alt="very happy marker">
               </div>
@@ -387,15 +442,14 @@
             </div><!-- end columns -->
 
             <div class="two columns">
-             <div class="styleguide__icon-container">
+             <div class="styleguide__element-container">
               <div class="styleguide__custom-icon">
                 <img src="images/moodmemo-icon--lightblue.svg" alt="Moodmemo icon">
               </div>
              </div><!-- end styleguide__icon -->
             </div><!-- end columns -->
-
-
           </div><!-- end row -->
+
         </div><!-- end container -->
       </section><!-- end custom-icons section -->
 
@@ -459,7 +513,6 @@
         <div class="container">
           <div class="one-page__heading">
            <h1 class="small-heading">Elements</h1>
-           <p>Moodmemo is based off a 12 column fluid grid with a max-width of 1140px. The syntax is easy to understand and utilise.</p>
           </div><!-- end one-page__heading -->
           <h3 class="section__title">Form Inputs</h3>
           <div class="row">
@@ -524,7 +577,7 @@
                 <span>Looking good!</span>
               </div>
               <div class="input-prepend">
-                <span class="ss-form-icon ss-user input-success"></span>
+                <span class="ss-form-icon ss-lock input-success"></span>
                 <input name="password" type="password" class="form-control input-success" value="12345678" placeholder="Password" tabindex="8">
               </div><!-- end input-prepend -->
             </div><!-- end four columns -->
@@ -594,6 +647,9 @@
         </div><!-- end container -->
       </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/waypoints-sticky.min.js"></script>
   <script src="js/funcs.js"></script>
   </body>
 </html>
+
