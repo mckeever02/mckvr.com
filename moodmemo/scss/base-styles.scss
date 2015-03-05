@@ -19,6 +19,11 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
@@ -120,7 +125,8 @@ body {
 
 .swatch {
   height: 250px;
-  width: 255px;
+  width: 250px;
+  width: 100%;
   border-radius: $border-radius $border-radius 0 0;
   margin-bottom: 145px;
 

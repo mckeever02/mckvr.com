@@ -38,8 +38,7 @@ li {
   }
 }
 
-.primary-nav {
-  float: right;
+nav {
   ul {
     list-style-type: none;
   }
@@ -47,16 +46,49 @@ li {
     float: left;
   }
   ul li a {
+    text-decoration: none;
+    display: block;
+  }
+}
+
+.primary-nav {
+  float: right;
+  ul li a {
     line-height: 45px;
     text-align: center;
     width: 115px;
-    display: block;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    border-radius: $border-radius;
     &:active, &:hover, &:focus, .active {
       background: #19869c;
     }
   }
 }
+
+.one-page-nav {
+  float: left;
+  font-size: 90%;
+  ul li a {
+    // line-height: 45px;
+    padding: 10px 15px;
+    // margin-right: 15px;
+    text-align: center;
+    width: auto;
+    color: white;
+    border-radius: $border-radius;
+    &:active, &:hover, &:focus, .active {
+      background: darken($bg--darkblue, 2%);
+    }
+  }
+}
+
+@media (min-width: 550px) {
+    .one-page-nav {
+      font-size: 100%;
+      float: right;
+      ul li a {
+        margin-right: 15px;
+      }
+    }
+  }
 

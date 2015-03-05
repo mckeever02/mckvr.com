@@ -73,10 +73,19 @@ h6 {
   }
   &.logo__white {
     background: transparent url(../images/logo__white.svg) no-repeat;
-    background-size: 90%;
-    width: 480px;
-    height: 126px;
-    background-position: right;
+    background-size: contain;
+    -webkit-background-size: contain;
+    background-position: 55%;
+    width: 100%;
+    min-height: 95px;
+  }
+  @media (min-width: 520px) {
+    &.logo__white {
+      background-size: 90%;
+      width: 480px;
+      height: 126px;
+      background-position: right;
+    }
   }
 }
 
@@ -134,7 +143,7 @@ span {
   height: 170px;
   font-size: 5rem;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   &.type-element {
     padding-top: 20px;
     display: block;
@@ -200,7 +209,9 @@ span {
   border-radius: $border-radius;
   height: 120px;
   width: 120px;
+  margin: 0 auto;
   margin-bottom: 6rem;
+  text-align: center;
   img {
     width: 65px;
     height: 65px;
