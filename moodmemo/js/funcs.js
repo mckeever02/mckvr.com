@@ -41,6 +41,9 @@ $(function(){
   });
 });
 
+//call the waypoints plugin to create sticky nav
+$('.sticky-nav').waypoint('sticky');
+
 
 $(function(){
   $(document).on('click','.ajaxFavourite',function(){

@@ -23,6 +23,13 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
+.stuck {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

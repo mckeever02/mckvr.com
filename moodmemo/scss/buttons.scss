@@ -6,19 +6,18 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 45px;
+  height: 50px;
   padding: 0 30px;
-  color: $t--offwhite;
+  color: $p--offwhite;
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
-  line-height: 45px;
+  line-height: 50px;
   letter-spacing: .2px;
   text-decoration: none;
   white-space: nowrap;
-  background-color: $p--orange;
   border: none;
-  border-bottom: 3px solid $p--darkestorange;
+  border-bottom: 3px solid;
   border-radius: $border-radius;
   cursor: pointer;
   box-sizing: border-box; }
@@ -32,7 +31,10 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  outline: 0; }
+  outline: 0;
+  color: $p--offwhite;
+  background-color: darken($p--orange,5%);
+}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -53,11 +55,32 @@ input[type="button"].button-primary:focus {
   background-color: darken($p--orange,2%);
   border-color: $p--darkestorange; }
 
+.button.button-secondary,
+button.button-secondary,
+input[type="submit"].button-secondary,
+input[type="reset"].button-secondary,
+input[type="button"].button-secondary {
+  background-color: $p--blue;
+  border-color: $p--darkestblue; }
+.button.button-secondary:hover,
+button.button-secondary:hover,
+input[type="submit"].button-secondary:hover,
+input[type="reset"].button-secondary:hover,
+input[type="button"].button-secondary:hover,
+.button.button-secondary:focus,
+button.button-secondary:focus,
+input[type="submit"].button-secondary:focus,
+input[type="reset"].button-secondary:focus,
+input[type="button"].button-secondary:focus {
+  background-color: darken($p--blue,3%);
+  border-color: $p--darkestblue; }
+
 .inact {
   background-color: #ccc!important;
-  border-bottom: 2px solid #bbb!important;
+  border-bottom: 3px solid #bbb!important;
+  cursor: not-allowed;
   &:hover {
-    color: #fff!important;
+
   }
 }
 

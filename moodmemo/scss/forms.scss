@@ -12,10 +12,9 @@ select {
   height: 50px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
-  border: 2px solid $bg--lightestgrey;
-  border-radius: $border-radius;
   box-shadow: none;
   width: 100%;
+  border-radius: $border-radius;
   box-sizing: border-box;
   font-weight: 600;
   font-size: 2rem;
@@ -23,6 +22,11 @@ select {
     color: $t--lightgrey;
   }
 }
+
+.form-control {
+    border: 2px solid $t--lightgrey;
+}
+
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
@@ -37,7 +41,7 @@ textarea {
   appearance: none;
 }
 textarea {
-  min-height: 65px;
+  min-height: 160px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -71,20 +75,6 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal;
 }
-
-#{$all-text-inputs} {
-
-  width: 100%;
-  height: 50px;
-  border: 2px solid #e5e5e5;
-
-}
-
-
-// .radio-label {
-//   display: inline-block;
-//   margin-top: 1rem;
-// }
 
 .submitButton {
   float: right;
@@ -156,18 +146,155 @@ label > .label-body {
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
   background-color: #fff;
-  border: 2px solid #E5E5E5;
+  border: 2px solid $t--lightgrey;
   box-sizing: border-box;
   border-radius: 5px 0 0 5px;
   margin-right: -6px;
   color: $t--lightgrey;
 }
 
+.focused {
+  border: 2px solid $p--blue;
+  color: $p--blue;
+}
+
+
 .form-logo {
   margin: 0 auto;
   margin-bottom: 40px;
   margin-top: 0;
   text-align: center;
+}
+
+.feedback-block {
+  border-radius: $border-radius;
+  width: 100%;
+  margin:5px;
+  border: 2px solid;
+  font-size:90%;
+   ul {
+    list-style-type: none;
+  }
+  padding: 11px 15px;
+  img {
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 3px;
+  }
+  span {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  a {
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+}
+
+.feedback-block__inline {
+  position: relative;
+  margin-bottom: 12px;
+  &:after, &:before {
+    top: 100%;
+    left: 80%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &:after {
+    border-width: 10px;
+    margin-left: -10px;
+    border-color: rgba(136, 183, 213, 0);
+  }
+  &:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-width: 13px;
+    margin-left: -13px;
+  }
+}
+
+.feedback-block__inline.alert:after {
+  border-top-color: $f--lightyellow;
+}
+.feedback-block__inline.alert:before {
+  border-top-color: $f--yellow;
+}
+
+.feedback-block__inline.error:after {
+  border-top-color: $f--lightred;
+}
+.feedback-block__inline.error:before {
+  border-top-color: $f--red;
+}
+
+.feedback-block__inline.success:after {
+  border-top-color: $f--lightgreen;
+}
+.feedback-block__inline.success:before {
+  border-top-color: $f--green;
+}
+
+
+.feedback-block__trigger {
+  float: right;
+  display: block;
+  margin: 5px;
+}
+
+#error, #success {
+  display:block;
+}
+
+.alert {
+  color: $f--yellow;
+  background: $f--lightyellow;
+  border-color: $f--yellow;
+  a {
+    color: $f--yellow;
+    &:hover, &:focus, &:active {
+      color: darken($f--yellow,5%);
+    }
+  }
+}
+
+.error {
+  color:$f--red;
+  background-color: $f--lightred;
+  border-color: $f--red;
+  a {
+    color: $f--red;
+    &:hover, &:focus, &:active {
+      color: darken($f--red,5%);
+    }
+  }
+}
+
+.success {
+  color:$f--green;
+  border-color:$f--green;
+  background-color: $f--lightgreen;
+  border-color: $f--green;
+  a {
+    color: $f--green;
+    &:hover, &:focus, &:active {
+      color: darken($f--green,5%);
+    }
+  }
+}
+
+.input-alert {
+  border: 2px solid $f--yellow;
+}
+.input-error {
+  border: 2px solid $f--red;
+}
+.input-success {
+  border: 2px solid $f--green;
 }
 
 

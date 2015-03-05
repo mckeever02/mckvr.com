@@ -3,36 +3,97 @@
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
+
+
+body, html {
+  height: 100%;
+}
+
 html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
 }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 500;
   font-family: $primary-stack;
   color: $t--darkestblue;
-  background: #E6EEF3;
+  background: #E6EEF3 url('../images/pattern-light.png') repeat;
   &.dark {
     background: $bg--darkblue;
+    color: white;
   }
   &.pattern-dark {
     background: $bg--darkblue url('../images/pattern-dark.png') repeat;
   }
+
 }
 
-header {
-  height: 100px;
-  background: #1a94ac;
+.header {
+  min-height: 100px;
   margin-bottom: 40px;
-  padding: 30px 0;
-  box-sizing: border-box;
+  padding: 25px 0;
+  &:before {
+    @include border-gradient-wide;
+  }
+}
 
+.header__main {
+  background: $p--blue;
+
+}
+
+.header__secondary {
+  border-bottom: 1px solid $bg--lightestgrey;
+  padding: 1.5rem 3.5rem;
+    h1 {
+      margin-bottom: 0;
+    }
+}
+
+.header__dark {
+  background: $bg--darkblue;
+}
+
+.styleguide__header {
+  border-bottom: 1px solid darken($bg--darkblue,3%);
+
+}
+
+.darkblue {
+  background: $b--darkblue;
+}
+
+.light {
+  background: white;
+  color: $t--darkestblue;
+}
+
+.content__box {
+  background: white;
+  box-shadow: 0 2px 0 #d7e4ed;
+}
+
+.secondary-content__box {
+
+}
+
+.secondary-content__box__content {
+  padding: 1.5rem 3.5rem;
+}
+
+.one-page {
+  padding: 10rem 0;
 }
 
 .gradient-border {
-  @include linear-gradient(to right, $b--lightblue, $b--lightblue 33.33%, $b--darkblue 33.33%, $b--lightgreen 33.33%);
   height: 5px;
   top: 0;
   position: relative;
@@ -56,3 +117,79 @@ header {
   font-size:14px;
   font-weight:300;
 }
+
+.swatch {
+  height: 250px;
+  width: 255px;
+  border-radius: $border-radius $border-radius 0 0;
+  margin-bottom: 145px;
+
+  p {
+    position: relative;
+    top: 100%;
+    background: white;
+    color: $t--darkestblue;
+    border-radius: 0 0 $border-radius $border-radius;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid $t--lightgrey;
+    span {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+
+
+  }
+}
+
+.swatch__p--blue {
+  background: $p--blue;
+}
+.swatch__p--orange {
+  background: $p--orange;
+}
+.swatch__p--lightblue {
+  background: $p--lightblue;
+}
+.swatch__p--offwhite {
+  background: $p--offwhite;
+}
+
+.swatch__t--darkestblue {
+  background: $t--darkestblue;
+}
+.swatch__t--darkestgrey {
+  background: $t--darkestgrey;
+}
+.swatch__t--lightgrey {
+  background: $t--lightgrey;
+}
+
+.swatch__b--lightgreen {
+  background: $b--lightgreen;
+}
+.swatch__b--lightblue {
+  background: $b--lightblue;
+}
+.swatch__b--darkblue {
+  background: $b--darkblue;
+}
+
+.styleguide__intro {
+  background: $bg--darkblue url('../images/pattern-dark.png') repeat;
+  text-align: center;
+  height: 100%;
+  .small-heading {
+    font-size: 1.4rem;
+  }
+}
+
+.styleguide__intro--content {
+  padding: 250px 0;
+}
+
+

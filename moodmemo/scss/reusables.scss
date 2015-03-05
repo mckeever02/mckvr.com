@@ -11,7 +11,7 @@ $darkestgrey:             #A0A09F;
 
 //background colours
 $bg--darkblue:            #0A4558;
-$bg--lightestgrey:        #ECECEC;
+$bg--lightestgrey:        #E5E5E5;
 $bg--lightgrey:           #C8C8C8;
 
 
@@ -19,19 +19,29 @@ $bg--lightgrey:           #C8C8C8;
 $t--darkestblue:          #083546;
 $t--darkestgrey:          #98A0A2;
 $t--lightgrey:            #D7D7D7;
-$t--offwhite:             #ecfded;
 
 //primary colours
 $p--blue:                 #2195AD;
 $p--darkestblue:          #19869C;
 $p--orange:               #ff6428;
 $p--darkestorange:        #CC4F1F;
+$p--lightblue:            #E0EBEF;
+$p--offwhite:             #f2f2f2;
+
+//feedback colours
+$f--red:                  #EF4746;
+$f--lightred:             #F9EBEC;
+$f--lightgreen:           #E1EFDC;
+$f--green:                #58AD34;
+$f--yellow:               #FEC605;
+$f--lightyellow:          #FFFFD4;
 
 
 /* Border-radius
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 $border-radius: 5px;
+$circle-radius: 50%;
 
 /* font-stack
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -47,7 +57,25 @@ $primary-stack: "proxima-nova-soft", sans-serif;
   top: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(to right, $b--lightblue, $b--lightblue 16.5%, $b--darkblue 16.5%, $b--darkblue 33.33%, $b--lightgreen 33.33%, $b--lightgreen 50%, $b--lightblue 50%, $b--lightblue 66.5%, $b--darkblue 66.5%, $b--darkblue 83%,$b--lightgreen 83%, $b--lightgreen 100%);
+  background-image: linear-gradient(to right, $b--lightblue, $b--lightblue 14.28%, $b--darkblue 14.28%, $b--darkblue 28.56%, $b--lightgreen 28.56%, $b--lightgreen 42.84%, $b--lightblue 42.84%, $b--lightblue 57.12%, $b--darkblue 57.12%, $b--darkblue 71.4%,$b--lightgreen 71.4%, $b--lightgreen 85.68%,$b--lightblue 85.68%, $b--lightblue 100%);
   height: 5px;
 }
+
+@mixin border-gradient-wide {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to right, $b--lightblue, $b--lightblue 7.14%, $b--darkblue 7.14%, $b--darkblue 14.28%, $b--lightgreen 14.28%, $b--lightgreen 21.42%, $b--lightblue 21.42%, $b--lightblue 28.56%, $b--darkblue 28.56%, $b--darkblue 35.7%,$b--lightgreen 35.7%, $b--lightgreen 42.84%,$b--lightblue 42.84%, $b--lightblue 50%, $b--darkblue 50%, $b--darkblue 57.14%, $b--lightgreen 57.14%, $b--lightgreen 64.28%, $b--lightblue 64.28%, $b--lightblue 71.42%, $b--darkblue 71.42%, $b--darkblue 78.56%, $b--lightgreen 78.56%,$b--lightgreen 85.7%, $b--lightblue 85.7%,$b--lightblue 92.84%, $b--darkblue 92.84%, $b--darkblue 100%, $b--lightblue 100%);
+  height: 5px;
+}
+
+@mixin icon {
+  font-family: "SSPika";
+  font-weight: normal;
+  vertical-align: middle;
+  }
+
+
 

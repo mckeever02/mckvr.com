@@ -3,7 +3,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -82,4 +82,18 @@
   .offset-by-one-half.column,
   .offset-by-one-half.columns     { margin-left: 52%; }
 
+}
+
+.styleguide__example-grid {
+
+  .column, .columns {
+    background: darken($bg--darkblue, 2%);
+    border-radius: $border-radius;
+    padding: 15px;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+  }
 }
