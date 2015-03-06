@@ -188,12 +188,15 @@ Table of contents
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 body, html {
   height: 100%; }
 
 html {
   font-size: 62.5%;
-  -webkit-font-smoothing: antialiased;
   box-sizing: border-box; }
 
 *, *:before, *:after {
@@ -549,6 +552,9 @@ span.small-heading__subtitle {
 
 .section__title {
   margin: 3rem 0; }
+
+.content .timeline-content p, .content .secondary-content__box {
+  color: #083546; }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -2667,9 +2673,28 @@ html:hover [class^="ss-"] {
 
 .item-info {
   position: absolute;
-  bottom: 1rem;
+  bottom: -1rem;
   width: 90%;
   display: block; }
+
+.item-functions {
+  display: block;
+  position: absolute;
+  bottom: -32px;
+  right: -50px;
+  height: 40px;
+  width: 80px;
+  display: none; }
+  .item-functions a {
+    color: #d7d7d7;
+    float: left;
+    padding: 1.2rem;
+    vertical-align: middle;
+    background: white; }
+    .item-functions a:hover, .item-functions a:active, .item-functions a:focus {
+      color: #98a0a2; }
+    .item-functions a:first-child {
+      border-right: 1px solid #e5e5e5; }
 
 .timeline-block {
   position: relative;
@@ -2774,8 +2799,6 @@ html:hover [class^="ss-"] {
 .timeline-content {
   position: relative;
   display: block;
-  margin-left: 5em;
-  margin-top: -50px;
   padding: 2.5rem;
   width: 100%;
   height: 150px;
@@ -2970,6 +2993,167 @@ html:hover [class^="ss-"] {
   border-radius: 50%;
   border: 5px solid #e5e5e5; }
 
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+.title {
+  position: relative;
+  height: 160px;
+  line-height: 230px;
+  text-align: center; }
+  .title h1 {
+    font-size: 2.4rem;
+    font-weight: 700; }
+  @media only screen and (min-width: 768px) {
+    .title {
+      line-height: 250px; } }
+  @media only screen and (min-width: 1170px) {
+    .title {
+      height: 200px;
+      line-height: 300px; }
+      .title h1 {
+        font-size: 3rem; } }
+
+.intro {
+  width: 90%;
+  max-width: 768px;
+  text-align: center; }
+
+.intro {
+  margin: 4em auto; }
+  @media only screen and (min-width: 768px) {
+    .intro {
+      margin: 5em auto; } }
+  @media only screen and (min-width: 1170px) {
+    .intro {
+      margin: 6em auto; } }
+
+.headline {
+  font-size: 3rem;
+  line-height: 1.2; }
+  @media only screen and (min-width: 768px) {
+    .headline {
+      font-size: 4.4rem;
+      font-weight: 300; } }
+  @media only screen and (min-width: 1170px) {
+    .headline {
+      font-size: 5.5rem; } }
+
+.words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left; }
+  .words-wrapper b {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0; }
+    .words-wrapper b.is-visible {
+      position: relative; }
+  .no-js .words-wrapper b {
+    opacity: 0; }
+    .no-js .words-wrapper b.is-visible {
+      opacity: 1; }
+
+/* --------------------------------
+
+xtype
+
+-------------------------------- */
+.headline.type {
+  font-weight: 300; }
+  .headline.type .words-wrapper {
+    vertical-align: top;
+    overflow: hidden; }
+    .headline.type .words-wrapper::after {
+      /* vertical bar */
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      bottom: auto;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      height: 90%;
+      width: 1px;
+      background-color: #f2f2f2; }
+    .headline.type .words-wrapper.waiting::after {
+      -webkit-animation: pulse 1s infinite;
+      -moz-animation: pulse 1s infinite;
+      animation: pulse 1s infinite; }
+    .headline.type .words-wrapper.selected {
+      background-color: #f2f2f2; }
+      .headline.type .words-wrapper.selected::after {
+        visibility: hidden; }
+      .headline.type .words-wrapper.selected b {
+        color: #083546; }
+  .headline.type b {
+    visibility: hidden;
+    font-weight: normal; }
+    .headline.type b.is-visible {
+      visibility: visible; }
+  .headline.type i {
+    position: absolute;
+    visibility: hidden;
+    font-style: normal; }
+    .headline.type i.in {
+      position: relative;
+      visibility: visible; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translateY(-50%) scale(1);
+    opacity: 1; }
+
+  40% {
+    -webkit-transform: translateY(-50%) scale(0.9);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform: translateY(-50%) scale(0);
+    opacity: 0; } }
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: translateY(-50%) scale(1);
+    opacity: 1; }
+
+  40% {
+    -moz-transform: translateY(-50%) scale(0.9);
+    opacity: 0; }
+
+  100% {
+    -moz-transform: translateY(-50%) scale(0);
+    opacity: 0; } }
+@keyframes pulse {
+  0% {
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    -ms-transform: translateY(-50%) scale(1);
+    -o-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+    opacity: 1; }
+
+  40% {
+    -webkit-transform: translateY(-50%) scale(0.9);
+    -moz-transform: translateY(-50%) scale(0.9);
+    -ms-transform: translateY(-50%) scale(0.9);
+    -o-transform: translateY(-50%) scale(0.9);
+    transform: translateY(-50%) scale(0.9);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform: translateY(-50%) scale(0);
+    -moz-transform: translateY(-50%) scale(0);
+    -ms-transform: translateY(-50%) scale(0);
+    -o-transform: translateY(-50%) scale(0);
+    transform: translateY(-50%) scale(0);
+    opacity: 0; } }
 #moodmemoRadios {
   margin-top: 2em; }
 

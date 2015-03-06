@@ -14,6 +14,12 @@ $(document).on('click', '.close', function () {
     $(this).parent('div').fadeOut('fast');
 });
 
+$( ".show-menu" ).click(function() {
+  $( ".item-functions" ).fadeToggle( "fast");
+});
+
+
+
 
 $(".form-control").on('focus blur', function(){
      $(this).siblings('span').toggleClass('focused');

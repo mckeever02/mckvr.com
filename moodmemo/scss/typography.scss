@@ -229,3 +229,9 @@ span {
 .section__title {
   margin: 3rem 0;
 }
+
+.content {
+  .timeline-content p, .secondary-content__box {
+    color: $t--darkestblue;
+  }
+}
