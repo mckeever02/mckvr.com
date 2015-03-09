@@ -78,6 +78,14 @@ $primary-stack: "proxima-nova-soft", sans-serif;
   }
 
 
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 // center vertically and/or horizontally an absolute positioned element
 
 @mixin center($xy:xy) {

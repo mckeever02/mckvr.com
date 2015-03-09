@@ -11,6 +11,7 @@
 
 
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/site.live.css">
 
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
@@ -18,26 +19,57 @@
 	<title>Moodmemo | Keep track of your moods, privately</title>
 </head>
 <body class="dark pattern-dark">
+	<div class="intro-container">
 
 
-	<section class="intro">
-		<h1 class="headline letters type">
-			<span>Moodmemo helps you keep track of your</span>
-			<span class="words-wrapper waiting">
-				<b class="is-visible">thoughts</b>
-				<b>ideas</b>
-				<b>possibilities</b>
-				<b>concepts</b>
-				<b>prospects</b>
-				<b>thinking</b>
-				<b>mind</b>
-				<b>projects</b>
-				<b>goals</b>
-			</span>
-		</h1>
-	</section>
+	<div class="intro">
+		<div class="row">
+			<h1 class="headline letters type">
+				<span>Keep track of your</span>
+				<span class="words-wrapper waiting">
+					<b class="is-visible">moods</b>
+					<b>thoughts</b>
+					<b>ideas</b>
+					<b>plans</b>
+					<b>goals</b>
+					<b>dreams</b>
+					<b>ambitions</b>
+					<b>memories</b>
+					<b>thinking</b>
+					<b>mind</b>
+				</span>
+			</h1>
+
+			<form action="http://student333.createsend.com/t/i/s/jyllkh/" method="post" id="subForm">
+				<div class="input-inline">
+					<input id="fieldEmail" name="cm-jyllkh-jyllkh" type="email" placeholder="Your email address" class="form-control left" required>
+					<input type="submit" class="button-primary inline-button right" value="Notify me">
+				</div><!-- end input-inline -->
+			</form>
+		</div><!-- end row -->
+	</div>
+
+	</div><!-- end container -->
+
+
+	<footer class="intro-footer">
+		<div class="row">
+						<a href="javascript:void(0)"><img class="intro-logo" src="images/logo__white.svg" alt=""></a>
+						<p>A thing by <a href="http://helloiammichael.co.uk">Michael Mckeever</a></p>
+		</div><!-- end row -->
+	</footer>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+	$(function(){
+		$('.intro-logo').on('click', function(){
+			$('input[type="email"]').focus();
+			$('.input-inline').addClass('animated shake');
+		});
+	});
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>

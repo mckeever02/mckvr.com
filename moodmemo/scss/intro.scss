@@ -1,60 +1,77 @@
 
+
+
 /* --------------------------------
 
 Primary style
 
 -------------------------------- */
 
-.title {
+.intro-container {
 	position: relative;
-	height: 160px;
-	line-height: 230px;
+	margin: 0 auto;
+	height: 100%;
+	width: 90%;
+}
+
+.intro-logo {
+	max-width: 180px;
+	width: 50%;
+	// margin-bottom: -25rem;
+	// margin-top: 25rem;
+	margin-left: 4rem;
+	margin-bottom: .2rem;
+	// float: right;
+}
+
+.intro-footer {
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+	margin: auto;
+	width: 100%;
 	text-align: center;
-
-	h1 {
-		font-size: 2.4rem;
-		font-weight: 700;
-	}
-
-	@include MQ(M) {
-		line-height: 250px;
-	}
-
-	@include MQ(L) {
-		height: 200px;
-		line-height: 300px;
-
-		h1 {
-			font-size: 3rem;
+	p {
+		font-size: 70%;
+		color: $t--lightgrey;
+		font-weight: 500;
+		a {
+			color: inherit;
+			font-weight: inherit;
+			&:hover, &:active, &:focus {
+				color: $p--orange;
+			}
 		}
 	}
 }
 
-.intro {
-	width: 90%;
-	max-width: $M;
-	text-align: center;
-}
 
 .intro {
-	margin: 4em auto;
-
-	@include MQ(M) {
-		margin: 5em auto;
-	}
-
-	@include MQ(L) {
-		margin: 6em auto;
-	}
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -110px 0 0 -160px;
+  text-align: center;
+  width: 300px;
+	padding: 10px;
+  height: 200px;
+  @include MQ(M) {
+  	width: 600px;
+  	margin: -110px 0 0 -305px;
+  }
+  @include MQ(M) {
+  	width: 800px;
+  	margin: -110px 0 0 -405px;
+  }
 }
 
 .headline {
-	font-size: 3rem;
+	font-size: 2.2rem;
 	line-height: 1.2;
+	margin-bottom: 4rem;
+	font-weight: 600;
 
 	@include MQ(M) {
 		font-size: 4.4rem;
-		font-weight: 300;
 	}
 
 	@include MQ(L) {
@@ -89,6 +106,45 @@ Primary style
 	}
 }
 
+.input-inline {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  width: 100%;
+  .form-control {
+    position: relative;
+    border-color: $p--offwhite;
+    margin-bottom: 0;
+    width: 70%;
+    max-width: 314px;
+    vertical-align: top;
+    background: $p--offwhite;
+    color: $t--darkestblue;
+    &:active, &:focus {
+			border: 2px solid $p--orange;
+    }
+    @include MQ(M) {
+    	width: 314px;
+    }
+  }
+  input.right {
+  	border-radius: 0 5px 5px 0;
+  }
+  input.left {
+  	border-radius: 5px 0 0 5px;
+  }
+  .inline-button {
+		border: none;
+		margin-left: -4px;
+		padding: 0 10px;
+		font-weight: bold;
+		@include MQ(M) {
+			padding: 0 20px;
+		}
+  }
+}
+
 /* --------------------------------
 
 xtype
@@ -96,7 +152,6 @@ xtype
 -------------------------------- */
 
 .headline.type {
-	font-weight: 300;
 
 	.words-wrapper {
 		vertical-align: top;
@@ -132,7 +187,7 @@ xtype
 
 	b {
 		visibility: hidden;
-		font-weight: normal;
+		font-weight: inherit;
 
 		&.is-visible {
 			visibility: visible;
@@ -167,3 +222,15 @@ xtype
 		opacity: 0;
 	}
 }
+
+::selection {
+  background: $p--orange;
+  color: $p--offwhite;
+}
+
+::-moz-selection {
+  background: $p--orange;
+  color: $p--offwhite;
+}
+
+
