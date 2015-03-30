@@ -229,14 +229,17 @@ body {
   min-height: 100px;
   margin-bottom: 40px;
   padding: 25px 0; }
-  .header:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-image: linear, to right, #00aba8, #00aba8 7.14%, #285d68 7.14%, #285d68 14.28%, #c9db52 14.28%, #c9db52 21.42%, #00aba8 21.42%, #00aba8 28.56%, #285d68 28.56%, #285d68 35.7%, #c9db52 35.7%, #c9db52 42.84%, #00aba8 42.84%, #00aba8 50%, #285d68 50%, #285d68 57.14%, #c9db52 57.14%, #c9db52 64.28%, #00aba8 64.28%, #00aba8 71.42%, #285d68 71.42%, #285d68 78.56%, #c9db52 78.56%, #c9db52 85.7%, #00aba8 85.7%, #00aba8 92.84%, #285d68 92.84%, #285d68 100%, #00aba8 100%;
-    height: 5px; }
+
+.border-gradient {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-image: url("../images/header-pattern.svg");
+  background-repeat: repeat-x;
+  background: url("../images/header-pattern.svg") repeat-x; }
 
 .header__main {
   background: #2195ad; }
@@ -251,6 +254,7 @@ body {
   background: #0a4558; }
 
 .styleguide__header {
+  border-top: 1px solid #083a4a;
   border-bottom: 1px solid #083a4a; }
 
 .darkblue {
@@ -812,8 +816,10 @@ label > .label-body {
     top: 0;
     left: 0;
     right: 0;
-    background-image: linear, to right, #00aba8, #00aba8 14.28%, #285d68 14.28%, #285d68 28.56%, #c9db52 28.56%, #c9db52 42.84%, #00aba8 42.84%, #00aba8 57.12%, #285d68 57.12%, #285d68 71.4%, #c9db52 71.4%, #c9db52 85.68%, #00aba8 85.68%, #00aba8 100%;
-    height: 5px; }
+    height: 5px;
+    background-image: url("../images/header-pattern.svg");
+    background-repeat: repeat-x;
+    background: url("../images/header-pattern.svg") repeat-x; }
 
 .form-container {
   width: 90%;

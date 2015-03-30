@@ -48,9 +48,10 @@ body {
   min-height: 100px;
   margin-bottom: 40px;
   padding: 25px 0;
-  &:before {
-    @include border-gradient-wide;
-  }
+}
+
+.border-gradient {
+  @include border-gradient
 }
 
 .header__main {
@@ -71,6 +72,7 @@ body {
 }
 
 .styleguide__header {
+  border-top: 1px solid darken($bg--darkblue,3%);
   border-bottom: 1px solid darken($bg--darkblue,3%);
 
 }

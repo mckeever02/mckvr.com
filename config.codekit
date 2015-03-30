@@ -26,6 +26,16 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/favicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 984,
+		"inputAbbreviatedPath": "\/images\/favicon.png",
+		"outputAbbreviatedPath": "\/images\/favicon.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -79,30 +89,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/css\/animate.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/moodmemo\/css\/bootstrap.min.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/moodmemo\/css\/bootstrap.min.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/moodmemo\/css\/font-awesome.min.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/moodmemo\/css\/font-awesome.min.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
-	"\/moodmemo\/css\/login.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/moodmemo\/css\/login.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
@@ -178,6 +164,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/moodmemo\/images\/header-pattern.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 144,
+		"inputAbbreviatedPath": "\/moodmemo\/images\/header-pattern.png",
+		"outputAbbreviatedPath": "\/moodmemo\/images\/header-pattern.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/moodmemo\/images\/moodmemo-icon--light--small.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -225,16 +221,6 @@
 		"inputAbbreviatedPath": "\/moodmemo\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
-		},
-	"\/moodmemo\/js\/classie.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/moodmemo\/js\/classie.js",
-		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/classie-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
 		},
 	"\/moodmemo\/js\/funcs.js": {
 		"fileType": 64,
@@ -296,6 +282,26 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/moodmemo\/js\/min\/main-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/moodmemo\/js\/min\/main-ck.js",
+		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/min\/main-ck-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/moodmemo\/js\/min\/modernizr-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/moodmemo\/js\/min\/modernizr-ck.js",
+		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/min\/modernizr-ck-ck.js",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/moodmemo\/js\/min\/timeline-ck.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -332,16 +338,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/timeline.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/timeline-ck.js",
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/moodmemo\/js\/uiMorphingButton_inflow.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/moodmemo\/js\/uiMorphingButton_inflow.js",
-		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/uiMorphingButton_inflow-ck.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1

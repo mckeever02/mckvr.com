@@ -57,18 +57,10 @@ $primary-stack: "proxima-nova-soft", sans-serif;
   top: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(to right, $b--lightblue, $b--lightblue 14.28%, $b--darkblue 14.28%, $b--darkblue 28.56%, $b--lightgreen 28.56%, $b--lightgreen 42.84%, $b--lightblue 42.84%, $b--lightblue 57.12%, $b--darkblue 57.12%, $b--darkblue 71.4%,$b--lightgreen 71.4%, $b--lightgreen 85.68%,$b--lightblue 85.68%, $b--lightblue 100%);
   height: 5px;
-}
-
-@mixin border-gradient-wide {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-image: linear-gradient(to right, $b--lightblue, $b--lightblue 7.14%, $b--darkblue 7.14%, $b--darkblue 14.28%, $b--lightgreen 14.28%, $b--lightgreen 21.42%, $b--lightblue 21.42%, $b--lightblue 28.56%, $b--darkblue 28.56%, $b--darkblue 35.7%,$b--lightgreen 35.7%, $b--lightgreen 42.84%,$b--lightblue 42.84%, $b--lightblue 50%, $b--darkblue 50%, $b--darkblue 57.14%, $b--lightgreen 57.14%, $b--lightgreen 64.28%, $b--lightblue 64.28%, $b--lightblue 71.42%, $b--darkblue 71.42%, $b--darkblue 78.56%, $b--lightgreen 78.56%,$b--lightgreen 85.7%, $b--lightblue 85.7%,$b--lightblue 92.84%, $b--darkblue 92.84%, $b--darkblue 100%, $b--lightblue 100%);
-  height: 5px;
+  background-image: url("../images/header-pattern.svg");
+  background-repeat: repeat-x;
+  background: url("../images/header-pattern.svg") repeat-x;
 }
 
 @mixin icon {
