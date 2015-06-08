@@ -6,14 +6,10 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 50px;
-  padding: 0 30px;
   color: $p--offwhite;
   text-align: center;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 50px;
-  letter-spacing: .2px;
+  font-weight: 700;
+  // letter-spacing: .2px;
   text-decoration: none;
   white-space: nowrap;
   border: none;
@@ -33,7 +29,6 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   outline: 0;
   color: $p--offwhite;
-  background-color: darken($p--orange,5%);
 }
 .button.button-primary,
 button.button-primary,
@@ -41,7 +36,9 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   background-color: $p--orange;
-  border-color: $p--darkestorange; }
+  border-color: $p--darkestorange;
+  text-shadow: 0 0 5px $p--darkestorange;
+}
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -75,12 +72,88 @@ input[type="button"].button-secondary:focus {
   background-color: darken($p--blue,3%);
   border-color: $p--darkestblue; }
 
-.inact {
-  background-color: #ccc!important;
-  border-bottom: 3px solid #bbb!important;
-  cursor: not-allowed;
-  &:hover {
+.button-jumbo {
+  height: 60px;
+  line-height: 60px;
+  font-size: 2.0rem;
+  font-weight:700;
+  padding: 0 20px;
+}
 
+.button-large {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  min-width: 118px;
+  font-size: 1.6rem;
+}
+
+.button-small {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+  font-size: 1.4rem;
+}
+
+.button.button-inactive,
+button.button-inactive,
+input[type="submit"].button-inactive,
+input[type="reset"].button-inactive,
+input[type="button"].button-inactive {
+  background-color: #ccc;
+  border-color: #bbb;
+  text-shadow: 0 0 5px #aaa;
+}
+
+button[disabled], html input[disabled] {
+    cursor: not-allowed;
+}
+
+
+.header-button {
+  font-size: 12px;
+  padding: 0 15px;
+  margin-right: 7rem;
+  margin-top: -25px;
+  float: left;
+}
+
+@media (min-width: 820px) {
+  .header-button {
+    font-size: 1.6rem;
+    padding: 0 20px;
+    margin-top: -60px;
+    margin-right: 0;
+    float: right;
   }
+
+}
+
+label.choose-file input[type="file"] {
+    position: fixed;
+    top: -1000px;
+}
+
+.choose-file {
+    border: 2px solid $bg--lightestgrey;
+    border-radius: $border-radius;
+    padding: 7px 20px;
+    background: transparent;
+    display: inline-block;
+}
+.choose-file:hover, .choose-file:active {
+    border: 2px solid $p--blue;
+}
+.choose-file :invalid + span {
+    color: $bg--lightgrey;
+    &:hover, &:active {
+      color: $p--blue;
+    }
+}
+.choose-file :valid + span {
+    color: $bg--lightgrey;
+    &:hover, &:active {
+      color: $p--blue;
+    }
 }
 

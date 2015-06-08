@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16877",
+"creatorBuild": "19033",
 "files": {
 	"\/css\/animate.css": {
 		"fileType": 16,
@@ -8,6 +8,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/animate.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/css\/normalize.css": {
@@ -16,6 +17,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/normalize.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/css\/style.css": {
@@ -24,6 +26,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/images\/favicon.png": {
@@ -33,6 +36,7 @@
 		"initialSize": 984,
 		"inputAbbreviatedPath": "\/images\/favicon.png",
 		"outputAbbreviatedPath": "\/images\/favicon.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -42,6 +46,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/js\/jquery.fittext.js": {
@@ -50,6 +55,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery.fittext.js",
 		"outputAbbreviatedPath": "\/js\/min\/jquery.fittext-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -60,6 +66,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/jquery.fittext-ck.js",
 		"outputAbbreviatedPath": "\/js\/min\/min\/jquery.fittext-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -70,6 +77,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/paper-ck.js",
 		"outputAbbreviatedPath": "\/js\/min\/min\/paper-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -80,6 +88,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/paper.js",
 		"outputAbbreviatedPath": "\/js\/min\/paper-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -90,6 +99,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/css\/animate.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/moodmemo\/css\/main.css": {
@@ -98,6 +108,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/css\/main.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/moodmemo\/css\/normalize.css": {
@@ -106,6 +117,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/css\/normalize.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/moodmemo\/css\/site.live.css": {
@@ -114,6 +126,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/css\/site.live.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/moodmemo\/css\/skeleton.css": {
@@ -122,6 +135,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/css\/skeleton.css",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/moodmemo\/images\/0.jpg": {
@@ -131,6 +145,7 @@
 		"initialSize": 16560,
 		"inputAbbreviatedPath": "\/moodmemo\/images\/0.jpg",
 		"outputAbbreviatedPath": "\/moodmemo\/images\/0.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -141,6 +156,7 @@
 		"initialSize": 17862,
 		"inputAbbreviatedPath": "\/moodmemo\/images\/1.jpg",
 		"outputAbbreviatedPath": "\/moodmemo\/images\/1.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -151,6 +167,7 @@
 		"initialSize": 984,
 		"inputAbbreviatedPath": "\/moodmemo\/images\/favicon.png",
 		"outputAbbreviatedPath": "\/moodmemo\/images\/favicon.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -161,6 +178,7 @@
 		"initialSize": 440,
 		"inputAbbreviatedPath": "\/moodmemo\/images\/FEAF6C5E9B08CEF2.jpg",
 		"outputAbbreviatedPath": "\/moodmemo\/images\/FEAF6C5E9B08CEF2.jpg",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -171,6 +189,7 @@
 		"initialSize": 144,
 		"inputAbbreviatedPath": "\/moodmemo\/images\/header-pattern.png",
 		"outputAbbreviatedPath": "\/moodmemo\/images\/header-pattern.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -181,6 +200,7 @@
 		"initialSize": 318,
 		"inputAbbreviatedPath": "\/moodmemo\/images\/moodmemo-icon--light--small.png",
 		"outputAbbreviatedPath": "\/moodmemo\/images\/moodmemo-icon--light--small.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -191,6 +211,7 @@
 		"initialSize": 37712,
 		"inputAbbreviatedPath": "\/moodmemo\/images\/pattern-dark.png",
 		"outputAbbreviatedPath": "\/moodmemo\/images\/pattern-dark.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -201,6 +222,7 @@
 		"initialSize": 30109,
 		"inputAbbreviatedPath": "\/moodmemo\/images\/pattern-light.png",
 		"outputAbbreviatedPath": "\/moodmemo\/images\/pattern-light.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -211,6 +233,7 @@
 		"initialSize": 133,
 		"inputAbbreviatedPath": "\/moodmemo\/images\/show-menu.png",
 		"outputAbbreviatedPath": "\/moodmemo\/images\/show-menu.png",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -220,6 +243,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/moodmemo\/js\/funcs.js": {
@@ -228,6 +252,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/funcs.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/funcs-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -238,6 +263,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/jquery-2.1.1.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/jquery-2.1.1-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -248,6 +274,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/main.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/main-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -258,6 +285,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/min\/data-ck.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/min\/data-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -268,6 +296,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/min\/funcs-ck.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/min\/funcs-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -278,6 +307,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/min\/jquery.min-ck.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/min\/jquery.min-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -288,6 +318,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/min\/main-ck.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/min\/main-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -298,6 +329,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/min\/modernizr-ck.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/min\/modernizr-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -308,6 +340,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/min\/timeline-ck.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/min\/timeline-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -318,6 +351,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/modernizr.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/modernizr-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -328,6 +362,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/radiotoslider.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/radiotoslider-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -338,6 +373,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/timeline.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/timeline-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -348,6 +384,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/waypoints-sticky.min.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/waypoints-sticky.min-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -358,6 +395,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/js\/waypoints.min.js",
 		"outputAbbreviatedPath": "\/moodmemo\/js\/min\/waypoints.min-ck.js",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -371,6 +409,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/base-styles.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/base-styles.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -386,6 +425,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/buttons.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/buttons.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -401,6 +441,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/code.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/code.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -416,6 +457,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/forms.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/forms.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -431,6 +473,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/grid.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/grid.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -446,6 +489,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/intro.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/intro.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -461,6 +505,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/links.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/links.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -476,6 +521,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/lists.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/lists.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -491,6 +537,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/media-queries.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/media-queries.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -506,6 +553,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/normalize.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/normalize.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -521,6 +569,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/radiotoslider.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/radiotoslider.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -536,6 +585,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/reusables.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/reusables.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -551,6 +601,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/site.live.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/site.live.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -566,6 +617,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/spacing.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/spacing.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -581,6 +633,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/ss-pika.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/ss-pika.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -596,6 +649,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/tables.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/tables.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -611,6 +665,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/timeline.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/timeline.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -626,6 +681,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/typography.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/typography.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -641,6 +697,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/scss\/utilities.scss",
 		"outputAbbreviatedPath": "\/moodmemo\/css\/utilities.css",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
@@ -653,6 +710,7 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/moodmemo\/styleguide.html",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/README.html": {
@@ -661,18 +719,29 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/README.html",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
 	"\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/README.md",
+		"maskEmailAddresses": 1,
 		"outputAbbreviatedPath": "\/README.html",
-		"outputPathIsSetByUser": 0
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		}
 	},
 "hooks": [
@@ -693,6 +762,8 @@
 	"autoprefixerBrowserString": "> 1%, last 2 versions, ff 17, opera 12.1",
 	"autoSyncProjectSettingsFile": 1,
 	"browserRefreshDelay": 0,
+	"coffeeAutoOutputPathEnabled": 1,
+	"coffeeAutoOutputPathFilenamePattern": "*.js",
 	"coffeeAutoOutputPathRelativePath": "",
 	"coffeeAutoOutputPathReplace1": "",
 	"coffeeAutoOutputPathReplace2": "",
@@ -723,6 +794,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"ensure_comprehensions": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"indentation": {
 			"active": 1,
 			"flagValue": 2
@@ -743,12 +818,16 @@
 			"active": 0,
 			"flagValue": 3
 			},
-		"no-unnecessary_fat_arrows": {
+		"no_backticks": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"no_backticks": {
+		"no_debugger": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_functions": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"no_empty_param_list": {
@@ -760,6 +839,10 @@
 			"flagValue": -1
 			},
 		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_interpolation_in_single_quotes": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -787,12 +870,28 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"no_unnecessary_double_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prefer_english_operator": {
 			"active": 0,
 			"flagValue": -1
 			},
 		"space_operators": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
 			"flagValue": -1
 			}
 		},
@@ -802,6 +901,8 @@
 	"externalServerAddress": "http:\/\/localhost\/mckeever02.github.io\/",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+	"hamlAutoOutputPathEnabled": 1,
+	"hamlAutoOutputPathFilenamePattern": "*.html",
 	"hamlAutoOutputPathRelativePath": "",
 	"hamlAutoOutputPathReplace1": "",
 	"hamlAutoOutputPathReplace2": "",
@@ -813,19 +914,22 @@
 	"hamlUseCDATA": 0,
 	"hamlUseDoubleQuotes": 0,
 	"hamlUseUnixNewlines": 0,
+	"jadeAutoOutputPathEnabled": 1,
+	"jadeAutoOutputPathFilenamePattern": "*.html",
 	"jadeAutoOutputPathRelativePath": "",
 	"jadeAutoOutputPathReplace1": "",
 	"jadeAutoOutputPathReplace2": "",
 	"jadeAutoOutputPathStyle": 0,
 	"jadeCompileDebug": 1,
 	"jadeOutputStyle": 0,
+	"javascriptAutoOutputPathEnabled": 1,
+	"javascriptAutoOutputPathFilenamePattern": "*-min.js",
 	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",
 	"javascriptAutoOutputPathStyle": 2,
 	"javascriptCreateSourceMap": 1,
 	"javascriptOutputStyle": 1,
-	"javascriptOutputSuffix": "-ck",
 	"javascriptSyntaxCheckerStyle": 1,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
@@ -843,6 +947,10 @@
 			},
 		"browser": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"browserify": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"camelcase": {
@@ -867,6 +975,10 @@
 			},
 		"dojo": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"eqeqeq": {
@@ -905,7 +1017,7 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"gcl": {
+		"futurehostile": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -922,6 +1034,10 @@
 			"flagValue": 4
 			},
 		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -969,6 +1085,10 @@
 			"active": 0,
 			"flagValue": 4
 			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"mootools": {
 			"active": 0,
 			"flagValue": -1
@@ -987,6 +1107,10 @@
 			},
 		"noarg": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"node": {
@@ -1021,10 +1145,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"onevar": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"phantom": {
 			"active": 0,
 			"flagValue": -1
@@ -1038,6 +1158,10 @@
 			"flagValue": -1
 			},
 		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1061,7 +1185,7 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"smarttabs": {
+		"singleGroups": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1077,10 +1201,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"trailing": {
-			"active": 1,
-			"flagValue": -1
-			},
 		"typed": {
 			"active": 0,
 			"flagValue": -1
@@ -1093,7 +1213,7 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"white": {
+		"varstmt": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1220,11 +1340,23 @@
 			"flagValue": -1
 			}
 		},
+	"jsonAutoOutputPathEnabled": 0,
+	"jsonAutoOutputPathFilenamePattern": "*-min.json",
+	"jsonAutoOutputPathRelativePath": "",
+	"jsonAutoOutputPathReplace1": "",
+	"jsonAutoOutputPathReplace2": "",
+	"jsonAutoOutputPathStyle": 0,
+	"jsonOrderOutput": 0,
+	"jsonOutputStyle": 1,
+	"kitAutoOutputPathEnabled": 1,
+	"kitAutoOutputPathFilenamePattern": "*.html",
 	"kitAutoOutputPathRelativePath": "",
 	"kitAutoOutputPathReplace1": "",
 	"kitAutoOutputPathReplace2": "",
 	"kitAutoOutputPathStyle": 0,
 	"lessAllowInsecureImports": 0,
+	"lessAutoOutputPathEnabled": 1,
+	"lessAutoOutputPathFilenamePattern": "*.css",
 	"lessAutoOutputPathRelativePath": "..\/css",
 	"lessAutoOutputPathReplace1": "less",
 	"lessAutoOutputPathReplace2": "css",
@@ -1237,14 +1369,27 @@
 	"lessStrictImports": 0,
 	"lessStrictMath": 0,
 	"lessStrictUnits": 0,
+	"markdownAutoOutputPathEnabled": 1,
+	"markdownAutoOutputPathFilenamePattern": "*.html",
 	"markdownAutoOutputPathRelativePath": "",
 	"markdownAutoOutputPathReplace1": "",
 	"markdownAutoOutputPathReplace2": "",
 	"markdownAutoOutputPathStyle": 0,
+	"markdownCriticStyle": 0,
 	"markdownEnableFootnotes": 0,
-	"markdownEnableSmartyPants": 1,
-	"markdownExpandTabs": 1,
+	"markdownEnableLabels": 1,
+	"markdownEnableSmartQuotes": 1,
+	"markdownEscapeLineBreaks": 0,
+	"markdownMaskEmailAddresses": 1,
+	"markdownOutputFormat": 0,
+	"markdownOutputStyle": 0,
+	"markdownParseMetadata": 1,
+	"markdownProcessHTML": 0,
+	"markdownRandomFootnoteNumbers": 0,
+	"markdownUseCompatibilityMode": 0,
 	"reloadFileURLs": 0,
+	"sassAutoOutputPathEnabled": 1,
+	"sassAutoOutputPathFilenamePattern": "*.css",
 	"sassAutoOutputPathRelativePath": "..\/css",
 	"sassAutoOutputPathReplace1": "sass",
 	"sassAutoOutputPathReplace2": "css",
@@ -1257,22 +1402,30 @@
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
 	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs",
+	"slimAutoOutputPathEnabled": 1,
+	"slimAutoOutputPathFilenamePattern": "*.html",
 	"slimAutoOutputPathRelativePath": "",
 	"slimAutoOutputPathReplace1": "",
 	"slimAutoOutputPathReplace2": "",
 	"slimAutoOutputPathStyle": 0,
 	"slimCompileOnly": 0,
 	"slimLogicless": 0,
+	"slimOutputFormat": 0,
 	"slimOutputStyle": 1,
 	"slimRailsCompatible": 0,
+	"stylusAutoOutputPathEnabled": 1,
+	"stylusAutoOutputPathFilenamePattern": "*.css",
 	"stylusAutoOutputPathRelativePath": "..\/css",
 	"stylusAutoOutputPathReplace1": "stylus",
 	"stylusAutoOutputPathReplace2": "css",
 	"stylusAutoOutputPathStyle": 2,
+	"stylusCreateSourceMap": 0,
 	"stylusDebugStyle": 0,
 	"stylusImportCSS": 0,
 	"stylusOutputStyle": 0,
 	"stylusResolveRelativeURLS": 0,
+	"typescriptAutoOutputPathEnabled": 1,
+	"typescriptAutoOutputPathFilenamePattern": "*.js",
 	"typescriptAutoOutputPathRelativePath": "\/js",
 	"typescriptAutoOutputPathReplace1": "",
 	"typescriptAutoOutputPathReplace2": "",
@@ -1282,12 +1435,17 @@
 	"typescriptMinifyOutput": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
-	"typescriptNoResolve": 0,
+	"typescriptPreserveConstEnums": 0,
 	"typescriptRemoveComments": 0,
+	"typescriptSuppressImplicitAnyIndexErrors": 0,
 	"typescriptTargetECMAVersion": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bare-returns": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1320,6 +1478,10 @@
 			"flagValue": -1
 			},
 		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_console": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1363,6 +1525,14 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
@@ -1375,8 +1545,16 @@
 			"active": 1,
 			"flagValue": 32000
 			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"properties": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"quote-keys": {

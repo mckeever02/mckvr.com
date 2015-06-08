@@ -59,8 +59,8 @@ Primary style
   	margin: -110px 0 0 -305px;
   }
   @include MQ(M) {
-  	width: 800px;
-  	margin: -110px 0 0 -405px;
+  	width: 1000px;
+  	margin: -110px 0 0 -505px;
   }
 }
 
@@ -75,7 +75,7 @@ Primary style
 	}
 
 	@include MQ(L) {
-		font-size: 5.5rem;
+		font-size: 6.5rem;
 	}
 }
 
