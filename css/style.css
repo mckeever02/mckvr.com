@@ -12,7 +12,6 @@
       font-family: "lato",sans-serif;
       font-size: 10px;
       margin: 0;
-      overflow: hidden;
     }
     .container {
       width: 100%;
@@ -131,4 +130,3 @@
 .description3 {
   -webkit-animation-delay: 300ms;
 }
-
