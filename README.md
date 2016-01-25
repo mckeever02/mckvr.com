@@ -1,4 +1,4 @@
 mckeever02.github.io
 ====================
 
-Testing out github pages
+The portfolio of Michael Mckeever, a designer from Belfast
