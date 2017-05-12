@@ -1,4 +1,19 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-highlighter: pygments # or rouge or null
+name: Michael Mckeever &ndash; Freelance Digital Designer & Front-end Developer, Belfast
+markdown: kramdown
+highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+permalink: pretty
+
+twitter: mick_mckeever
+github: mckeever02
+instagram: mckeever02
+dribbble: mckeever02
+
+link_classes: link underline near-black hover-blue
+code_classes: ba b--light-silver bg-near-white br1 pv1
+post_heading_classes: f4
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/

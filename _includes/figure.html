@@ -1,0 +1,6 @@
+<figure class="center {{include.size}} db mv4">
+  <img data-sizes="auto" data-src="{{site.baseurl}}/images/{{include.url}}.{{include.type}}" data-srcset="{{site.baseurl}}/images/{{include.url}}.{{include.type}} 1x, {{site.baseurl}}/images/{{include.url}}-2x.{{include.type}} 2x" class="lazyload ba b--light-silver" alt="{{include.alt}}" />
+  {%if include.caption%}
+  <figcaption class="f6 left gray">{{include.caption}}</figcaption>
+  {%endif%}
+</figure>

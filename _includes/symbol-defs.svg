@@ -1,0 +1,20 @@
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<symbol id="icon-cross" viewBox="0 0 32 32">
+<title>cross</title>
+<path d="M26.88 0l-10.88 10.878-10.88-10.878-5.12 5.12 10.88 10.88-10.88 10.878 5.12 5.122 10.88-10.882 10.88 10.882 5.12-5.122-10.88-10.878 10.88-10.88z"></path>
+</symbol>
+<symbol id="icon-square" viewBox="0 0 38 32">
+<title>square</title>
+<path d="M3.2 0h32v32h-32v-32z"></path>
+</symbol>
+<symbol id="icon-triangle" viewBox="0 0 32 32">
+<title>triangle</title>
+<path d="M16 0l16 32h-32z"></path>
+</symbol>
+<symbol id="icon-polygon" viewBox="0 0 32 32">
+<title>Polygon</title>
+<path d="M16 0l13.856 8v16l-13.856 8-13.856-8v-16z"></path>
+</symbol>
+</defs>
+</svg>

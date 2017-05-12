@@ -1,9 +1,95 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
+
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+{% if page.collection %}
+    {% assign  document = site[the_collection] | sort: "date" | reversed %}
+{% endif %}
+
+{% for links in document %}
+    {% if links.title == page.title %}
+
+        {% unless forloop.first %}
+            {% assign prevurl = prev.url %}
+
+            {% assign prevtitle = prev.title %}
+        {% endunless %}
+
+        {% unless forloop.last %}
+            {% assign next = document[forloop.index] %}
+
+            {% assign nexturl = next.url %}
+
+            {% assign nexttitle = next.title %}
+        {% endunless %}
+    {% endif %}
+
+    {% assign prev = links %}
+{% endfor %}
+
+<div class="mw8 center pv3 pv5-ns ph4 ph0-l">
+
+  <h1 class="f2-m f1-l serif fw-9 black lh-title mb1">{{ page.title }}{% if page.subtitle %} {{page.subtitle}}{%endif%}</h1>
+
+  <div class="flex flex-column flex-row-l mt4">
+    <div class="w-100 w-50-l">
+      <div class="mb4">
+        <h3 class="f8 gray ttu tracked ma0">Role</h3>
+        <p class="mt1 lh-copy">{{ page.role | join: ', ' }}</p>
+      </div>
+      <div class="mb4">
+        <h3 class="f8 gray ttu tracked ma0">Technologies</h3>
+        <p class="mt1 lh-copy">{{ page.tech | join: ', ' }}</p>
+      </div>
+      <div class="mb4">
+        <h3 class="f8 gray ttu tracked ma0">Date</h3>
+        <p class="mt1 lh-copy">{{page.date | date: "%B %Y"}}</p>
+      </div>
+    </div>
+    <div class="w-100 w-50-l">
+      <div class="mb4">
+        <h3 class="f8 gray ttu tracked ma0">Brief</h3>
+        <p class="mt1 lh-copy">{{ page.brief}}</p>
+        {% if page.project_url %}
+        <a class="link blue f7 b db mt4 link-arrow" href="//{{page.project_url}}">Visit the website</a>
+        {%endif%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bb relative tc b--light-silver">
+  <svg class="icon icon-sm light-silver absolute bg-white pa2 icon-sm-center">
+    <use xlink:href="#icon-cross"></use>
+  </svg>
+</div>
+
+<div class="center mt5 post-content ph4 ph0-l lh-copy-md">
 {{ content }}
 </div>
+
+{% if prevurl or nexturl %}
+  <div class="bt b--light-silver flex flex-column flex-row-ns relative mt6">
+    <svg class="icon icon-sm light-silver absolute bg-white pa2 icon-sm-center">
+      <use xlink:href="#icon-cross"></use>
+    </svg>
+    {% if prevurl %}
+    <a href="{{prevurl}}" class="link near-black hover-blue db w-100-s flex-0-ns pa5 br-ns b--light-silver flex justify-center align-center order-1 order-0-ns">
+      <div class="pv2-ns tr-ns">
+        <span class="f7 gray b">Previous project</span>
+        <h3 class="f4 ma0 mt1 normal">{{ prevtitle}}</h3>
+      </div>
+    </a>
+    {% endif %}
+    {% if nexturl %}
+    <a href="{{nexturl}}" class="link near-black hover-blue db w-100-s flex-0-ns pa5 bb b--light-silver bn-ns flex justify-center align-center order-0 order-1-ns">
+      <div class="pv2-ns">
+        <span class="f7 gray b">Next project</span>
+        <h3 class="f4 ma0 mt1 normal">{{nexttitle}}</h3>
+      </div>
+    </a>
+    {% endif %}
+  </div>
+{% endif %}

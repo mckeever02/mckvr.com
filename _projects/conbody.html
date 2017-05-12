@@ -1,0 +1,82 @@
+---
+layout: post
+title:  "Conbody Live"
+subtitle: "online workouts - prison style"
+date:   October 2016
+color1: "#FF903E"
+color2: "#F5B22E"
+role:
+  - UX
+  - UI
+  - Front-end Development
+description: "Website and product design/development for an exciting new fitness start-up"
+permalink: /projects/conbody/
+tech:
+  - Ruby on Rails
+  - HAML
+  - CSS
+  - JS
+description: "Website and product design/development for an exciting new fitness start-up"
+brief: "Design and develop a web app and product website to allow people to signup and watch live-streaming workout videos online."
+permalink: /projects/conbody/
+---
+
+<p><a class="{{site.link_classes}}" href="https://conbody.com/">Conbody</a> is the brain child of ex-convict Coss Marte who, whilst serving a long-term prison sentence, developed a unique training program that incorporated prison style workouts into a studio style approach.</p>
+
+<p>After the success of Conbody’s studio classes run throughout NYC, Coss came up with the idea of Conbody Live &mdash; a web app that offers live streaming of Conbody’s unique fitness classes to homes around the world in three different time zones.</p>
+
+
+<h2 class="f4">The role</h2>
+
+<p>I worked alongside <a class="{{site.link_classes}}" href="https://twitter.com/hamstarr">Simon Hamilton</a> who served as the project lead and rails developer. I was in charge of designing the product website, web app and building out the front-end.</p>
+
+<h2 class="f4">The Challenge</h2>
+
+<p>To design a front-facing website to promote Conbody's new streaming service whilst expanding upon and in keeping with the current Conbody brand.</p>
+
+<p>The web app had its own set of design challenges, such as:</p>
+
+<ul>
+  <li>Allow registered users to easily discover and signup for daily workout classes</li>
+  <li>Inform users (politely) of live classes that are about to start via either email or desktop notifications</li>
+  <li>Design a gamification system that will encourage users to keep attending classes</li>
+  <li>List upcoming classes in an intuitive way that enables users to easily join multiple classes throughout the week/month</li>
+  <li>Design and cater the experience responsively so a user can use the web app on their mobile/tablet/desktop wihtout their experience being affected</li>
+</ul>
+
+<h2 class="f4">The Web App</h2>
+
+{% include figure.html size="mw7" url="conbody-dashboard" type="png" alt="Conbody Dashboard" caption="The Dashboard Page" %}
+
+<p>The dashboard is focused around classes. Each day has a new class ran by a specific trainer. It was important to showcase a week of upcoming classes that a member could join. Member numbers and avatars were displayed in order to encourage other members to join.</p>
+
+<p>Fitness stats are displayed at the top to help increase participation. encouragement and therefore, engagement.</p>
+
+{% include figure.html size="mw7" url="conbody-classes" type="png" alt="Conbody Classes" caption="The Classes Page" %}
+
+<p>Many iterations were considered before deciding on a calendar layout for classes. A user may be joining multiple classes every week so it was important that it was easy for them to quickly scan and join classes from within this view.</p>
+
+<p>A class has two views:</p>
+
+<ol>
+  <li>Before a class has started</li>
+  <li>When a class has started</li>
+</ol>
+
+{% include figure.html size="mw7" url="conbody-class-item" type="png" alt="Conbody Class Item" caption="Class item page, Before a class has started" %}
+
+<p>The image above is the former, this page was designed around providing meaningful information to the user regarding the class and drawing attention to the next class.</p>
+
+{% include figure.html size="mw7" url="conbody-video-item" type="png" alt="Conbody Class Item" caption="Class item page, when a class has started" %}
+
+<p>When a class has started the view switches to a live video streaming the class. Naturally, the focus of this page is on the video experience, with some secondary data present such as number of people currently watching, duration etc.</p>
+
+<p>A rating system was implemented to allow users to provide feedback for classes. Given more time, I would have liked to expand on this feature to gather more useful feedback data than a star rating. I would have also liked to incorporate more engagement with the audience such as a live commenting system perhaps or even user webcam integration.</p>
+
+<h2 class="f4">Profile Page</h2>
+
+{% include figure.html size="mw7" url="conbody-profile" type="png" alt="Conbody Profile Page" caption="User profile page" %}
+
+<h2 class="f4">Home Page</h2>
+
+{% include figure.html size="mw7" url="conbody-homepage" type="jpg" alt="Conbody Homepage" caption="Conbody Live Homepage" %}
