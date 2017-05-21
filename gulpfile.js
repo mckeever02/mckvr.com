@@ -6,7 +6,7 @@ var buffer      = require('vinyl-buffer');
 var merge       = require('merge');
 var gutil       = require('gulp-util');
 var source      = require('vinyl-source-stream');
-var sourceMaps = require('gulp-sourcemaps');
+var sourcemaps  = require('gulp-sourcemaps');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
@@ -15,42 +15,15 @@ var rename      = require('gulp-rename');
 var uglify      = require('gulp-uglify');
 var uncss       = require('gulp-uncss');
 var cleanCSS    = require('gulp-clean-css');
+var jshint      = require('gulp-jshint');
+var babel       = require('gulp-babel');
+var transform   = require('vinyl-transform');
+var imageop     = require('lossy-imagemin');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
-
-var config = {
-    js: {
-        src: 'js/main.js',       // Entry point
-        outputDir: 'js/dist/',  // Directory to save bundle to
-        mapDir: '/maps/',      // Subdirectory to save maps to
-        outputFile: 'main.js' // Name to use for bundle
-    },
-};
-
-// This method makes it easy to use common bundling options in different tasks
-function bundle (bundler) {
-
-    // Add options to add to "base" bundler passed as parameter
-    bundler
-      .bundle()                                                        // Start bundle
-      .pipe(source(config.js.src))                        // Entry point
-      .pipe(buffer())                                               // Convert to gulp pipeline
-      .pipe(rename(config.js.outputFile))          // Rename output from 'main.js'
-                                                                              //   to 'bundle.js'
-      .pipe(sourceMaps.init({ loadMaps : true }))  // Strip inline source maps
-      .pipe(sourceMaps.write(config.js.mapDir))    // Save source maps to their
-                                                                                      //   own directory
-      .pipe(gulp.dest(config.js.outputDir))        // Save 'bundle' to build/
-      .pipe(browserSync.reload({stream:true}))                                     // Reload browser if relevant
-}
-
-gulp.task('bundle', function () {
-    var bundler = browserify(config.js.src)  // Pass browserify the entry point
-    bundle(bundler);  // Chain other options -- sourcemaps, rename, etc.
-})
 
 
 /**
@@ -60,6 +33,14 @@ gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
     return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
         .on('close', done);
+});
+
+gulp.task('images', function(cb) {
+    gulp.src(['images/*.*']).pipe(imageop({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('images/dist')).on('end', cb).on('error', cb);
 });
 
 /**
@@ -83,13 +64,85 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 var jsFiles = 'js/*.js',
     jsDest = 'js/dist';
 
-gulp.task('js', function() {
-  return gulp.src(jsFiles)
-    .pipe(concat('scripts.js'))
-    .pipe(gulp.dest(jsDest))
-    .pipe(rename('scripts.min.js'))
+// gulp.task('js', function() {
+// return gulp.src(jsFiles)
+//     .pipe(jshint())
+//     .pipe(jshint.reporter('jshint-stylish'))
+//     //.pipe(jshint.reporter('fail'))
+//     .pipe(concat('scripts.js'))
+//     .pipe(gulp.dest(jsDest))
+//     .pipe(rename('scripts.min.js'))
+//     .pipe(babel({
+//             presets: ['es2015']
+//         }))
+//     .pipe(uglify())
+//     //.on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+//     .pipe(gulp.dest(jsDest));
+//     browserSync.reload();
+// });
+
+gulp.task('js:main', function() {
+  gulp.src("js/*.js")
+    // .pipe(babel({
+    //   presets: ["es2015"]
+    // }))
+    //.pipe(jshint())
+    //.pipe(jshint.reporter('jshint-stylish'))
+    .pipe(concat("main.js"))
+    // .pipe(browserify({
+    //     insertGlobals : true,
+    //     debug : !gulp.env.production
+    //   }))
     .pipe(uglify())
-    .pipe(gulp.dest(jsDest));
+    .on('error', function(err) {
+      console.error('Error in compress task', err.toString());
+    })
+    .pipe(gulp.dest("js/dist/"));
+});
+
+gulp.task('js:vendor', function() {
+  gulp.src("js/vendor/*.js")
+    // .pipe(babel({
+    //   presets: ["es2015"]
+    // }))
+    //.pipe(jshint())
+    //.pipe(jshint.reporter('jshint-stylish'))
+    .pipe(concat("vendor.js"))
+    // .pipe(browserify({
+    //     insertGlobals : true,
+    //     debug : !gulp.env.production
+    //   }))
+    .pipe(uglify())
+    .on('error', function(err) {
+      console.error('Error in compress task', err.toString());
+    })
+    .pipe(gulp.dest("js/dist/"));
+});
+
+
+gulp.task('js', ['js:main', 'js:vendor']);
+
+
+gulp.task('babel', function() {
+  gulp.src("js/vendor/lastfm-listener.js")
+    .pipe(babel({
+      presets: ["es2015"]
+    }))
+    //.pipe(uglify())
+    .pipe(gulp.dest("js/dist/"));
+});
+
+
+// Optimize images
+
+gulp.task('images-optim', () => {
+  return gulp.src('images/*')
+  .pipe($$.imagemin({
+    optimizationLevel: 7,
+    progressive: true,
+    interlaced: true
+  }))
+  .pipe(gulp.dest('images/dist'));
 });
 
 /**
@@ -113,7 +166,9 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*','_projects/*', 'js/*.js'], ['jekyll-rebuild']);
+    gulp.watch('js/**/*.js', ['js']);
+    gulp.watch('fonts/*.*', ['jekyll-rebuild']);
+    gulp.watch(['*.html', '**/*.html', '**/*.md', 'js/**/*.js', 'images/*', '_posts/*','_projects/*'], ['jekyll-rebuild']);
 });
 
 /**

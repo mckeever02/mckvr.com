@@ -1,0 +1,7 @@
+<article itemscope="" itemtype="http://schema.org/BlogPosting">
+  <a href="{{post.url}}" class="flex justify-between items-baseline pv3 link near-black hover-blue">
+    <h3 itemprop="name headline" class="f4 ma0 mb1 normal dib ma0">{{post.title}}</h3>
+    <span class="line-spacer flex-auto mh2"></span>
+    <time datetime="{{post.date}}" itemprop="datePublished" class="f7 gray b ttu tracked ma0">{{post.date | date: "%d %B %Y"}}</time>
+  </a>
+</article>

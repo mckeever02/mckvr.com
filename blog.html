@@ -1,0 +1,19 @@
+---
+layout: default
+title: "Blog"
+---
+
+{% include page-title.html %}
+
+<div class="center mw6 mb5 ph4 ph0-l">
+  {% for post in site.posts %}
+    {% include post-list-item.html %}
+  {%endfor%}
+</div>
+
+
+<div class="center pv4 tc">
+  <svg class="icon icon-sm gray">
+    <use xlink:href="#icon-cross"></use>
+  </svg>
+</div>

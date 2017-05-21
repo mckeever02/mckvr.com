@@ -8,7 +8,7 @@ description: "Freelance digital designer & front-end developer, Belfast"
   <use xlink:href="#icon-cross"></use>
 </svg>
 
-<div class="mw7 center pv3 pv4-m pv6-l ph4 ph0-l">
+<div class="mw7 center pv3 pv4-m pv5-l ph4 ph0-l">
   <h2 class="f2-m f1-l serif fw-9 mb6 black lh-title">Freelance digital designer & front-end developer.</h2>
 
   <section class="cf mb3 mb5-ns">
@@ -25,7 +25,7 @@ description: "Freelance digital designer & front-end developer, Belfast"
       <a id="show2" class="ttu tracked b gray f8 link hover-blue" href="javascript:void(0)">And more?</a>
       </p>
 
-      <p id="about2" class="lh-copy-lg dn">Outside of the internet, I like to lift heavy things, get outside, and listen to music that goes <em>uns uns uns</em>. I'm currently listening to <a class="link near-black bg-animate hover-bg-washed-blue bg-near-white" id="songURL" href=""><span id="songName">...</span> by <span id="artistName">...</span></a>
+      <p id="about2" class="lh-copy-lg dn">Outside of the internet, I like to lift heavy things, get outside, and listen to music that goes <em>uns uns uns</em>. I'm currently listening to <a class="{{site.link_classes}}" id="songURL" href=""><span id="songName">...</span> by <span id="artistName">...</span></a>
         <br>
       </p>
 
@@ -65,20 +65,20 @@ description: "Freelance digital designer & front-end developer, Belfast"
         <div class="w-100 w-50-l">
           <ul class="list pl0 ma0">
             <li class="mb3">
-              <a class="link hover-black link-arrow near-black" href="//twitter.com/{{site.twitter}}" title="Follow me on Twitter">Twitter</a>
+              <a class="link hover-blue active-black link-arrow near-black" href="//twitter.com/{{site.twitter}}" title="Follow me on Twitter">Twitter</a>
             </li>
             <li class="mb3">
-              <a class="link hover-black link-arrow near-black" href="//github.com/{{site.github}}" title="Follow me on Github">Github</a>
+              <a class="link hover-blue active-black link-arrow near-black" href="//github.com/{{site.github}}" title="Follow me on Github">Github</a>
             </li>
           </ul>
         </div>
         <div class="w-100 w-50-l pl4-l">
           <ul class="list pl0 ma0">
             <li class="mb3">
-              <a class="link hover-black link-arrow near-black" href="//twitter.com/{{site.dribbble}}" title="Follow me on dribbble">Dribbble</a>
+              <a class="link hover-blue active-black link-arrow near-black" href="//twitter.com/{{site.dribbble}}" title="Follow me on dribbble">Dribbble</a>
             </li>
             <li class="mb3">
-              <a class="link hover-black link-arrow near-black" href="//github.com/{{site.instagram}}" title="Follow me on Instagram">Instagram</a>
+              <a class="link hover-blue active-black link-arrow near-black" href="//github.com/{{site.instagram}}" title="Follow me on Instagram">Instagram</a>
             </li>
           </ul>
         </div>
@@ -86,7 +86,7 @@ description: "Freelance digital designer & front-end developer, Belfast"
     </div>
   </section>
 
-  <section class="flex flex-column flex-row-ns mb3 mb5-ns">
+  <section class="flex flex-column flex-row-ns mb3">
     <div class="w-100 w-30-ns">
     </div>
     <div class="w-100 w-70-ns relative">
@@ -97,49 +97,44 @@ description: "Freelance digital designer & front-end developer, Belfast"
 
 </div>
 
-<section class="bw1 bg-light-gray border-gray pv3">
+<section class="bw1 b--light-gray bt bb pv3">
   <div class="mw7 center pv5 ph4 ph0-l">
     <section class="cf">
       <div class="fl w-100 w-30-ns">
-        <h3 class="lh-copy-lg-ns mb3 mb0-ns f8 gray ttu tracked ma0">Projects</h3>
+        <h3 class="lh-copy-lg-ns mb3 mb0-ns f8 gray ttu tracked ma0">Case Studies</h3>
       </div>
       <div class="fl w-100 w-70-ns">
+        {% assign projects = site.projects | sort: 'date' | where: "category", "case study"  %}
+
+        {% for project in projects reversed limit: 3 %}
         <article class="mb5">
-          <h3 class="f4 near-black ma0 mb1 normal">
-            <a class="near-black hover-black link dib" href="#">
-            Trying to work
-            </a>
-            <svg class="icon ml1 icon-xs pink v-mid">
+          <h3 class="f4 ma0 mb1 normal">
+            <a class="link near-black hover-blue link-arrow dib" href="{{project.url}}">
+            {{project.title}}
+            {%if project.role contains "Design"%}
+            <svg class="icon ml1 icon-xs pink v-mid" title="Design">
               <use xlink:href="#icon-triangle"></use>
             </svg>
-            <svg class="icon ml1 icon-xs light-green v-mid">
+            {%endif%}
+            {%if project.role contains "UX"%}
+            <svg class="icon ml1 icon-xs light-green v-mid" title="UX">
               <use xlink:href="#icon-square"></use>
             </svg>
-            <svg class="icon ml1 icon-xs blue v-mid">
+            {%endif%}
+            {%if project.role contains "Front-end Development"%}
+            <svg class="icon ml1 icon-xs blue v-mid" title="Front-end Development">
               <use xlink:href="#icon-polygon"></use>
             </svg>
-          </h3>
-          <ul class="list gray list-horizontal-disc f7 b pa0 ma0 mb1">
-            <li class="dib mv1 mr1">Design, Front-end Development</li>
-            <li class="dib mv1 mr1">2017</li>
-          </ul>
-          <a class="link blue f8 b db mt3 link-arrow" href="#">View the Case Study</a>
-        </article>
-
-        <article class="mb5">
-          <h3 class="f4 near-black ma0 mb1 normal">
-            <a class="near-black hover-black link link-arrow dib" href="#">
-            Usfolk
+            {%endif%}
             </a>
           </h3>
           <ul class="list gray list-horizontal-disc f7 b pa0 ma0 mb1">
-            <li class="dib mv1 mr1">Front-end Development</li>
-            <li class="dib mv1 mr1">July 2016</li>
+            <li class="dib mv1 mr1">{{ project.role | join: ', ' }}</li>
           </ul>
-          <a class="link blue f8 b db mt3 link-arrow" href="#">View the Case Study</a>
         </article>
+        {%endfor%}
 
-      <a class="ttu tracked b gray f8 link hover-blue link-arrow" href="{{site.baseurl}}/projects">View all</a>
+      <a class="ttu tracked b gray f8 link hover-blue" href="{{site.baseurl}}/projects">View all</a>
 
 
       </div>
@@ -154,19 +149,21 @@ description: "Freelance digital designer & front-end developer, Belfast"
         <h3 class="lh-copy-lg-ns mb3 mb0-ns f8 gray ttu tracked ma0">Writing</h3>
       </div>
       <div class="fl w-100 w-70-ns">
+        {% for post in site.posts %}
         <article class="mb5">
           <h3 class="f4 near-black ma0 mb1 normal">
-            <a class="near-black hover-black link link-arrow dib" href="#">
-              A sane wordpress workflow
+            <a class="near-black hover-blue link link-arrow dib" href="{{post.url}}">
+              {{post.title}}
             </a>
           </h3>
           <ul class="list gray list-horizontal-disc f7 b pa0 ma0 mb1">
-            <li class="dib mv1 mr1">#Development</li>
-            <li class="dib mv1 mr1">20 May 2017</li>
+            {%if post.categories%} {%for category in post.categories%}<li class="dib mv1 mr1"><a class="link gray hover-near-black" href="{{site.baseurl}}/category/{{category}}">{{category | prepend: "#"}}</a></li>{%endfor%}{%endif%}
+            <li class="dib mv1 mr1">{{post.date | date: "%d %B %Y"}}</li>
           </ul>
         </article>
+        {%endfor%}
 
-        <a class="ttu tracked b gray f8 link hover-blue link-arrow" href="{{site.baseurl}}/projects">View all</a>
+        <a class="ttu tracked b gray f8 link hover-blue" href="{{site.baseurl}}/blog">View all</a>
 
 
       </div>
@@ -175,8 +172,4 @@ description: "Freelance digital designer & front-end developer, Belfast"
 </section>
 
 
-<div class="center pv4 tc">
-  <svg class="icon icon-sm near-black">
-    <use xlink:href="#icon-cross"></use>
-  </svg>
-</div>
+{% include footer.html %}

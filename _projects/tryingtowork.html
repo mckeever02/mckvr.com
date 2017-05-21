@@ -2,7 +2,7 @@
 layout: post
 title:  "Trying to work"
 subtitle: "free spaces to work online"
-date:   29/04/2017
+date: 29/04/2017
 color1: "#34D4C1"
 color2: "#28FABE"
 role:
@@ -14,8 +14,10 @@ tech:
   - CSS
   - JS
 description: "Side-project to create a collection of spaces to work online around Belfast City Centre"
-brief: "A side-project fuelled by my impatience for slow wifi while working remotely"
+brief: "A side-project fuelled by my impatience for slow wifi whilst working remotely"
 permalink: /projects/tryingtowork/
+project_url: "//tryingtowork.in"
+category: "case study"
 ---
 
 <p><a class="{{site.link_classes}}" href="https://tryingtowork.in/">Trying to work</a> was a side project born from the frustrations of trying to find a space to work in Belfast City Centre with fast and stable wifi. Often, I’d grab a tea and sit down in a cosey coffee shop to do some work only to find that the wifi speed is a #tbt to the good ole days of dial up.</p>
@@ -80,8 +82,8 @@ permalink: /projects/tryingtowork/
 
 <p>This was my first time in taking active measures to create a progressive web app(PWA).</p>
 
-<blockquote class="mw7 center f3 lh-copy gray">
-  &ldquo;A PWA uses modern web capabilities to deliver an <em class="bg-light-yellow fs-normal">app-like experience</em>.&rdquo;
+<blockquote class="mw7 center f3 lh-copy mv5">
+  &ldquo;A PWA uses modern web capabilities to deliver an <mark class="bg-yellow fs-normal">app-like experience</mark>.&rdquo;
 </blockquote>
 
 {% include figure.html url="tryingtowork-pwa-score" type="png" alt="Trying to work PWA score" caption="Progress Web app score using Google Lighthouse" %}
@@ -92,7 +94,7 @@ permalink: /projects/tryingtowork/
 
 <p>I decided to use Jekyll for this as a starting point. Its easy to use, really fast and perfect for small side projects. The spaces are populated using markdown files. All data is pulled from the frontmatter in the markdown file. Its laid out like so:</p>
 
-{% highlight markdown %}
+{% highlight liquid %}
 ---
 title: The Black Box
 date: 12/05/2017
@@ -135,4 +137,4 @@ opening_times:
 
 <p>I would also like to expand it out for other cities, such as Dublin, London etc. <code class="{{site.code_classes}}">tryingtowork.in/london</code> Wouldn’t that be cool?</p>
 
-<p class="tc mv4">Visit <a class="{{site.link_classes}}" href="https://tryingtowork.in">https://tryingtowork.in</a> or <a class="{{site.link_classes}}" href="https://github.com/mckeever02/tryingtowork">view the source code on Github</a>
+<p>Visit <a class="{{site.link_classes}}" href="https://tryingtowork.in">https://tryingtowork.in</a> or <a class="{{site.link_classes}}" href="https://github.com/mckeever02/tryingtowork">view the source code on Github</a>

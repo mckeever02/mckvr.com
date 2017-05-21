@@ -1,0 +1,15 @@
+---
+layout: default
+title: "Archives"
+---
+
+{% include page-title.html %}
+
+<div class="center mw6 mb5 ph4 ph0-l">
+  {% for post in page.posts %}
+    {% include post-list-item.html %}
+  {%endfor%}
+</div>
+
+
+{% include footer.html %}

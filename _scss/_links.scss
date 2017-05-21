@@ -14,7 +14,7 @@
 
 .link {
   text-decoration: none;
-  transition: color .15s ease-in;
+  transition: all .15s ease-in;
 }
 
 .link:link,
@@ -30,6 +30,36 @@
 .link:focus   {
   transition: color .15s ease-in;
   //outline: 1px dotted currentColor;
+}
+
+.link-arrow-child-item--before:before, .link-arrow-child-item--after:after {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(0);
+  transition: transform .15s ease-in;
+}
+
+ .link-arrow-child-item--after:after {
+   content: "\2192";
+ }
+
+ .link-arrow-child-item--before:before {
+   content: "\2190";
+ }
+
+
+.link-arrow-child {
+  &:hover, &:focus {
+    .link-arrow-child-item--before:before, .link-arrow-child-item--after:after {
+      opacity: 1;
+    }
+    .link-arrow-child-item--before:before {
+      transform: translateX(-4px);
+    }
+    .link-arrow-child-item--after:after {
+      transform: translateX(4px);
+    }
+  }
 }
 
 .link-arrow {

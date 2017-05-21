@@ -4,11 +4,55 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }} &ndash; {{page.description}}</title>
+        <meta name="google-site-verification" content="cIAuNiL_hF5sx4i3bG0gDN38_CJ8TgKdtG8HJPPIo8E" />
+        <title>{{ page.title }} &ndash; {%if page.description%} {{page.description}} {%else%} {{site.name}} {%endif%}</title>
         <meta name="viewport" content="width=device-width">
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}{{site.imageurl}}/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}{{site.imageurl}}/favicon-16x16.png">
+        <link rel="mask-icon" href="{{site.baseurl}}{{site.imageurl}}/safari-pinned-tab.svg" color="#555555">
+        <meta name="theme-color" content="#ffffff">
+
+
+        <!-- Disable tap highlight on IE -->
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <meta name="google-site-verification" content="IMC-lwHL5ZqPd7MdL2mVE5N_7fILL5b7bkwiq-q4yss" />
+
+        <!-- Web Application Manifest -->
+        <link rel="manifest" href="{{site.baseurl}}/manifest.json">
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="{{site.name}}">
+        <link rel="icon" sizes="192x192" href="{{site.baseurl}}{{site.imageurl}}android-chrome-192x192.png">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+        <meta name="apple-mobile-web-app-title" content="{{site.name}}">
+        <link rel="apple-touch-icon" href="{{site.baseurl}}{{site.imageurl}}/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="images/mstile-150x150.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+
+
+        <!-- Open Graph Metadata -->
+        <meta property="og:url" content="{{site.baseurl}}" />
+        <meta property="og:title" content="{{site.name}}" />
+        <meta property="og:description" content="{{site.description}}" />
+        <meta property="og:image" content="{{site.baseurl}}/og-image.png" />
+
+        <!-- Twitter Card Metadata -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="{{site.twitter | prepend "@" }}" />
+        <meta name="twitter:title" content="{{site.name}}" />
+        <meta name="twitter:description" content="{{site.description}}" />
+        <meta name="twitter:image" content="{{site.baseurl}}{{site.imageurl}}/og-image.png" />
 
         {% include symbol-defs.svg %}
 
@@ -17,28 +61,32 @@
       <main class="bg-white overflow-hidden z-1 relative shadow-4">
         <nav class="db dt-l w-100 border-box pa4 ph5-l relative z-1">
           <div class="db dtc-l v-mid w-100 w-25-l tc tl-l ">
-            <a class="black link" href="{{site.baseurl}}" title="Home">
+            <a class="black link" href="{{site.baseurl}}/" title="Home">
               <h1 id="logo" class="f7 b dib">mckvr</h1>
             </a>
           </div>
           <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-            <a class="link hover-black gray b f7 dib mr3 mr5-l" href="{{site.baseurl}}/blog" title="Home">Blog</a>
-            <a class="link hover-black gray b f7 dib mr3 mr5-l" href="{{site.baseurl}}/projects" title="How it Works">Projects</a>
-            <a class="link hover-black gray b f7 dib" href="{{site.baseurl}}/hire-me" title="Blog">Hire me</a>
+            {% for item in site.navigation %}
+              {% assign class = nil %}
+              {% if page.url contains item.url %}
+                  {% assign class = 'active' %}
+              {% endif %}
+              <a href="{{ item.url }}" class="{{ class }} link hover-black gray b f7 dib {% if forloop.last == true %} {%else%} mr3 mr5-l {%endif%}" title="{{item.title}}">
+                {{ item.title }}
+              </a>
+            {% endfor %}
           </div>
         </nav>
 
         {{content}}
-        <!-- <div class="center pv4 tc">
-          <svg class="icon icon-sm near-black">
-            <use xlink:href="#icon-cross"></use>
-          </svg>
-        </div> -->
+
       </main>
     </body>
 
-    <script src="{{site.baseurl}}/js/lazysizes.js"></script>
-    <script src="{{site.baseurl}}/js/baffle.min.js"></script>
-    <script src="{{site.baseurl}}/js/dist/main.js"></script>
+    <!-- <script src="{{site.baseurl}}/js/lazysizes.js"></script>
+    <script src="{{site.baseurl}}/js/lightense.js"></script> -->
+    <!--<script src="{{site.baseurl}}/js/dist/lastfm-listener.js"></script> -->
+    <script async defer src="{{site.baseurl}}/js/dist/vendor.js"></script>
+    <script async defer src="{{site.baseurl}}/js/dist/main.js"></script>
 
 </html>

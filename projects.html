@@ -1,23 +1,35 @@
 ---
 layout: default
 title: "Projects"
-description: "Michael Mckeever, freelance digital designer & front-end developer"
 ---
 
-<div class="mw8-m mw9-l center flex flex-column flex-row-ns justify-between flex-wrap pv5 ph3 ph4-l">
+<div class="mw8-m mw9-l center flex flex-column flex-row-ns justify-around flex-wrap pv5 ph3 ph4-l">
 
-{% for project in site.projects %}
+{% assign projects = site.projects | sort: 'category' %}
+
+
+{% for project in projects %}
 
   <div class="w-100 w-50-m w-third-l pa4 mb4 project-item">
     <div class="relative tc">
-      <a href="{{site.baseurl}}{{project.permalink}}" class="db relative z-1 br1 shadow-6 shadow-hover dib grow project-image">
-        <img class="db" src="{{site.baseurl}}/images/{{project.title | slugify}}-thumbnail.jpg" alt="{{project.title}}">
+      <a
+      {%if project.category == "case study"%}
+      href="{{site.baseurl}}{{project.permalink}}"
+      {%else%}
+      href="{{project.project_url}}"
+      {%endif%}
+      class="db relative z-1 br1 shadow-6 shadow-hover dib grow project-image">
+        <img src="{{site.baseurl}}{{site.imageurl}}{{project.title | slugify}}-thumbnail-lq.jpg" class="db lazyload" data-src="{{site.baseurl}}{{site.imageurl}}{{project.title | slugify}}-thumbnail.jpg" alt="{{project.title}}">
       </a>
       <div class="absolute bg-gradient br2 w-100 h-100 z-0 top-0 left-0" style="background-image: linear-gradient(0deg, {{project.color1}} 0%, {{project.color2}} 100%);"></div>
     </div>
     <h2 class="f4 normal mt4">{{project.title}}</h2>
     <p class="lh-copy mid-gray">{{project.description}}</p>
-    <a class="link blue f8 b db mt3 link-arrow" href="#">View the Case Study</a>
+    {%if project.category == "case study"%}
+    <a class="link blue f8 b db mt3 link-arrow ttu tracked" href="{{project.url}}">View the Case Study</a>
+    {%else%}
+    <a class="link blue f8 b db mt3 link-arrow ttu tracked" href="{{project.project_url}}">Visit the website</a>
+    {%endif%}
   </div>
 
 {% endfor %}

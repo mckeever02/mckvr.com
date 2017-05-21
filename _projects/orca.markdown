@@ -1,29 +1,23 @@
 ---
 layout: post
-title:  "Orca"
-color1: "#F848A9"
-color2: "#FD90BB"
-date:   29/04/2017
-categories:
-  - front-end development
-description: "Bespoke Wordpress Development for N.Ireland’s first Illustration agency"
+title:  "Orca Money"
+subtitle: "Belfast fintech startup"
+color1: "#2C5BE2"
+color2: "#5A82FF"
+date: 01/04/2017
+role:
+  - Front-end Development
+tech:
+  - Wordpress
+  - PHP
+  - HTML
+  - CSS
+  - JS
+description: "Wordpress development for a new fintech startup"
+brief: "Wordpress development for a new fintech startup"
 permalink: /projects/orca/
+project_url: "//orcamoney.com"
+category: "link"
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+Case study coming soon. Visit [{{page.title}}]({{page.project_url}}) to see it in action.

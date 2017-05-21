@@ -2,10 +2,10 @@
 layout: default
 ---
 
-
 {% capture the_collection %}{{page.collection}}{% endcapture %}
+
 {% if page.collection %}
-    {% assign  document = site[the_collection] | sort: "date" | reversed %}
+  {% assign document = site[the_collection] | where: "category", "case study" | sort: "date" %}
 {% endif %}
 
 {% for links in document %}
@@ -29,11 +29,15 @@ layout: default
     {% assign prev = links %}
 {% endfor %}
 
-<div class="mw8 center pv3 pv5-ns ph4 ph0-l">
+<div class="mw8 center pv3 pt5-ns ph4 ph0-l">
 
   <h1 class="f2-m f1-l serif fw-9 black lh-title mb1">{{ page.title }}{% if page.subtitle %} {{page.subtitle}}{%endif%}</h1>
+  {%if page.collection != "projects" %}
+  <p class="gray b f6">{{page.date | date: "%d %B %Y"}}<span class="ph2">&bull;</span>{%if page.categories%} {%for category in page.categories%}<a class="link gray hover-near-black mr2" href="{{site.baseurl}}/category/{{category}}">{{category | prepend: "#"}}</a>{%endfor%}{%endif%}</p>
+  {%endif%}
 
-  <div class="flex flex-column flex-row-l mt4">
+  {% if page.collection == "projects" %}
+  <div class="flex flex-column flex-row-l mt4 mb3">
     <div class="w-100 w-50-l">
       <div class="mb4">
         <h3 class="f8 gray ttu tracked ma0">Role</h3>
@@ -58,38 +62,66 @@ layout: default
       </div>
     </div>
   </div>
+  {%endif%}
 </div>
 
+{% if page.collection == "projects" %}
 <div class="bb relative tc b--light-silver">
   <svg class="icon icon-sm light-silver absolute bg-white pa2 icon-sm-center">
     <use xlink:href="#icon-cross"></use>
   </svg>
 </div>
+{%endif%}
 
-<div class="center mt5 post-content ph4 ph0-l lh-copy-md">
+<div class="center mv5 post-content ph4 ph0-l lh-copy-md">
 {{ content }}
 </div>
 
-{% if prevurl or nexturl %}
+{% if page.collection == "projects" %}
+  {% if prevurl or nexturl %}
+    <div class="bt b--light-silver flex flex-column flex-row-ns relative mt6">
+      <svg class="icon icon-sm light-silver absolute bg-white pa2 icon-sm-center">
+        <use xlink:href="#icon-cross"></use>
+      </svg>
+      {% if prevurl %}
+      <a href="{{prevurl}}" class="link link-arrow-child near-black hover-blue db w-100-s flex-0-ns pa5 br-ns b--light-silver flex justify-center align-center order-1 order-0-ns">
+        <div class="pv2-ns tr-ns">
+          <span class="f7 gray b">Previous project</span>
+          <h3 class="f4 ma0 mt1 normal link-arrow-child-item--before">{{ prevtitle}}</h3>
+        </div>
+      </a>
+      {% endif %}
+      {% if nexturl %}
+      <a href="{{nexturl}}" class="link link-arrow-child near-black hover-blue db w-100-s flex-0-ns pa5 bb b--light-silver bn-ns flex justify-center align-center order-0 order-1-ns">
+        <div class="pv2-ns">
+          <span class="f7 gray b">Next project</span>
+          <h3 class="f4 ma0 mt1 normal link-arrow-child-item--after">{{nexttitle}}</h3>
+        </div>
+      </a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+{%else%}
   <div class="bt b--light-silver flex flex-column flex-row-ns relative mt6">
     <svg class="icon icon-sm light-silver absolute bg-white pa2 icon-sm-center">
       <use xlink:href="#icon-cross"></use>
     </svg>
-    {% if prevurl %}
-    <a href="{{prevurl}}" class="link near-black hover-blue db w-100-s flex-0-ns pa5 br-ns b--light-silver flex justify-center align-center order-1 order-0-ns">
+    {% if page.previous.url %}
+    <a href="{{page.previous.url}}" class="link link-arrow-child near-black hover-blue db w-100-s flex-0-ns pa5 br-ns b--light-silver flex justify-center align-center order-1 order-0-ns">
       <div class="pv2-ns tr-ns">
-        <span class="f7 gray b">Previous project</span>
-        <h3 class="f4 ma0 mt1 normal">{{ prevtitle}}</h3>
+        <span class="f7 gray b">Previous post</span>
+        <h3 class="f4 ma0 mt1 normal link-arrow-child-item--before">{{ page.previous.title}}</h3>
       </div>
     </a>
     {% endif %}
-    {% if nexturl %}
-    <a href="{{nexturl}}" class="link near-black hover-blue db w-100-s flex-0-ns pa5 bb b--light-silver bn-ns flex justify-center align-center order-0 order-1-ns">
+    {% if page.next.url %}
+    <a href="{{page.next.url}}" class="link link-arrow-child near-black hover-blue db w-100-s flex-0-ns pa5 bb b--light-silver bn-ns flex justify-center align-center order-0 order-1-ns">
       <div class="pv2-ns">
-        <span class="f7 gray b">Next project</span>
-        <h3 class="f4 ma0 mt1 normal">{{nexttitle}}</h3>
+        <span class="f7 gray b">Next post</span>
+        <h3 class="f4 ma0 mt1 normal link-arrow-child-item--after">{{ page.next.title}}</h3>
       </div>
     </a>
     {% endif %}
   </div>
-{% endif %}
+{%endif%}

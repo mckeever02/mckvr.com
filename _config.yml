@@ -1,19 +1,57 @@
-name: Michael Mckeever &ndash; Freelance Digital Designer & Front-end Developer, Belfast
+name: Michael Mckeever, Freelance Digital Designer & Front-end Developer, Belfast
 markdown: kramdown
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 permalink: pretty
 
+# Social
 twitter: mick_mckeever
 github: mckeever02
 instagram: mckeever02
 dribbble: mckeever02
+email: mckeever02@gmail.com
 
-link_classes: link underline near-black hover-blue
-code_classes: ba b--light-silver bg-near-white br1 pv1
-post_heading_classes: f4
 
+#directories
+imageurl: /images/dist/
+
+# Global classes
+link_classes: link underline underline-gray hover-underline-blue blue hover-blue active-black
+code_classes: ba b--light-silver bg-near-white br2 pa1
+post_heading_classes: f3
+
+# Gems
+gems:
+  - jekyll-archives
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Settings for archives
+jekyll-archives:
+  enabled:
+    - categories
+  layouts:
+    category: 'category-archive'
+  permalinks:
+    category: '/category/:name/'
+
+# Collections
 collections:
   projects:
     output: true
     permalink: /:collection/:path/
+
+# Custom configs
+daily_rate: £300
+hourly_rate: £40
+
+# Navigation
+navigation:
+  - title: Projects
+    url: /projects/
+  - title: Blog
+    url: /blog/
+  - title: Hire me
+    url: /hire-me/

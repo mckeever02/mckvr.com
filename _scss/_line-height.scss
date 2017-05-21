@@ -22,12 +22,14 @@
   .lh-copy  { line-height: 1.5; }
   .lh-copy-md  { line-height: 1.8; }
   .lh-copy-lg  { line-height: 2; }
+  .lh-copy-xl  { line-height: 3; }
 
 @media #{$breakpoint-not-small} {
   .lh-solid-ns { line-height: 1; }
   .lh-title-ns { line-height: 1.25; }
   .lh-copy-ns  { line-height: 1.5; }
   .lh-copy-lg-ns  { line-height: 2; }
+  .lh-copy-xl-ns  { line-height: 3; }
 }
 
 @media #{$breakpoint-medium} {
@@ -35,6 +37,7 @@
   .lh-title-m { line-height: 1.25; }
   .lh-copy-m  { line-height: 1.5; }
   .lh-copy-lg-m  { line-height: 2; }
+  .lh-copy-xl-m  { line-height: 3; }
 }
 
 @media #{$breakpoint-large} {
@@ -42,4 +45,5 @@
   .lh-title-l { line-height: 1.25; }
   .lh-copy-l  { line-height: 1.5; }
   .lh-copy-lg-l  { line-height: 2; }
+  .lh-copy-xl-l  { line-height: 3; }
 }

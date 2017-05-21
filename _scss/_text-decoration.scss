@@ -22,6 +22,20 @@
 .underline    { text-decoration: underline; }
 .no-underline { text-decoration: none; }
 
+.underline-blue {
+  text-decoration-color: $blue;
+}
+
+.hover-underline-blue {
+  &:hover, &:focus {
+    text-decoration-color: $blue;
+  }
+}
+
+.underline-gray {
+  text-decoration-color: $gray;
+}
+
 
 @media #{$breakpoint-not-small} {
   .strike-ns       { text-decoration: line-through; }

@@ -70,8 +70,8 @@ body {
 }
 
 .icon-xs {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
 }
 
 .icon-sm {
@@ -110,18 +110,52 @@ transform: skewY(-2deg);
 }
 
 .post-content {
-  > *:not(.full-width):not(.mw7):not(.mw8):not(.mw9):not(.flex):not(.cf):not(.highlight) {
-    max-width: 540px;
+  > *:not(.full-width):not(.mw7):not(.mw8):not(.mw9):not(.flex):not(.cf):not(.highlight):not(.highlighter-rouge) {
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
   }
-  > blockquote, > .highlight {
-    max-width: 580px;
+  > blockquote, > div.highlighter-rouge, figure.highlight {
+    max-width: 660px;
     margin-left: auto;
     margin-right: auto;
+  }
+  figure.highlight {
+    padding: 1rem;
   }
   > .highlight {
     line-height: 1.4;
+  }
+  h2, h3 {
+    font-size: 1.25rem;
+  }
+  a {
+    color: $blue;
+    transition: all .15s ease-in;
+    text-decoration: underline solid $gray;
+    &:hover, &:focus {
+      text-decoration-color: $blue;
+    }
+    &:visited {
+      color: $light-blue;
+      &:hover {
+        color: $blue;
+      }
+      &:active {
+        color: $near-black;
+      }
+    }
+    &:active {
+      color: $near-black;
+    }
+  }
+  p img {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $spacing-large;
+    margin-bottom: $spacing-large;
   }
 }
 
@@ -143,4 +177,60 @@ transform: skewY(-2deg);
 
 pre {
   margin: 0;
+}
+
+code.highlighter-rouge {
+  padding: 0.25rem;
+  background-color: $near-white;
+  border-radius: .25rem;
+  border: 1px solid $light-silver;
+}
+
+.line-spacer {
+  border-bottom: 1px dotted $gray;
+}
+
+
+::selection {
+  background-color: $yellow;
+}
+
+.active {
+  color: $near-black;
+}
+
+.cross {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  transition: 700ms ease;
+  &:hover {
+    &:before, &:after {
+      background-color: $black;
+    }
+    &:before {
+      left: -33.4%;
+    }
+    &:after {
+      right: -33.4%;
+    }
+  }
+}
+.cross:after,
+.cross:before {
+  background-color: $gray;
+  content: "";
+  position: absolute;
+  height: .23em;
+  width: 100%;
+  transition: 200ms ease;
+  top: 50%;
+}
+.cross:after {
+  transform: rotate(45deg);
+  right: 0;
+}
+.cross:before {
+  transform: rotate(-45deg);
+  left: 0;
 }
