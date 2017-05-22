@@ -2,6 +2,7 @@
 layout: default
 title: "Michael Mckeever"
 description: "Freelance digital designer & front-end developer, Belfast"
+id: "index"
 ---
 
 <svg class="icon icon-header light-gray absolute rotateFull o-70">
@@ -9,7 +10,7 @@ description: "Freelance digital designer & front-end developer, Belfast"
 </svg>
 
 <div class="mw7 center pv3 pv4-m pv5-l ph4 ph0-l">
-  <h2 class="f2-m f1-l serif fw-9 mb6 black lh-title">Freelance digital designer & front-end developer.</h2>
+  <h2 class="f1-ns serif fw-9 mb4 mb6-ns black lh-title ">Freelance digital designer & front-end developer.</h2>
 
   <section class="cf mb3 mb5-ns">
     <div class="fl w-100 w-30-ns">
@@ -25,14 +26,14 @@ description: "Freelance digital designer & front-end developer, Belfast"
       <a id="show2" class="ttu tracked b gray f8 link hover-blue" href="javascript:void(0)">And more?</a>
       </p>
 
-      <p id="about2" class="lh-copy-lg dn">Outside of the internet, I like to lift heavy things, get outside, and listen to music that goes <em>uns uns uns</em>. I'm currently listening to <a class="{{site.link_classes}}" id="songURL" href=""><span id="songName">...</span> by <span id="artistName">...</span></a>
+      <p id="about2" class="lh-copy-lg dn">Outside of the internet, I like to lift heavy things, listen to 🏠 🎵, drink 🍺 and eat 🍔 🍔.
         <br>
       </p>
 
     </div>
   </section>
 
-  <section class="flex flex-column flex-row-ns mb3 mb5-ns">
+  <section class="flex flex-column flex-row-ns mb4 mb5-ns">
     <div class="w-100 w-30-ns">
       <h3 class="f8 gray ttu tracked ma0 mb3 mb0-ns">What?</h3>
     </div>
@@ -56,13 +57,13 @@ description: "Freelance digital designer & front-end developer, Belfast"
     </div>
   </section>
 
-  <section class="flex flex-column flex-row-ns mb3 mb5-ns">
+  <section class="flex flex-column flex-row-ns mb4 mb5-ns">
     <div class="w-100 w-30-ns">
       <h3 class="f8 gray ttu tracked ma0 mb3 mb0-ns">Where?</h3>
     </div>
     <div class="w-100 w-70-ns">
-      <div class="flex flex-column flex-row-l">
-        <div class="w-100 w-50-l">
+      <div class="flex flex-row">
+        <div class="w-50">
           <ul class="list pl0 ma0">
             <li class="mb3">
               <a class="link hover-blue active-black link-arrow near-black" href="//twitter.com/{{site.twitter}}" title="Follow me on Twitter">Twitter</a>
@@ -72,7 +73,7 @@ description: "Freelance digital designer & front-end developer, Belfast"
             </li>
           </ul>
         </div>
-        <div class="w-100 w-50-l pl4-l">
+        <div class="w-50 pl4-l">
           <ul class="list pl0 ma0">
             <li class="mb3">
               <a class="link hover-blue active-black link-arrow near-black" href="//twitter.com/{{site.dribbble}}" title="Follow me on dribbble">Dribbble</a>
@@ -86,7 +87,7 @@ description: "Freelance digital designer & front-end developer, Belfast"
     </div>
   </section>
 
-  <section class="flex flex-column flex-row-ns mb3">
+  <section class="flex flex-column flex-row-ns mb4">
     <div class="w-100 w-30-ns">
     </div>
     <div class="w-100 w-70-ns relative">
@@ -98,7 +99,7 @@ description: "Freelance digital designer & front-end developer, Belfast"
 </div>
 
 <section class="bw1 b--light-gray bt bb pv3">
-  <div class="mw7 center pv5 ph4 ph0-l">
+  <div class="mw7 center pv4 pv5-ns ph4 ph0-l">
     <section class="cf">
       <div class="fl w-100 w-30-ns">
         <h3 class="lh-copy-lg-ns mb3 mb0-ns f8 gray ttu tracked ma0">Case Studies</h3>
@@ -109,7 +110,7 @@ description: "Freelance digital designer & front-end developer, Belfast"
         {% for project in projects reversed limit: 3 %}
         <article class="mb5">
           <h3 class="f4 ma0 mb1 normal">
-            <a class="link near-black hover-blue link-arrow dib" href="{{project.url}}">
+            <a class="link near-black hover-blue dib" href="{{project.url}}">
             {{project.title}}
             {%if project.role contains "Design"%}
             <svg class="icon ml1 icon-xs pink v-mid" title="Design">
@@ -143,7 +144,7 @@ description: "Freelance digital designer & front-end developer, Belfast"
 </section>
 
 <section class="pv3">
-  <div class="mw7 center pv5 ph4 ph0-l">
+  <div class="mw7 center pv4 pv5-ns ph4 ph0-l">
     <div class="cf mb3 mb5-ns">
       <div class="fl w-100 w-30-ns">
         <h3 class="lh-copy-lg-ns mb3 mb0-ns f8 gray ttu tracked ma0">Writing</h3>
@@ -164,8 +165,6 @@ description: "Freelance digital designer & front-end developer, Belfast"
         {%endfor%}
 
         <a class="ttu tracked b gray f8 link hover-blue" href="{{site.baseurl}}/blog">View all</a>
-
-
       </div>
     </div>
   </div>

@@ -16,7 +16,7 @@ email: mckeever02@gmail.com
 imageurl: /images/dist/
 
 # Global classes
-link_classes: link underline underline-gray hover-underline-blue blue hover-blue active-black
+link_classes: link underline-hover blue hover-blue active-black
 code_classes: ba b--light-silver bg-near-white br2 pa1
 post_heading_classes: f3
 

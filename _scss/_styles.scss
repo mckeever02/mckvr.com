@@ -85,11 +85,30 @@ body {
 }
 
 .icon-header {
-  height: 60em;
-  width: 60em;
-  top: -10em;
-  left: -10em;
+  height: 25em;
+  width: 25em;
+  top: 0;
+  left: -5em;
   z-index: -1;
+  @media #{$breakpoint-medium} {
+    height: 40em;
+    width: 40em;
+    top: -5em;
+    left: -5em;
+  }
+  @media #{$breakpoint-large} {
+    height: 60em;
+    width: 60em;
+    top: -10em;
+    left: -10em;
+  }
+  @media #{$breakpoint-xlarge} {
+    height: 80em;
+    width: 80em;
+    top: -20em;
+    left: -20em;
+  }
+
 }
 
 .bg-gradient {
@@ -132,18 +151,10 @@ transform: skewY(-2deg);
   a {
     color: $blue;
     transition: all .15s ease-in;
-    text-decoration: underline solid $gray;
+    text-decoration: none;
     &:hover, &:focus {
-      text-decoration-color: $blue;
-    }
-    &:visited {
-      color: $light-blue;
-      &:hover {
-        color: $blue;
-      }
-      &:active {
-        color: $near-black;
-      }
+      text-decoration: underline;
+      text-decoration-color: currentColor;
     }
     &:active {
       color: $near-black;

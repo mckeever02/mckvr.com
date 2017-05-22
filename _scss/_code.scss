@@ -19,6 +19,7 @@
 
 .highlighter-rouge {
   padding: 1rem;
+  margin: $spacing-medium 0;
   border: 1px solid $black;
   ::selection {
     background-color: $white;

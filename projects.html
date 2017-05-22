@@ -1,16 +1,17 @@
 ---
 layout: default
 title: "Projects"
+canonical: "Projects"
 ---
 
-<div class="mw8-m mw9-l center flex flex-column flex-row-ns justify-around flex-wrap pv5 ph3 ph4-l">
+<div class="mw8-m mw9-l center flex flex-column flex-row-ns justify-around flex-wrap pv3 pv5-ns ph3 ph4-l">
 
 {% assign projects = site.projects | sort: 'category' %}
 
 
 {% for project in projects %}
 
-  <div class="w-100 w-50-m w-third-l pa4 mb4 project-item">
+  <div class="w-100 w-50-m w-third-l pa4 mb3 mb4-ns project-item">
     <div class="relative tc">
       <a
       {%if project.category == "case study"%}
@@ -34,4 +35,7 @@ title: "Projects"
 
 {% endfor %}
 
+
 </div>
+
+{%include footer.html%}

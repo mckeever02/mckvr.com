@@ -4,6 +4,7 @@ type: "post"
 title:  "about.md"
 date:   2017-05-15
 categories: jekyll
+canonical: "Blog post"
 ---
 
 After 2 redesigns and 3 rebuilds I think I’ve finally got a portfolio that I’m content with… for now.  Its true how designers says they’re their own worst clients. Here’s some information about what lies under the hood.

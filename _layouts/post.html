@@ -29,9 +29,9 @@ layout: default
     {% assign prev = links %}
 {% endfor %}
 
-<div class="mw8 center pv3 pt5-ns ph4 ph0-l">
+<div class="mw8 center pv3 pt5-ns ph5">
 
-  <h1 class="f2-m f1-l serif fw-9 black lh-title mb1">{{ page.title }}{% if page.subtitle %} {{page.subtitle}}{%endif%}</h1>
+  <h1 class="f2-m f1-l serif fw-9 black lh-title mb1">{{ page.title }}{% if page.subtitle %}{{page.subtitle}}{%endif%}</h1>
   {%if page.collection != "projects" %}
   <p class="gray b f6">{{page.date | date: "%d %B %Y"}}<span class="ph2">&bull;</span>{%if page.categories%} {%for category in page.categories%}<a class="link gray hover-near-black mr2" href="{{site.baseurl}}/category/{{category}}">{{category | prepend: "#"}}</a>{%endfor%}{%endif%}</p>
   {%endif%}
@@ -73,13 +73,13 @@ layout: default
 </div>
 {%endif%}
 
-<div class="center mv5 post-content ph4 ph0-l lh-copy-md">
+<div class="center mv3 mv5-ns post-content ph4 ph0-l lh-copy-md">
 {{ content }}
 </div>
 
 {% if page.collection == "projects" %}
   {% if prevurl or nexturl %}
-    <div class="bt b--light-silver flex flex-column flex-row-ns relative mt6">
+    <div class="bt b--light-silver flex flex-column flex-row-ns relative mt5 mt6-ns">
       <svg class="icon icon-sm light-silver absolute bg-white pa2 icon-sm-center">
         <use xlink:href="#icon-cross"></use>
       </svg>
@@ -87,7 +87,7 @@ layout: default
       <a href="{{prevurl}}" class="link link-arrow-child near-black hover-blue db w-100-s flex-0-ns pa5 br-ns b--light-silver flex justify-center align-center order-1 order-0-ns">
         <div class="pv2-ns tr-ns">
           <span class="f7 gray b">Previous project</span>
-          <h3 class="f4 ma0 mt1 normal link-arrow-child-item--before">{{ prevtitle}}</h3>
+          <h3 class="f4 ma0 mt1 normal link-arrow-child-item--before lh-copy">{{ prevtitle}}</h3>
         </div>
       </a>
       {% endif %}
@@ -95,7 +95,7 @@ layout: default
       <a href="{{nexturl}}" class="link link-arrow-child near-black hover-blue db w-100-s flex-0-ns pa5 bb b--light-silver bn-ns flex justify-center align-center order-0 order-1-ns">
         <div class="pv2-ns">
           <span class="f7 gray b">Next project</span>
-          <h3 class="f4 ma0 mt1 normal link-arrow-child-item--after">{{nexttitle}}</h3>
+          <h3 class="f4 ma0 mt1 normal link-arrow-child-item--after lh-copy">{{nexttitle}}</h3>
         </div>
       </a>
       {% endif %}
@@ -103,7 +103,7 @@ layout: default
   {% endif %}
 
 {%else%}
-  <div class="bt b--light-silver flex flex-column flex-row-ns relative mt6">
+  <div class="bt b--light-silver flex flex-column flex-row-ns relative mt5 mt6-ns">
     <svg class="icon icon-sm light-silver absolute bg-white pa2 icon-sm-center">
       <use xlink:href="#icon-cross"></use>
     </svg>
@@ -111,7 +111,7 @@ layout: default
     <a href="{{page.previous.url}}" class="link link-arrow-child near-black hover-blue db w-100-s flex-0-ns pa5 br-ns b--light-silver flex justify-center align-center order-1 order-0-ns">
       <div class="pv2-ns tr-ns">
         <span class="f7 gray b">Previous post</span>
-        <h3 class="f4 ma0 mt1 normal link-arrow-child-item--before">{{ page.previous.title}}</h3>
+        <h3 class="f4 ma0 mt1 normal link-arrow-child-item--before lh-copy">{{ page.previous.title}}</h3>
       </div>
     </a>
     {% endif %}
@@ -119,7 +119,7 @@ layout: default
     <a href="{{page.next.url}}" class="link link-arrow-child near-black hover-blue db w-100-s flex-0-ns pa5 bb b--light-silver bn-ns flex justify-center align-center order-0 order-1-ns">
       <div class="pv2-ns">
         <span class="f7 gray b">Next post</span>
-        <h3 class="f4 ma0 mt1 normal link-arrow-child-item--after">{{ page.next.title}}</h3>
+        <h3 class="f4 ma0 mt1 normal link-arrow-child-item--after lh-copy">{{ page.next.title}}</h3>
       </div>
     </a>
     {% endif %}

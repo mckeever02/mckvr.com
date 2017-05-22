@@ -49,7 +49,7 @@
 
         <!-- Twitter Card Metadata -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="{{site.twitter | prepend "@" }}" />
+        <meta name="twitter:site" content="{{site.twitter | prepend: "@" }}" />
         <meta name="twitter:title" content="{{site.name}}" />
         <meta name="twitter:description" content="{{site.description}}" />
         <meta name="twitter:image" content="{{site.baseurl}}{{site.imageurl}}/og-image.png" />
@@ -59,19 +59,19 @@
     </head>
     <body class="bg-gray pa4-l sans-serif near-black">
       <main class="bg-white overflow-hidden z-1 relative shadow-4">
-        <nav class="db dt-l w-100 border-box pa4 ph5-l relative z-1">
-          <div class="db dtc-l v-mid w-100 w-25-l tc tl-l ">
+        <nav class="db dt-ns w-100 border-box pa4 ph5-l relative z-1">
+          <div class="db dtc-ns v-mid w-100 w-25-ns tc tl-ns ">
             <a class="black link" href="{{site.baseurl}}/" title="Home">
-              <h1 id="logo" class="f7 b dib">mckvr</h1>
+              <h1 id="logo" class="f5 f7-ns b dib">mckvr</h1>
             </a>
           </div>
-          <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+          <div class="dtc-ns v-mid w-100 w-75-ns tc tr-ns mt2 mt0-ns">
             {% for item in site.navigation %}
               {% assign class = nil %}
               {% if page.url contains item.url %}
                   {% assign class = 'active' %}
               {% endif %}
-              <a href="{{ item.url }}" class="{{ class }} link hover-black gray b f7 dib {% if forloop.last == true %} {%else%} mr3 mr5-l {%endif%}" title="{{item.title}}">
+              <a href="{{ item.url }}" class="{{ class }} link hover-black gray b f6 f7-ns dib {% if forloop.last == true %} {%else%} mr4 mr5-ns {%endif%}" title="{{item.title}}">
                 {{ item.title }}
               </a>
             {% endfor %}
@@ -88,5 +88,61 @@
     <!--<script src="{{site.baseurl}}/js/dist/lastfm-listener.js"></script> -->
     <script async defer src="{{site.baseurl}}/js/dist/vendor.js"></script>
     <script async defer src="{{site.baseurl}}/js/dist/main.js"></script>
+
+    <script>
+    (function() {
+      function a() {
+        var b = baffle('#logo').start().set({
+          characters: '░█▓ ▓▒░',
+          speed: 40
+        }).text(function (currentText) {
+          return "mckvr | {{page.canonical}}";
+        });
+
+        setTimeout(function () {
+          b.reveal(500);
+        }, 500);
+      }
+
+      function b() {
+        var b = baffle('#logo').start().set({
+          characters: '░█▓ ▓▒░',
+          speed: 40
+        }).text(function (currentText) {
+          return "mckvr";
+        });
+
+        setTimeout(function () {
+          b.reveal(500);
+        }, 500);
+      }
+
+      function c() {
+        var b = baffle('#logo').start().set({
+          characters: '░█▓ ▓▒░',
+          speed: 40
+        }).text(function (currentText) {
+          {%if page.id == "index"%}
+          return "Michael Mckeever";
+          {%else%}
+          return "Back Home";
+          {%endif%}
+        });
+
+        setTimeout(function () {
+          b.reveal(500);
+        }, 500);
+      }
+      {%if page.id == "index"%}
+      window.onload=function(){b();};
+      {%else%}
+      window.onload=function(){a();};
+      {%endif%}
+      document.getElementById('logo').onmouseover=function(){c();};
+      document.getElementById('logo').onmouseleave=function(){a();};
+    })();
+    </script>
+
+
 
 </html>

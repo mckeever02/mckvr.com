@@ -166,7 +166,7 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch('js/**/*.js', ['js']);
+    gulp.watch('js/*.js', ['js']);
     gulp.watch('fonts/*.*', ['jekyll-rebuild']);
     gulp.watch(['*.html', '**/*.html', '**/*.md', 'js/**/*.js', 'images/*', '_posts/*','_projects/*'], ['jekyll-rebuild']);
 });

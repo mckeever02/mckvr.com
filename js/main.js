@@ -1,34 +1,36 @@
 (function() {
 
-  function a() {
-    var b = baffle('#logo').start().set({
-      characters: '░█▓ ▓▒░',
-      speed: 40
-    }).text(function (currentText) {
-      return "Michael Mckeever";
-    });
+  // function a() {
+  //   var b = baffle('#logo').start().set({
+  //     characters: '░█▓ ▓▒░',
+  //     speed: 40
+  //   }).text(function (currentText) {
+  //     return "Michael Mckeever";
+  //   });
+  //
+  //   setTimeout(function () {
+  //     b.reveal(500);
+  //   }, 500);
+  // }
+  //
+  // function b() {
+  //   var b = baffle('#logo').start().set({
+  //     characters: '░█▓ ▓▒░',
+  //     speed: 40
+  //   }).text(function (currentText) {
+  //     return "mckvr";
+  //   });
+  //
+  //   setTimeout(function () {
+  //     b.reveal(500);
+  //   }, 500);
+  // }
 
-    setTimeout(function () {
-      b.reveal(500);
-    }, 500);
-  }
+  // document.getElementById('logo').onmouseover=function(){a();};
+  //
+  // document.getElementById('logo').onmouseleave=function(){b();};
 
-  function b() {
-    var b = baffle('#logo').start().set({
-      characters: '░█▓ ▓▒░',
-      speed: 40
-    }).text(function (currentText) {
-      return "mckvr";
-    });
-
-    setTimeout(function () {
-      b.reveal(500);
-    }, 500);
-  }
-
-  document.getElementById('logo').onmouseover=function(){a();};
-
-  document.getElementById('logo').onmouseleave=function(){b();};
+  //window.onload=function(){b();};
 
   var about1 = document.querySelector('#about1'),
       show1 = document.querySelector('#show1'),

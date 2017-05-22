@@ -80,7 +80,9 @@
 
 .underline-hover:hover,
 .underline-hover:focus {
+  transition: all .15s ease-in;
   text-decoration: underline;
+  text-decoration-color: currentColor;
 }
 
 /* Can combine this with overflow-hidden to make background images grow on hover
