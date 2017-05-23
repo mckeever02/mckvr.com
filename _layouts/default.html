@@ -59,10 +59,10 @@
     </head>
     <body class="bg-gray pa4-l sans-serif near-black">
       <main class="bg-white overflow-hidden z-1 relative shadow-4">
-        <nav class="db dt-ns w-100 border-box pa4 ph5-l relative z-1">
-          <div class="db dtc-ns v-mid w-100 w-25-ns tc tl-ns ">
-            <a class="black link" href="{{site.baseurl}}/" title="Home">
-              <h1 id="logo" class="f5 f7-ns b dib">mckvr</h1>
+        <nav class="db dt-ns w-100 border-box pv3 pv4-ns ph4-m ph5-l relative z-1">
+          <div class="db dtc-ns v-mid w-100 w-25-ns tc tl-ns">
+            <a class="black link pv2 dib pv0-ns" href="{{site.baseurl}}/" title="Home">
+              <h1 id="logo" class="f7 f7-ns b dib">mckvr</h1>
             </a>
           </div>
           <div class="dtc-ns v-mid w-100 w-75-ns tc tr-ns mt2 mt0-ns">
@@ -93,10 +93,17 @@
     (function() {
       function a() {
         var b = baffle('#logo').start().set({
-          characters: '░█▓ ▓▒░',
-          speed: 40
+          characters: '░█▓ ▓▒░<>/',
+          speed: 60
         }).text(function (currentText) {
+
+          {%if page.url contains "category"%}
+          return "mckvr | Archives";
+          {%elsif page.id != "index"%}
           return "mckvr | {{page.canonical}}";
+          {%else%}
+          return "mckvr";
+          {%endif%}
         });
 
         setTimeout(function () {
@@ -106,8 +113,8 @@
 
       function b() {
         var b = baffle('#logo').start().set({
-          characters: '░█▓ ▓▒░',
-          speed: 40
+          characters: '░█▓ ▓▒░<>/',
+          speed: 60
         }).text(function (currentText) {
           return "mckvr";
         });
@@ -119,8 +126,8 @@
 
       function c() {
         var b = baffle('#logo').start().set({
-          characters: '░█▓ ▓▒░',
-          speed: 40
+          characters: '░█▓ ▓▒░<>/',
+          speed: 60
         }).text(function (currentText) {
           {%if page.id == "index"%}
           return "Michael Mckeever";

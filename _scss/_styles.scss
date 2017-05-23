@@ -16,6 +16,7 @@
 body {
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
 }
 
 @-webkit-keyframes rotateFull {
@@ -61,7 +62,6 @@ body {
 }
 
 .icon {
-  display: inline-block;
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -85,10 +85,10 @@ body {
 }
 
 .icon-header {
-  height: 25em;
-  width: 25em;
-  top: 0;
-  left: -5em;
+  height: 30em;
+  width: 30em;
+  top: -3.5em;
+  left: -3.5em;
   z-index: -1;
   @media #{$breakpoint-medium} {
     height: 40em;
@@ -99,16 +99,19 @@ body {
   @media #{$breakpoint-large} {
     height: 60em;
     width: 60em;
-    top: -10em;
+    top: -15em;
     left: -10em;
   }
   @media #{$breakpoint-xlarge} {
     height: 80em;
     width: 80em;
     top: -20em;
-    left: -20em;
+    left: -15em;
   }
+}
 
+.icon-header:not(*:root) {
+  display: block;
 }
 
 .bg-gradient {
@@ -190,17 +193,9 @@ pre {
   margin: 0;
 }
 
-code.highlighter-rouge {
-  padding: 0.25rem;
-  background-color: $near-white;
-  border-radius: .25rem;
-  border: 1px solid $light-silver;
-}
-
 .line-spacer {
   border-bottom: 1px dotted $gray;
 }
-
 
 ::selection {
   background-color: $yellow;

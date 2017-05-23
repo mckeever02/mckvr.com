@@ -23,9 +23,9 @@ canonical: "Case Study"
 
 <p>Usfolk is an illustration and design agency based in Belfast. Its the first illustration agency of its kind in N.Ireland. When Mel approached me with the task of developing his new agencies website, I jumped at the chance.</p>
 
-<figure class="center mw7 tc db mv4">
-  <img class="ba b--light-silver" src="{{site.baseurl}}/images/usfolk-homepage.png" srcset="{{site.baseurl}}/images/usfolk-homepage.png, {{site.baseurl}}/images/usfolk-homepage-2x.png 2x" alt="Usfolk Homepage">
-</figure>
+
+{% include figure.html url="usfolk-homepage" type="png" alt="Usfolk Homepage" caption="Usfolk Homepage" %}
+
 
 <h2 class="{{site.post_heading_classes}}">Performance first</h2>
 
@@ -42,37 +42,33 @@ canonical: "Case Study"
 </ul>
 
 <p>The results spoke for themselves:</p>
-<figure class="center tc db mv4">
-  <img class="ba b--light-silver" src="{{site.baseurl}}/images/usfolk-test.png" alt="Usfolk Speed test results">
-  <figcaption class="f6 i"><a class="link gray underline hover-near-black" href="https://tools.pingdom.com">https://tools.pingdom.com</a></figcaption>
-</figure>
+
+{% include figure.html url="usfolk-test" type="png" alt="Usfolk Speed test results" caption="<a class='link gray underline hover-near-black' href='https://tools.pingdom.com'>https://tools.pingdom.com</a>" %}
 
 <h2 class="{{site.post_heading_classes}}">Animations</h2>
 
 <p>Subtle animations and transitions when used effectively can really enhance the experience of a site and if used cohesively and consistently can even create a larger brand impact.</p>
 
-<video class="center db mw7 tc full-width mv4" autoplay loop src="{{site.baseurl}}/images/usfolk-animations-1.mp4"></video>
+{%include video.html url="usfolk-animations-1" type="mp4" autoplay=true loop=true %}
 
-<video class="center db mw7 tc full-width mv4" autoplay loop src="{{site.baseurl}}/images/usfolk-animations-3.mp4"></video>
+{%include video.html url="usfolk-animations-3" type="mp4" autoplay=true loop=true %}
 
-<video class="center db mw7 tc mv4" autoplay loop src="{{site.baseurl}}/images/usfolk-animations-2.mp4"></video>
-
-
+{%include video.html url="usfolk-animations-2" type="mp4" autoplay=true loop=true %}
 
 <h2 class="{{site.post_heading_classes}}">Mobile first</h2>
 
 <div class="cf mw9 ph5-l center">
   <figure class="tc db mv2 fl w-50 w-25-l ma0 ph2 ph4-ns">
-    <img class="ba b--light-silver" src="{{site.baseurl}}/images/usfolk-homepage-mobile.png" srcset="{{site.baseurl}}/images/usfolk-homepage-mobile.png 1x, {{site.baseurl}}/images/usfolk-homepage-mobile-2x.png 2x" alt="Usfolk Homepage mobile">
+    {% include image.html url="usfolk-homepage-mobile" type="png" border=true alt="Usfolk Homepage mobile" %}
   </figure>
   <figure class="tc db mv2 fl w-50 w-25-l ma0 ph2 ph4-ns">
-    <img class="ba b--light-silver" src="{{site.baseurl}}/images/usfolk-about-mobile.png" srcset="{{site.baseurl}}/images/usfolk-about-mobile.png 1x, {{site.baseurl}}/images/usfolk-about-mobile-2x.png 2x" alt="Usfolk about mobile">
+    {% include image.html url="usfolk-about-mobile" type="png" border=true alt="Usfolk About mobile" %}
   </figure>
   <figure class="tc db mv2 fl w-50 w-25-l ma0 ph2 ph4-ns">
-    <img class="ba b--light-silver" src="{{site.baseurl}}/images/usfolk-design-mobile.png" srcset="{{site.baseurl}}/images/usfolk-design-mobile.png 1x, {{site.baseurl}}/images/usfolk-design-mobile-2x.png 2x" alt="Usfolk design mobile">
+    {% include image.html url="usfolk-design-mobile" type="png" border=true alt="Usfolk Design mobile" %}
   </figure>
   <figure class="tc db mv2 fl w-50 w-25-l ma0 ph2 ph4-ns">
-    <img class="ba b--light-silver" src="{{site.baseurl}}/images/usfolk-blog-mobile.png" srcset="{{site.baseurl}}/images/usfolk-blog-mobile.png 1x, {{site.baseurl}}/images/usfolk-blog-mobile-2x.png 2x" alt="Usfolk blog mobile">
+    {% include image.html url="usfolk-blog-mobile" type="png" border=true alt="Usfolk Blog mobile" %}
   </figure>
 </div>
 
@@ -82,9 +78,7 @@ canonical: "Case Study"
 
 <p>Usfolk is unique to N.Ireland in that it is a collective of freelance illustrators and designers that can be commissioned for a wide variety of projects. It was important that the owner had the ability to add new illustrators to the site and that each illustrator had control over their own portfolio and contact details (but not other areas of the site).</p>
 
-<figure class="center tc db mv4 mw7">
-  <img class="ba b--light-silver" src="{{site.baseurl}}/images/usfolk-illustrators.png" alt="Usfolk illustrators">
-</figure>
+{% include figure.html url="usfolk-illustrators" type="png" alt="Usfolk illustrators" caption="The Illustrators in wp-admin" %}
 
 <p>This functionality isn’t entirely provided ‘out-of-the-box’ by wordpress but with a couple of plugins you can extend the functionality to support custom roles and avatars.</p>
 
@@ -92,6 +86,4 @@ canonical: "Case Study"
 
 <p>I'm not an SEO expert, I leave that to the marketers but I do have a good understanding of the technicalities required to get your site noticed. Methods such as informative page titles and descriptions, strong focus key words, proper use of rich meta and schema attributes, a strong social presence, SSL encryption and fast performance were all utilised to ensure the site ranked well on Google. The results: within a month of launch, Usfolk was the first result in google for “Illustration Belfast”.</p>
 
-<figure class="center tc db mv4 mw7">
-  <img class="ba b--light-silver" src="{{site.baseurl}}/images/usfolk-seo.png" alt="Usfolk Google Results">
-</figure>
+{% include figure.html url="usfolk-seo" type="png" alt="Usfolk Google results" caption="" %}

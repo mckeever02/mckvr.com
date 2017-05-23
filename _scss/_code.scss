@@ -20,18 +20,26 @@
 .highlighter-rouge {
   padding: 1rem;
   margin: $spacing-medium 0;
-  border: 1px solid $black;
   ::selection {
     background-color: $white;
     color: $near-black;
   }
+}
+div.highlighter-rouge {
+  border-radius: .25rem;
+}
+
+code.highlighter-rouge {
+  padding: 0.25rem 0;
+  background-color: $washed-blue;
+  border-radius: 0;
 }
 
 .highlight, div.highlighter-rouge {
   font-size: .875rem;
   overflow: auto;
   word-wrap: normal; /* horizontal scrolling */
-  background: $near-black;
+  background: $dark-gray;
   color: #C1C2C3;
   line-height: 1.6;
 }

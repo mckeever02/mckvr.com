@@ -5,18 +5,18 @@ description: "Freelance digital designer & front-end developer, Belfast"
 id: "index"
 ---
 
-<svg class="icon icon-header light-gray absolute rotateFull o-70">
+<svg class="icon icon-header light-gray absolute rotateFull o-70 dn">
   <use xlink:href="#icon-cross"></use>
 </svg>
 
 <div class="mw7 center pv3 pv4-m pv5-l ph4 ph0-l">
-  <h2 class="f1-ns serif fw-9 mb4 mb6-ns black lh-title ">Freelance digital designer & front-end developer.</h2>
+  <h1 class="f3 f1-ns serif fw-9 mt0 mt4-ns mb4 mb6-ns black lh-title">Freelance digital designer & front-end developer.</h1>
 
-  <section class="cf mb3 mb5-ns">
+  <section class="cf mb4 mb5-ns">
     <div class="fl w-100 w-30-ns">
       <h3 class="lh-copy-lg-ns mb3 mb0-ns f8 gray ttu tracked ma0">Who?</h3>
     </div>
-    <div class="fl w-100 w-70-ns">
+    <div class="fl w-100 w-70-ns {{site.paragraph_classes}}">
       <p class="mt0 lh-copy-lg">I’m Michael Mckeever, a digital designer &amp;&amp; front-end developer hailing from Belfast but working remotely with clients around the globe. I help agencies, startups &amp; businesses bring their products to life through effective design &amp; performant code.
 
       <br><a id="show1" class="ttu tracked b gray f8 link hover-blue" href="javascript:void(0)">See more?</a></p>
@@ -40,17 +40,19 @@ id: "index"
     <div class="w-100 w-70-ns">
       <div class="flex flex-column flex-row-l">
         <div class="w-100 w-50-l">
-          <ul class="list pl0 ma0">
+          <ul class="list pl0 ma0 {{site.paragraph_classes}}">
             <li class="mb3">Web Design</li>
             <li class="mb3">Product Design</li>
             <li class="mb3">Front-end Development</li>
+            <li class="mb3">Brand Identity</li>
           </ul>
         </div>
         <div class="w-100 w-50-l pl4-l">
-          <ul class="list pl0 ma0">
+          <ul class="list pl0 ma0 {{site.paragraph_classes}}">
             <li class="mb3">E-Commerce</li>
             <li class="mb3">CMS Integration</li>
             <li class="mb3">Performance Optimisation</li>
+            <li class="mb3">Technical SEO</li>
           </ul>
         </div>
       </div>
@@ -64,7 +66,7 @@ id: "index"
     <div class="w-100 w-70-ns">
       <div class="flex flex-row">
         <div class="w-50">
-          <ul class="list pl0 ma0">
+          <ul class="list pl0 ma0 {{site.paragraph_classes}}">
             <li class="mb3">
               <a class="link hover-blue active-black link-arrow near-black" href="//twitter.com/{{site.twitter}}" title="Follow me on Twitter">Twitter</a>
             </li>
@@ -73,8 +75,8 @@ id: "index"
             </li>
           </ul>
         </div>
-        <div class="w-50 pl4-l">
-          <ul class="list pl0 ma0">
+        <div class="w-50 pl4">
+          <ul class="list pl0 ma0 {{site.paragraph_classes}}">
             <li class="mb3">
               <a class="link hover-blue active-black link-arrow near-black" href="//twitter.com/{{site.dribbble}}" title="Follow me on dribbble">Dribbble</a>
             </li>
@@ -90,7 +92,7 @@ id: "index"
   <section class="flex flex-column flex-row-ns mb4">
     <div class="w-100 w-30-ns">
     </div>
-    <div class="w-100 w-70-ns relative">
+    <div class="w-100 w-70-ns relative {{site.paragraph_classes}}">
       <span class="status dib bg-green mr1 v-mid br-100 absolute"></span>
       <p class="ma0 dib">I'm available for work. <a class="{{site.link_classes}}" href="{{site.baseurl}}/hire-me">Hire me</a></p>
     </div>
@@ -152,7 +154,7 @@ id: "index"
       <div class="fl w-100 w-70-ns">
         {% for post in site.posts %}
         <article class="mb5">
-          <h3 class="f4 near-black ma0 mb1 normal">
+          <h3 class="f4 near-black ma0 mb1 normal lh-copy">
             <a class="near-black hover-blue link link-arrow dib" href="{{post.url}}">
               {{post.title}}
             </a>

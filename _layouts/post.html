@@ -29,7 +29,7 @@ layout: default
     {% assign prev = links %}
 {% endfor %}
 
-<div class="mw8 center pv3 pt5-ns ph5">
+<div class="mw8 center pv3 pt5-ns ph4 ph5-ns">
 
   <h1 class="f2-m f1-l serif fw-9 black lh-title mb1">{{ page.title }}{% if page.subtitle %}{{page.subtitle}}{%endif%}</h1>
   {%if page.collection != "projects" %}
@@ -73,7 +73,7 @@ layout: default
 </div>
 {%endif%}
 
-<div class="center mv3 mv5-ns post-content ph4 ph0-l lh-copy-md">
+<div class="center {% if page.collection == 'projects' %} mv5 {%else%} mv3 mv5-ns {%endif%} post-content ph4 ph0-l lh-copy-md">
 {{ content }}
 </div>
 
@@ -85,7 +85,7 @@ layout: default
       </svg>
       {% if prevurl %}
       <a href="{{prevurl}}" class="link link-arrow-child near-black hover-blue db w-100-s flex-0-ns pa5 br-ns b--light-silver flex justify-center align-center order-1 order-0-ns">
-        <div class="pv2-ns tr-ns">
+        <div class="pv2-ns tr">
           <span class="f7 gray b">Previous project</span>
           <h3 class="f4 ma0 mt1 normal link-arrow-child-item--before lh-copy">{{ prevtitle}}</h3>
         </div>
@@ -109,7 +109,7 @@ layout: default
     </svg>
     {% if page.previous.url %}
     <a href="{{page.previous.url}}" class="link link-arrow-child near-black hover-blue db w-100-s flex-0-ns pa5 br-ns b--light-silver flex justify-center align-center order-1 order-0-ns">
-      <div class="pv2-ns tr-ns">
+      <div class="pv2-ns tr">
         <span class="f7 gray b">Previous post</span>
         <h3 class="f4 ma0 mt1 normal link-arrow-child-item--before lh-copy">{{ page.previous.title}}</h3>
       </div>

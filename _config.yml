@@ -14,11 +14,13 @@ email: mckeever02@gmail.com
 
 #directories
 imageurl: /images/dist/
+videourl: /videos/
 
 # Global classes
 link_classes: link underline-hover blue hover-blue active-black
-code_classes: ba b--light-silver bg-near-white br2 pa1
-post_heading_classes: f3
+code_classes: bg-washed-blue pv1
+post_heading_classes: f3 lh-title
+paragraph_classes: f6 f5-ns
 
 # Gems
 gems:
