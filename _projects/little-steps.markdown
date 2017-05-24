@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Little Steps"
-subtitle: "Belfast fintech startup"
 color1: "#852CAE"
 color2: "#E643EC"
 date: 01/09/2016
@@ -12,8 +11,7 @@ tech:
   - HTML
   - CSS
   - JS
-description: "Wordpress development for a new fintech startup"
-brief: "Wordpress development for a new fintech startup"
+description: "Jekyll development for a Little Thunder Co. venture"
 permalink: /projects/little-steps/
 project_url: "//littlesteps.to"
 category: "link"
