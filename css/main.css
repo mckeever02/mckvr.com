@@ -3315,6 +3315,9 @@ code, .code {
 .mw9 {
   max-width: 96rem; }
 
+.mw10 {
+  max-width: 120rem; }
+
 /* Max Width String Properties */
 .mw-none {
   max-width: none; }
@@ -7220,8 +7223,7 @@ code.highlighter-rouge {
 */
 body {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: normal; }
+  -moz-osx-font-smoothing: grayscale; }
 
 @-webkit-keyframes rotateFull {
   from {
@@ -7242,10 +7244,6 @@ body {
 .rotateFull {
   -webkit-animation: rotateFull 900s linear infinite;
   animation: rotateFull 900s linear infinite; }
-
-main {
-  max-width: 1920px;
-  margin: auto; }
 
 .status {
   width: 6px;
@@ -7413,9 +7411,3 @@ pre {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   left: 0; }
-
-.fourohfour {
-  background-image: url("../images/bladerunner.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }

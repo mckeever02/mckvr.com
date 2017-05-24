@@ -5,6 +5,7 @@ title:  "Displaying dynamic opening times in Jekyll"
 date:   2017-05-15
 categories: jekyll liquid
 canonical: "Blog post"
+description: "Here is how to display 'Google-like' dynamic opening times using liquid, Jekyll's templating language."
 ---
 
 A problem I came across when building [Trying to work](//tryingtowork.in) was how do I display "Google-like" dynamic opening times using only liquid&mdash;Jekyll's templating language? Well, as it turns out, quite easily.
