@@ -7,33 +7,4 @@ card_image: true
 
 {%include page-title.html%}
 
-<p class="tc mt0 f4 white mw6 center lh-copy-md mb5 ph4">The page you are looking for has been moved or deleted. Please double-check the address or <a class="link white underline" href="mailto:{{site.social.email}}">contact me</a>.</p>
-
-{%include footer.html%}
-
-<script>
-
-  // # of images
-  var imgCount = 9;
-
-  var main = document.querySelector("main");
-  // image directory
-  var dir = '{{site.baseurl}}{{site.imageurl}}';
-  // random the images
-  var randomCount = Math.round(Math.random() * (imgCount - 1)) + 1;
-
-  // array of images & file name
-  var images = new Array
-
-    images[1] = "madmax",
-    images[2] = "thewolfpack",
-    images[3] = "thedarkknight",
-    images[4] = "lostintranslation";
-    images[5] = "taxidriver";
-    images[6] = "ghostintheshell";
-    images[7] = "spaceodyssey";
-    images[8] = "biglebowski";
-    images[9] = "myneighbourtotoro";
-
-  main.style.backgroundImage = "url(" + dir + images[randomCount] + "-min.gif)";
-</script>
+<p class="tc mt0 f4 white mw6 center lh-copy-md mb7 ph4">The page you are looking for has been moved or deleted. Please double-check the address or <a class="link white underline" href="mailto:{{site.social.email}}">contact me</a>.</p>
