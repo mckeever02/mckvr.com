@@ -45,6 +45,11 @@ body {
     animation: rotateFull 900s linear infinite
 }
 
+main {
+  max-width: 1920px;
+  margin: auto;
+}
+
 
 .status {
   width: 6px;

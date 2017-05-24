@@ -43,20 +43,20 @@
         <meta property="og:url" content="{{site.baseurl}}{{page.url}}" />
         <meta property="og:title" content="{%if page.title%} {{page.title}} {%else%} {{site.name}} {%endif%}" />
         <meta property="og:description" content="{%if page.description%} {{page.description}} {%else%} {{site.description}} {%endif%}" />
-        <meta property="og:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.url | append: "-card-image.png"}}{%else%}/og-image.png{%endif%}" />
+        <meta property="og:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.title | downcase | slugify | prepend: "card-image-" | append: ".png" }}{%else%}/card-image.png{%endif%}" />
 
         <!-- Twitter Card Metadata -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="{{site.social.twitter.username | prepend: "@" }}" />
         <meta name="twitter:title" content="{%if page.title%} {{page.title}} {%else%} {{site.name}} {%endif%}" />
         <meta name="twitter:description" content="{%if page.description%} {{page.description}} {%else%} {{site.description}} {%endif%}" />
-        <meta name="twitter:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.url | append: "-card-image.png"}}{%else%}/og-image.png{%endif%}" />
+        <meta name="twitter:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.title | downcase | slugify | prepend: "card-image-" | append: ".png" }}{%else%}/card-image.png{%endif%}" />
 
         {% include symbol-defs.svg %}
 
     </head>
     <body class="{%if page.url contains "404"%}bg-white{%else%}bg-gray{%endif%} pa4-l sans-serif near-black">
-      <main class="bg-white overflow-hidden z-1 relative shadow-4 {%if page.url contains "404"%}fourohfour{%endif%}">
+      <main class="overflow-hidden z-1 relative shadow-7 {%if page.url contains "404"%}bg-black cover bg-center{%else%}bg-white{%endif%}">
         <nav class="db dt-ns w-100 border-box pv3 pv4-ns ph4-m ph5-l relative z-1">
           <div class="db dtc-ns v-mid w-100 w-25-ns tc tl-ns">
             <a class="{%if page.url contains "404"%}white{%else%}black{%endif%} link pv2 dib pv0-ns" href="{{site.baseurl}}/" title="Home">
