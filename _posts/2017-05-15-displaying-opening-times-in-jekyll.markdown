@@ -58,4 +58,4 @@ Next, use a `for` loop to cycle through the `opening_times` list and if today ma
 
 The next step would be to also determine if it is open using the time of day and measuring this against the stated times in the front matter. Any takers?
 
-Have any suggestions to improve or extend on this? [Hit me up on Twitter](//twitter.com/{{site.twitter}}).
+Have any suggestions to improve or extend on this? [Hit me up on Twitter]({{site.social.twitter.url}}{{site.social.twitter.username}}).

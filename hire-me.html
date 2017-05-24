@@ -2,6 +2,7 @@
 layout: default
 title: "I'm available."
 canonical: "Hire me"
+card_image: true
 ---
 
 {%include page-title.html%}
@@ -58,7 +59,7 @@ canonical: "Hire me"
       <h3 class="lh-copy-xl-ns mb3 mb0-ns f8 gray ttu tracked ma0">Contact</h3>
     </div>
     <div class="fl w-100 w-70-ns">
-      <p class="mt0 lh-copy-lg">If you would like to work with me you can get in touch by <a class="{{site.link_classes}}" href="mailto:{{site.email}}">emailing me</a> or shooting me a DM on <a class="{{site.link_classes}}" href="//twitter.com/{{site.twitter}}">Twitter</a>.</p>
+      <p class="mt0 lh-copy-lg">If you would like to work with me you can get in touch by <a class="{{site.link_classes}}" href="mailto:{{site.social.email}}">emailing me</a> or shooting me a DM on <a class="{{site.link_classes}}" href="{{site.social.twitter.url}}{{site.social.twitter.username}}">Twitter</a>.</p>
 
     </div>
   </section>

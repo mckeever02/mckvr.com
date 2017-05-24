@@ -1,3 +1,4 @@
-<div class="mw8 center pv3 pv5-ns ph4 ph0-l">
-  <h2 class="serif black tc f-subheadline f-headline-l mv4">{{page.title}}</h2>
+<div class="mw8 center pv3 pv5-ns ph4 ph0-l tc {%if page.url contains "404"%}white{%else%}black{%endif%}">
+  {%if page.url contains "404"%} <h2 class="ttu f5 tracked b mt5">404</h2> {%endif%}
+  <h1 class="serif f-subheadline f-headline-l mv4">{{page.title}}</h1>
 </div>

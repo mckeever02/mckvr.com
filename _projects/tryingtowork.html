@@ -21,7 +21,7 @@ category: "case study"
 canonical: "Case Study"
 ---
 
-<p><a class="{{site.link_classes}}" href="https://tryingtowork.in/">Trying to work</a> was a side project born from the frustrations of trying to find a space to work in Belfast City Centre with fast and stable wifi. Often, I’d grab a tea and sit down in a cosey coffee shop to do some work only to find that the wifi speed is a #tbt to the good ole days of dial up.</p>
+<p><a class="{{site.link_classes}}" href="https://tryingtowork.in/">Trying to work</a> was a side project born from the frustrations of trying to find a space to work in Belfast City Centre with fast and stable wifi. Often, I’d grab a tea and sit down in a coffee shop to do some work only to find that the wifi speed is a #tbt to the good ole days of dial up (I'm looking at you, Starbucks).</p>
 
 <p>The web app was designed and built over an Easter weekend (fuelled by chocolate, of course).</p>
 
@@ -54,7 +54,7 @@ canonical: "Case Study"
   <li>Opening hours</li>
 </ol>
 
-<p>And that is all there is to it. I thought it was important to focus only on the important aspects of a working space; the wifi speed, opening hours and password (so you’re not looking around wondering who to ask) - no images (for performance reasons),  and no reviews. Foursquare does that brilliantly, it was important to focus on only one metric - the wifi speed.</p>
+<p>And that is all there is to it. I thought it was important to focus only on the key aspects of a working space; the wifi speed, opening hours and password (so you’re not looking around wondering who to ask) - no images (for performance reasons), and no reviews. Foursquare and tripAdvisor do reviews brilliantly, it was important to focus on only one metric - the wifi speed.</p>
 
 <div class="mw8 center mv4">
   <div class="flex flex-wrap justify-around">
@@ -89,11 +89,11 @@ canonical: "Case Study"
 
 {% include figure.html url="tryingtowork-pwa-score" type="png" alt="Trying to work PWA score" caption="Progress Web app score using Google Lighthouse" %}
 
-<p>I used this nifty tool to test the website and after some adjustments and tweaks, managed to get a perfect score.</p>
+<p>I used this nifty tool to test the website and after some adjustments and tweaks, managed to get a perfect score. The website was now a PWA.</p>
 
 <h2 class="{{site.post_heading_classes}}">Built in Jekyll</h2>
 
-<p>I decided to use Jekyll for this as a starting point. Its easy to use, really fast and perfect for small side projects. The spaces are populated using markdown files. All data is pulled from the frontmatter in the markdown file. Its laid out like so:</p>
+<p>I decided to use [Jekyll](https://jekyllrb.com/) for this as a starting point. Its easy to use, really fast and perfect for small side projects. The spaces are populated using markdown files. All data is pulled from the frontmatter in the markdown file. Its laid out like so:</p>
 
 {% highlight liquid %}
 ---
@@ -124,7 +124,7 @@ opening_times:
 <p>With a load time of around 300ms over 30Mb/s this is definitely the fastest site I have built to date. Here are some of the methods I used to achieve this:</p>
 
 <ol>
-  <li><strong>SVG Sprite</strong> - All icons on the page are grouped into an svg sprite and inlined in the head of the document. This saves on requests for individual icons and because its all SVG, the overhead is tiny. You can read more about svg sprites and how to utilise them <a class="{{site.link_classes}}" href="https://css-tricks.com/svg-sprites-use-better-icon-fonts/">here</a></li>
+  <li><strong>SVG Sprite</strong> - All icons on the page are grouped into an svg sprite and inlined in the head of the document. This saves on requests for individual icons and because it's all SVG, the overhead is tiny. You can read more about svg sprites and how to utilise them <a class="{{site.link_classes}}" href="https://css-tricks.com/svg-sprites-use-better-icon-fonts/">here</a></li>
   <li><strong>CSS Development with Tachyons</strong> - This was my first time using <a class="{{site.link_classes}}" href="http://tachyons.io/">Tachyons</a> and I’m very impressed with it. Regardless of your thoughts on atomic vs semantic css, you can’t deny the performance benefits of using a library such as Tachyons. Paired with uncss, which strips out all unused CSS, the total CSS size comes to just 7kb, and thats before gzipping.</li>
   <li><strong>Inlining CSS</strong> - To stop CSS render blocking the page before it has loaded I inlined it in the head of the document. The maximum size Google recommends for inlined CSS is 14kb so at 7kb it was a no brainer to just inline all of it.</li>
   <li><strong>Concatenate, minify and asynchronously load js</strong> - This is easy to do with a gulp task and means less requests to the browser. Adding <code class="{{site.code_classes}}">async</code> to the script tag means it can be loaded asynchronously also.</li>

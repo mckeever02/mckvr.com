@@ -20,8 +20,6 @@
         <!-- Disable tap highlight on IE -->
         <meta name="msapplication-tap-highlight" content="no">
 
-        <meta name="google-site-verification" content="IMC-lwHL5ZqPd7MdL2mVE5N_7fILL5b7bkwiq-q4yss" />
-
         <!-- Web Application Manifest -->
         <link rel="manifest" href="{{site.baseurl}}/manifest.json">
 
@@ -42,26 +40,26 @@
 
 
         <!-- Open Graph Metadata -->
-        <meta property="og:url" content="{{site.baseurl}}" />
-        <meta property="og:title" content="{{site.name}}" />
-        <meta property="og:description" content="{{site.description}}" />
-        <meta property="og:image" content="{{site.baseurl}}/og-image.png" />
+        <meta property="og:url" content="{{site.baseurl}}{{page.url}}" />
+        <meta property="og:title" content="{%if page.title%} {{page.title}} {%else%} {{site.name}} {%endif%}" />
+        <meta property="og:description" content="{%if page.description%} {{page.description}} {%else%} {{site.description}} {%endif%}" />
+        <meta property="og:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.url | append: "-card-image.png"}}{%else%}/og-image.png{%endif%}" />
 
         <!-- Twitter Card Metadata -->
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="{{site.twitter | prepend: "@" }}" />
-        <meta name="twitter:title" content="{{site.name}}" />
-        <meta name="twitter:description" content="{{site.description}}" />
-        <meta name="twitter:image" content="{{site.baseurl}}{{site.imageurl}}/og-image.png" />
+        <meta name="twitter:site" content="{{site.social.twitter.username | prepend: "@" }}" />
+        <meta name="twitter:title" content="{%if page.title%} {{page.title}} {%else%} {{site.name}} {%endif%}" />
+        <meta name="twitter:description" content="{%if page.description%} {{page.description}} {%else%} {{site.description}} {%endif%}" />
+        <meta name="twitter:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.url | append: "-card-image.png"}}{%else%}/og-image.png{%endif%}" />
 
         {% include symbol-defs.svg %}
 
     </head>
-    <body class="bg-gray pa4-l sans-serif near-black">
-      <main class="bg-white overflow-hidden z-1 relative shadow-4">
+    <body class="{%if page.url contains "404"%}bg-white{%else%}bg-gray{%endif%} pa4-l sans-serif near-black">
+      <main class="bg-white overflow-hidden z-1 relative shadow-4 {%if page.url contains "404"%}fourohfour{%endif%}">
         <nav class="db dt-ns w-100 border-box pv3 pv4-ns ph4-m ph5-l relative z-1">
           <div class="db dtc-ns v-mid w-100 w-25-ns tc tl-ns">
-            <a class="black link pv2 dib pv0-ns" href="{{site.baseurl}}/" title="Home">
+            <a class="{%if page.url contains "404"%}white{%else%}black{%endif%} link pv2 dib pv0-ns" href="{{site.baseurl}}/" title="Home">
               <h1 id="logo" class="f7 f7-ns b dib">mckvr</h1>
             </a>
           </div>
@@ -71,7 +69,7 @@
               {% if page.url contains item.url %}
                   {% assign class = 'active' %}
               {% endif %}
-              <a href="{{ item.url }}" class="{{ class }} link hover-black gray b f6 f7-ns dib {% if forloop.last == true %} {%else%} mr4 mr5-ns {%endif%}" title="{{item.title}}">
+              <a href="{{ item.url }}" class="{{ class }} link {%if page.url contains "404"%}hover-white{%else%}hover-black{%endif%} gray b f6 f7-ns dib {% if forloop.last == true %} {%else%} mr4 mr5-ns {%endif%}" title="{{item.title}}">
                 {{ item.title }}
               </a>
             {% endfor %}
@@ -149,7 +147,5 @@
       document.getElementById('logo').onmouseleave=function(){a();};
     })();
     </script>
-
-
 
 </html>

@@ -1,18 +1,41 @@
-name: Michael Mckeever, Freelance Digital Designer & Front-end Developer, Belfast
+name: Michael Mckeever
+description: Freelance Digital Designer & Front-end Developer, Belfast
 markdown: kramdown
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 permalink: pretty
 
+author: Michael Mckeever
+
+logo: /images/dist/android-chrome-384x384.png
+
 # Social
-twitter: mick_mckeever
-github: mckeever02
-instagram: mckeever02
-dribbble: mckeever02
-email: mckeever02@gmail.com
+social:
+  name: Michael Mckeever
+  links:
+    - https://twitter.com/mmckvr
+    - https://github.com/mckeever02
+  twitter:
+    username: mmckvr
+    url: https://twitter.com/
+  github:
+    username: mckeever02
+    url: https://github.com/
+  instagram:
+    username: mckeever02
+    url: https://instagram.com/
+  dribbble:
+    username: mckeever02
+    url: https://dribbble.com/
+  email: mckeever02@gmail.com
+
+webmaster_verifications:
+  google: IMC-lwHL5ZqPd7MdL2mVE5N_7fILL5b7bkwiq-q4yss
 
 
-#directories
+
+
+#directores
 imageurl: /images/dist/
 videourl: /videos/
 
