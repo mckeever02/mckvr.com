@@ -33,7 +33,8 @@ layout: default
 
   <h1 class="f2-m f1-l serif fw-9 black lh-title mb1">{{ page.title }}{% if page.subtitle %}{{page.subtitle}}{%endif%}</h1>
   {%if page.collection != "projects" %}
-  <p class="gray b f6">{{page.date | date: "%d %B %Y"}}<span class="ph2">&bull;</span>{%if page.categories%} {%for category in page.categories%}<a class="link gray hover-near-black mr2" href="{{site.baseurl}}/category/{{category}}">{{category | prepend: "#"}}</a>{%endfor%}{%endif%}</p>
+  <p class="gray b f6">{{page.date | date: "%d %B %Y"}}</p>
+      <!-- <span class="ph2">&bull;</span>{%if page.categories%} {%for category in page.categories%}<a class="link gray hover-near-black mr2" href="{{site.baseurl}}/category/{{category}}">{{category | prepend: "#"}}</a>{%endfor%}{%endif%} -->
   {%endif%}
 
   {% if page.collection == "projects" %}
