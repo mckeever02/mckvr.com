@@ -166,7 +166,7 @@ gulp.task('sass:styles', function () {
         .pipe(cleanCSS())
         .pipe(uncss({
                 html: ['*.html', '_includes/*.html','_layouts/*.html','_projects/*.html','_posts/*.html'],
-                ignore: [/\.bg-gray/, /\.bg-white/, /\.pa4-l/, /\.hover-white/, /\.hover-black/, /\.mr4/, /\.mr5-ns/, /\.sans-serif/, /\.bg-black/, /\.cover/, /\.bg-center/, /\.f5-ns/, /\.mv5/, /\.mv3/, /\.mv5-ns/, /\.post-content/]
+                ignore: [/\.bg-gray/, /\.bg-white/, /\.pa4-l/, /\.hover-white/, /\.hover-black/, /\.mr4/, /\.mr5-ns/, /\.sans-serif/, /\.bg-black/, /\.cover/, /\.bg-center/, /\.f5-ns/, /\.mv5/, /\.mv3/, /\.mv5-ns/, /\.post-content/, /\.underline-hover/, /\.active/]
             }))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('css'));

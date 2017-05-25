@@ -5,6 +5,10 @@ highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 permalink: pretty
 
+website: //mckvr.com
+
+# baseurl: //mckvr.com
+
 author: Michael Mckeever
 
 logo: /images/dist/android-chrome-384x384.png
