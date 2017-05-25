@@ -44,14 +44,14 @@
         <meta property="og:url" content="{{site.baseurl}}{{page.url}}" />
         <meta property="og:title" content="{%if page.title%} {{page.title}} {%else%} {{site.name}} {%endif%}" />
         <meta property="og:description" content="{%if page.description%} {{page.description}} {%else%} {{site.description}} {%endif%}" />
-        <meta property="og:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.title | downcase | slugify | prepend: "card-image-" | append: ".png" }}{%else%}/card-image.png{%endif%}" />
+        <meta property="og:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.title | downcase | slugify | prepend: "card-image-" | append: ".png" }}{%else%}card-image.png{%endif%}" />
 
         <!-- Twitter Card Metadata -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="{{site.social.twitter.username | prepend: "@" }}" />
         <meta name="twitter:title" content="{%if page.title%} {{page.title}} {%else%} {{site.name}} {%endif%}" />
         <meta name="twitter:description" content="{%if page.description%} {{page.description}} {%else%} {{site.description}} {%endif%}" />
-        <meta name="twitter:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.title | downcase | slugify | prepend: "card-image-" | append: ".png" }}{%else%}/card-image.png{%endif%}" />
+        <meta name="twitter:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.title | downcase | slugify | prepend: "card-image-" | append: ".png" }}{%else%}card-image.png{%endif%}" />
 
         {% include criticalCSS.html %}
 
