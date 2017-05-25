@@ -42,6 +42,7 @@
 
         <!-- Open Graph Metadata -->
         <meta property="og:url" content="{{site.website}}{{page.url}}" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="{%if page.title%} {{page.title}} {%else%} {{site.name}} {%endif%}" />
         <meta property="og:description" content="{%if page.description%} {{page.description}} {%else%} {{site.description}} {%endif%}" />
         <meta property="og:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.title | downcase | slugify | prepend: "card-image-" | append: ".png" }}{%else%}card-image.png{%endif%}" />
