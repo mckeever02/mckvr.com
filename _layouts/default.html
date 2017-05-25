@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <!--<link rel="stylesheet" href="/css/main.css">-->
 
         <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}{{site.imageurl}}/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="{{site.baseurl}}{{site.imageurl}}/favicon-16x16.png">
@@ -52,6 +52,8 @@
         <meta name="twitter:title" content="{%if page.title%} {{page.title}} {%else%} {{site.name}} {%endif%}" />
         <meta name="twitter:description" content="{%if page.description%} {{page.description}} {%else%} {{site.description}} {%endif%}" />
         <meta name="twitter:image" content="{{site.baseurl}}{{site.imageurl}}{%if page.card_image == true%}{{page.title | downcase | slugify | prepend: "card-image-" | append: ".png" }}{%else%}/card-image.png{%endif%}" />
+
+        {% include criticalCSS.html %}
 
         {% include symbol-defs.svg %}
 
