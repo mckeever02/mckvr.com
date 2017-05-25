@@ -20,6 +20,7 @@ var babel       = require('gulp-babel');
 var transform   = require('vinyl-transform');
 var imageop     = require('lossy-imagemin');
 
+
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -60,6 +61,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
         }
     });
 });
+
 
 var jsFiles = 'js/*.js',
     jsDest = 'js/dist';
@@ -148,7 +150,12 @@ gulp.task('images-optim', () => {
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
-gulp.task('sass', function () {
+
+
+gulp.task('sass', ['sass:styles', 'sass:critical']);
+
+
+gulp.task('sass:styles', function () {
     return gulp.src('_scss/main.scss')
         .pipe(sass({
             includePaths: ['scss'],
@@ -156,9 +163,28 @@ gulp.task('sass', function () {
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('_site/css'))
+        .pipe(cleanCSS())
+        .pipe(uncss({
+                html: ['*.html', '_includes/*.html','_layouts/*.html','_projects/*.html','_posts/*.html']
+            }))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('css'));
 });
+
+gulp.task('sass:critical', function() {
+  return gulp.src('css/main.css')
+    // wrap with style tags
+
+    .pipe(concat.header('<style>'))
+    .pipe(concat.footer('</style>'))
+    // convert it to an include file
+    .pipe(rename({
+        basename: 'criticalCSS',
+        extname: '.html'
+      }))
+    // insert file in the includes folder
+    .pipe(gulp.dest('_includes/'));
+    });
 
 /**
  * Watch scss files for changes & recompile
