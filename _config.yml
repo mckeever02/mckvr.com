@@ -62,6 +62,8 @@ jekyll-archives:
     category: 'category-archive'
   permalinks:
     category: '/category/:name/'
+  category_archive:
+    type: liquid
 
 # Collections
 collections:
