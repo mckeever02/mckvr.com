@@ -1,52 +1,20 @@
-jekyll-gulp-sass-browser-sync
-=============================
+After 2 redesigns and 3 rebuilds I think I’ve finally got a portfolio that I’m content with… for now.  Its true how designers says they’re their own worst clients. Here’s some information about what lies under the hood.
 
-A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
+## Build
+This portfolio is built in Jekyll. I’m using a gulp workflow for browser sync, compiling the css, and concatenating/minifying the JS. You can view it here.
 
-Here's a 1.5min [screencast](http://quick.as/pvrslgx) showing what you get.
+## Framework
+The site is built with [Tachyons](http://tachyons.io/)  - an atomic CSS framework that enables for fast prototyping and writing as little CSS as possible.  
 
-And here's a GIF showing the CSS injecting.
+## Typography
+Headings are typeset in Lyon Display from the [Commercial Type Foundry](https://commercialtype.com/catalog/lyon/lyon_display)  and hosted locally.
 
-![GIF](http://f.cl.ly/items/373y2E0e0i2p0E2O131g/test-gif.gif)
+Paragraph text is set in system fonts so the typeface you see will depend on what platform you’re viewing this on. I’m on a mac, so I see Apple’s system font, San Francisco.
 
-## System Preparation
+Why system fonts? Well, for speed mostly, but they also look great so I don’t think  I’m sacrificing design for performance.
 
-To use this starter project, you'll need the following things installed on your machine.
+## Hosting
+The site is hosted for free on Github pages. SSL cert is provided via Cloudflare.
 
-1. [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
-2. [NodeJS](http://nodejs.org) - use the installer.
-3. [GulpJS](https://github.com/gulpjs/gulp) - `$ npm install -g gulp` (mac users may need sudo)
-
-## Local Installation
-
-1. Clone this repo, or download it into a directory of your choice.
-2. Inside the directory, run `npm install`.
-
-## Usage
-
-**development mode**
-
-This will give you file watching, browser synchronisation, auto-rebuild, CSS injecting etc etc.
-
-```shell
-$ gulp
-```
-
-**jekyll**
-
-As this is just a Jekyll project, you can use any of the commands listed in their [docs](http://jekyllrb.com/docs/usage/)
-
-## Deploy with Gulp
-
-You can easily deploy your site build to a gh-pages branch. First, follow the instructions at [gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages) to get your branch prepared for the deployment and to install the module. Then, in `gulpfile.js` you'll want to include something like the code below. `gulp.src()` needs to be the path to your final site folder, which by default will be `_site`. If you change the `destination` in your `_config.yml` file, be sure to reflect that in your gulpfile.
-
-
-
-```javascript
-var deploy = require("gulp-gh-pages");
-
-gulp.task("deploy", ["jekyll-build"], function () {
-    return gulp.src("./_site/**/*")
-        .pipe(deploy());
-});
-```
+## Assets
+Images are hosted locally and loaded dynamically using [lazysizes.js](https://github.com/aFarkas/lazysizes).  Icons are loaded via an SVG sprite in the document header.  The font face is also hosted locally and loaded dynamically using [FontFaceObserver](https://github.com/bramstein/fontfaceobserver) and uses `localstorage` to cache the font call.
