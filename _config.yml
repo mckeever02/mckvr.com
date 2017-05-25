@@ -5,7 +5,7 @@ highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 permalink: pretty
 
-website: https://mckvr.com
+website: http://mckvr.com
 
 # baseurl: //mckvr.com
 
