@@ -26,7 +26,7 @@ Why system fonts? Well, for speed mostly, but they also look great so I don’t 
 ## Hosting
 The site is hosted for free on Github pages. SSL cert is provided via [Cloudflare](https://www.cloudflare.com/).
 
-#Gulp
+## Gulp
 
 [Gulp](http://gulpjs.com/) is used to automate certain tasks such as minifying and concatenating javascript, minifying CSS and inlining in the head of the document, and watching for changes to rebuild/reload the browser.
 
