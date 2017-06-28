@@ -133,8 +133,8 @@
         {% include symbol-defs.svg %}
 
     </head>
-    <body class="{%if page.url contains "404"%}bg-white{%else%}bg-gray{%endif%} pa4-l sans-serif near-black normal">
-      <main class="overflow-hidden z-1 relative shadow-7 center mw10 {%if page.url contains "404"%}bg-black cover bg-center{%else%}bg-white{%endif%}">
+    <body class="{%if page.url contains "404"%}bg-white{%else%}bg-gray{%endif%} sans-serif near-black normal">
+      <main class="overflow-hidden z-1 relative shadow-7 center {%if page.url contains "404"%}bg-black cover bg-center{%else%}bg-white{%endif%}">
         <nav class="db dt-ns w-100 border-box pv3 pv4-ns ph4-m ph5-l relative z-1">
           <div class="db dtc-ns v-mid w-100 w-25-ns tc tl-ns">
             <a class="{%if page.url contains "404"%}white{%else%}black{%endif%} link pv2 dib pv0-ns" href="{{site.baseurl}}/" title="Home">
