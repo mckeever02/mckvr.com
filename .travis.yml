@@ -1,0 +1,20 @@
+language: ruby
+cache: bundler
+install:
+- bundle install
+- yarn
+script:
+- "./build.sh"
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local-dir: _site
+  fqdn: newhaven.io
+  github-token: $DEPLOY_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  target-branch: master
+  on:
+    branch: develop
+env:
+  matrix:
+  - secure: scnCVl5pnUWaElabNoU7ej8OQxbd3bx+hwlx6NHiZWCPUweCEHA7eKBf+uJyfdnrLugttP7x0lwADU/FuS49bonr5gtyIR8/K8q7a7g0cF8rYFGcP7WaFUJqZdZ9zN81QeznEcURxOhNG6dThEzxassq8695Jhc+qchUyqLnv2x9z+kj2OKTrA+Mn9VH0ySKZQbe1ubSXwzfugLbocHlithGmjrXXwC8zmDGx5BuSG1B37mReX2l4zfV9SuTGUxfstAvbpked6x3DjVL3yB+oh8/rG8gaCWTC+7ECP9ev3nE0EURKI0YRWS+DNte898WiJ2rvslq6poYbSvOAyu/uQz/Mr8CtuHI4GWXzqh146ElXLV1UvY40ebqNFu1zU3zZ+hZxBMjglbl9jotOEJ9IK09XjMnEjW45Au8FwE08JKdRLvr3hrKyrmkYUJNPZUvog7SNvs36NnP3lH9zuEBQ47+pme9HjQZQvkjcvoxZhx7XPMd/RsCSq3d5ooT7ZMiapAN4XjWro065FD5/z+JjjHst3wcCes11U1wO9kZJ0kkO9c7TMyD7HYHXZpknSj0bn3YH/8QlX5G7DVLLfLxgw240X4BrHoiUybecdh49SzFrrgen4Fb6yXMgyjuhIuRqy6ErnIBIPPQupmoaUfdRevA/Xr1SmjQYpRzVPlI5E4=
