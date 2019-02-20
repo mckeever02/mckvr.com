@@ -8,7 +8,7 @@ card_image: true
 
 <div class="mw8-m mw9-l center flex flex-column flex-row-ns justify-around flex-wrap pv3 pv5-ns ph3 ph4-l">
 
-{% assign projects = site.projects | sort: 'category' %}
+{% assign projects = site.projects | reverse' %}
 
 
 {% for project in projects %}

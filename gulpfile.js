@@ -20,6 +20,8 @@ var babel       = require('gulp-babel');
 var transform   = require('vinyl-transform');
 var imageop     = require('lossy-imagemin');
 var deploy      = require("gulp-gh-pages");
+var imagemin    = require('gulp-imagemin');
+
 
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
@@ -37,12 +39,20 @@ gulp.task('jekyll-build', function (done) {
         .on('close', done);
 });
 
-gulp.task('images', function(cb) {
-    gulp.src(['images/*.*']).pipe(imageop({
-        optimizationLevel: 5,
-        progressive: true,
-        interlaced: true
-    })).pipe(gulp.dest('images/dist')).on('end', cb).on('error', cb);
+// gulp.task('images', function(cb) {
+//     gulp.src(['images/*']).pipe(imageop({
+//         optimizationLevel: 5,
+//         progressive: true,
+//         jpgQuality: '70',
+//         cache: false,
+//         interlaced: true
+//     })).pipe(gulp.dest('images/dist')).on('end', cb).on('error', cb);
+// });
+
+gulp.task('images', function (cb) {
+  gulp.src('images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('images/dist'))
 });
 
 /**

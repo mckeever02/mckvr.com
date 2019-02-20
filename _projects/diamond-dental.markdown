@@ -17,6 +17,7 @@ brief: "Wordpress development for one of N.Ireland's leading Dental Clinics"
 permalink: /projects/diamond-dental/
 project_url: "//diamonddentalclinic.co.uk"
 category: "link"
+published: false
 ---
 
 Case study coming soon. Visit [{{page.title}}]({{page.project_url}}) to see it in action.
