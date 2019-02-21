@@ -83,3 +83,11 @@ navigation:
     url: /blog/
   - title: Hire me
     url: /hire-me/
+
+side_projects:
+  - title: Mailtolink.me
+    url: https://mailtolink.me
+    description: Quickly and easily generate code for those annoying mailto links.
+  - title: Trying to work
+    url: https://tryingtowork.in
+    description: Free spaces to work online in Belfast and Dublin.

@@ -143,6 +143,31 @@ id: "index"
   </div>
 </section>
 
+<section class="pv3 bw1 b--light-gray bb">
+  <div class="mw7 center pt4 pt5-ns ph4 ph0-l">
+    <div class="cf mb3 mb5-ns">
+      <div class="fl w-100 w-30-ns">
+        <h2 class="lh-copy-lg-ns mb3 mb0-ns f8 gray ttu tracked ma0">Side Projects</h2>
+      </div>
+      <div class="fl w-100 w-70-ns">
+        {% for post in site.side_projects %}
+        <article class="mb5">
+          <h3 class="f4 near-black ma0 mb1 normal lh-copy">
+            <a class="near-black hover-blue link link-arrow dib" href="{{post.url}}">
+              {{post.title}}
+            </a>
+          </h3>
+          <ul class="list gray list-horizontal-disc f7 b pa0 ma0 mb1">
+            <li class="dib mv1 mr1">{{post.description}}</li>
+            <!-- {%if post.categories%} {%for category in post.categories%}<li class="dib mv1 mr1"><a class="link gray hover-near-black" href="{{site.baseurl}}/category/{{category}}">{{category | prepend: "#"}}</a></li>{%endfor%}{%endif%} -->
+          </ul>
+        </article>
+        {%endfor%}
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="pv3">
   <div class="mw7 center pv4 pv5-ns ph4 ph0-l">
     <div class="cf mb3 mb5-ns">
