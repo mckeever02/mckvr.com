@@ -44,10 +44,12 @@ layout: default
         <h3 class="f8 gray ttu tracked ma0">Role</h3>
         <p class="mt1 lh-copy">{{ page.role | join: ', ' }}</p>
       </div>
+      {% if page.tech %}
       <div class="mb4">
         <h3 class="f8 gray ttu tracked ma0">Technologies</h3>
         <p class="mt1 lh-copy">{{ page.tech | join: ', ' }}</p>
       </div>
+      {% endif %}
       <div class="mb4">
         <h3 class="f8 gray ttu tracked ma0">Date</h3>
         <p class="mt1 lh-copy">{{page.date | date: "%B %Y"}}</p>
