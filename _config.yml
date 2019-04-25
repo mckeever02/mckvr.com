@@ -72,7 +72,7 @@ collections:
     permalink: /:collection/:path/
 
 # Custom configs
-daily_rate: £300
+daily_rate: £400
 hourly_rate: £40
 
 # Navigation
