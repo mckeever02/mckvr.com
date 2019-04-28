@@ -15,6 +15,7 @@ description: "Jekyll development for a Little Thunder Co. venture"
 permalink: /projects/little-steps/
 project_url: "//littlesteps.to"
 category: "link"
+published: false
 ---
 
 Case study coming soon. Visit [{{page.title}}]({{page.project_url}}) to see it in action.
