@@ -105,9 +105,9 @@ id: "index"
         <h2 class="lh-copy-lg-ns mb3 mb0-ns f8 gray ttu tracked ma0">Case Studies</h2>
       </div>
       <div class="fl w-100 w-70-ns">
-        {% assign projects = site.projects | sort: 'date' | where: "category", "case study"  %}
+        {% assign projects = site.projects | where: "featured", true  %}
 
-        {% for project in projects reversed limit: 3 %}
+        {% for project in projects reversed  limit: 3 %}
         <article class="mb5">
           <h3 class="f4 ma0 mb1 normal">
             <a class="link near-black hover-blue dib" href="{{project.url}}">
