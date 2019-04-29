@@ -18,6 +18,7 @@ brief: "Wordpress development for a new fintech startup"
 permalink: /projects/orca/
 project_url: "//orcamoney.com"
 category: "link"
+published: false
 ---
 
 Case study coming soon. Visit [{{page.title}}]({{page.project_url}}) to see it in action.

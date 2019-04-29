@@ -179,7 +179,7 @@ gulp.task('sass:styles', function () {
                 html: ['*.html', '_includes/*.html','_layouts/*.html','_projects/*.html','_posts/*.html'],
           ignore: [/\.bg-gray/, /\.bg-loblolly-gray/, /\.bg-white/, /\.pa4-l/, /\.hover-white/, /\.hover-black/, /\.mr4/, /\.mr5-ns/, /\.sans-serif/, /\.bg-black/, /\.cover/, /\.bg-center/, /\.f5-ns/, /\.mv5/, /\.mv3/, /\.mv5-ns/, /\.post-content/, /\.underline-hover/, /\.active/, /\.highlighter-rouge/, /\.highlight/]
             }))
-        .pipe(browserSync.reload({stream:true}))
+        .pipe(browserSync.reload({ stream: true }))
         .pipe(gulp.dest('css'));
 });
 

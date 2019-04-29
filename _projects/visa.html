@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Visa"
+subtitle: ", designing and building an e-commerce platform."
+date: 01/08/2017
+color1: "#214853"
+color2: "#2D606D"
+role:
+  - Design
+  - Front-end Development
+description: "Design & development of an e-commerce website for Visa UK"
+brief: "Design and develop a mock e-commerce website for VISA UK to demonstrate the VISA Checkout payment system."
+permalink: /projects/visa/
+category: "case study"
+canonical: "Case Study"
+---
+
+<p>I worked with the team at <a href="https://littlethunder.co">Little Thunder Co</a>. to design and develop a mock e-commerce website for VISA UK sales representives to demonstrate their <a href="https://www.visa.co.uk/pay-with-visa/visa-checkout.html">VISA Checkout</a> payment gateway. I was in charge of the design and development of the e-commerce website hat would allow sales reps to easily and effectively demonstrate VISA Checkout at trade shows, meetings, conferences etc.</p>
+
+<h2 class="{{site.post_heading_classes}}">The Homepage</h2>
+
+{% include figure.html size="mw8" url="vmm-home" type="jpg" alt="Via Monte Moda Home Page" %}
+
+<p>The brief was to create a "luxury" e-commerce website with various products, login/signup, user account settings and a checkout flow. The design was up to us.</p>
+
+<h2 class="{{site.post_heading_classes}}">The Shop</h2>
+
+{% include figure.html size="mw9" url="vmm-shop" type="jpg" alt="Via Monte Moda Shop" %}
+
+<h2 class="{{site.post_heading_classes}}">Product Item</h2>
+
+{% include figure.html size="mw9" url="vmm-product-item" type="jpg" alt="Via Monte Moda Product Item" %}
+
+<h2 class="{{site.post_heading_classes}}">Basket</h2>
+
+{% include figure.html size="mw8" url="vmm-basket" type="jpg" alt="Via Monte Moda Basket" %}
+
+<h2 class="{{site.post_heading_classes}}">Checkout Flow</h2>
+
+{% include figure.html size="mw9" url="vmm-checkout-flow" type="jpg" alt="Via Monte Checkout Flow" %}
+
+<h2 class="{{site.post_heading_classes}}">Development</h2>
+
+<h3>Phase 1</h3>
+
+<p>Phase 1 of the development involved building out the website with Jekyll, a static site generator. This meant that there would be no backend for user signup, checkout or product items. Everything would be contained within the front-end with some local storage manipulation for storing user credentials etc.</p>
+
+<p>This worked well for a couple of reasons:</p>
+
+<ol>
+  <li>Super fast. The output was static HTML with no server calls. This meant performance was great which was an important requirement for sales reps who couldn't be reliant on fast or stable internet speeds.</li>
+  <li>Easy to update. VISA's technical team would be required to update certain aspects of the website. With Jekyll, updating product items, prices etc would be as simple as updating a markdown file. No need for a CMS.</li>
+</ol>
+
+<h3>Phase 2</h3>
+
+<p>Phase 2 of the development cycle required more dynamacy for the build. Such as user signup/login, updating account/card details, user reviews etc. These were requirements that jekyll wouldn't be able to meet. In order to meet these new requirements, a new developer came on to the project to rebuild the website in VueJS, to allow for the new requirements. This lead to a fully functioning, backend driven E-commerce website.</p>
