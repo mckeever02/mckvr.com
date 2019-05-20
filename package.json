@@ -1,5 +1,5 @@
 {
-  "name": "Snappy Jekyll",
+  "name": "snappy-jekyll",
   "version": "1.0.0",
   "main": "index.html",
   "repository": "Web Book Template",
@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "concurrently -n jekyll,webpack \"yarn run jekyll-server\" \"yarn run webpack-watch\"",
-    "jekyll-server": "jekyll serve --incremental --watch",
+    "jekyll-server": "bundle exec jekyll serve --incremental --watch",
     "webpack-watch": "webpack -w",
     "webpack": "webpack"
   }
