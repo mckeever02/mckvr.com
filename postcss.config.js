@@ -1,4 +1,5 @@
 const tailwindcss = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
 const purgecss = require('@fullhuman/postcss-purgecss')
 
 class TailwindExtractor {
@@ -18,6 +19,7 @@ module.exports = {
         }
       ],
       content: ['./_site/*.html', './_site/**/*.html', './_site/**/**/*.html']
-    })
+    }),
+    require('autoprefixer')
   ]
 }

@@ -9,6 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.0.1",
+    "autoprefixer": "^9.6.0",
     "postcss": "^6.0.22",
     "postcss-loader": "^2.1.5",
     "turbolinks": "^5.1.1"
