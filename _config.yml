@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Snappy Jekyll
+title: Michael McKeever | Product Designer
 description: > # this means to ignore newlines until "baseurl:"
-  A setup for making snappy static sites with Jekyll, Webpack, Tailwind, and Turbolinks
+  Michael McKeever is a digital product designer from Belfast
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
@@ -16,8 +16,26 @@ exclude: [
   'node_modules'
 ]
 
+permalink: pretty
+
+plugins:
+  - jekyll-turbolinks
+
+collections:
+  case-studies:
+    output: true
+    permalink: /:collection/:name
+
 sass:
   style: compressed
 
 # Build settings
 markdown: kramdown
+
+navigation:
+  - text: 'About'
+    url: '/about'
+  - text: 'Case Studies'
+    url: /#case-studies
+  - text: 'Contact'
+    url: '/#contact'

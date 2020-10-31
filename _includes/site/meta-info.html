@@ -1,0 +1,48 @@
+{%- assign page_title = page.title | append: ' :: ' | append: site.name -%}
+
+{%- assign site_title = site.name -%}
+{%- assign current_url = site.url | append: page.url -%}
+
+{%- unless social_image -%}
+  {% assign social_image = site.url | append: '/images/social-share.png' -%}
+{%- endunless -%}
+
+{%-if meta.title -%}
+  {% assign page_title = meta.title -%}
+{%- endif -%}
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+<link rel="stylesheet" href="/css/main.css?{{site.time | date: '%s'}}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+<meta property="og:site_name" content="{{ site_title }}" />
+<meta property="og:title" content="{{ page_title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ current_url }}" />
+
+{%- if social_image -%}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="{{ social_image }}" />
+  <meta name="twitter:image" content="{{ social_image }}" />
+  <meta property="og:image:alt" content="Page image for {{ site.name }}" />
+  <meta name="twitter:image:alt" content="Page image for {{ site.name }}" />
+{%- endif -%}
+
+{%- if meta.desc -%}
+  <meta name="description" content="{{ meta.desc }}" />
+  <meta name="twitter:description" content="{{ meta.desc }}" />
+  <meta property="og:description" content="{{ meta.desc }}" />
+{%- endif -%}
+
+{%- if page.url == "/404.html" -%}
+    <meta http-equiv="refresh" content="3; url=/">
+{%- endif -%}
+
+
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />

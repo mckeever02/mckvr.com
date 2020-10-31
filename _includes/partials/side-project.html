@@ -1,0 +1,29 @@
+<a
+  href="{{ item.url }}"
+  target="_blank"
+  rel="noopener noreferrer"
+  data-tilt
+  data-tilt-max="10"
+  data-tilt-speed="750"
+  data-tilt-perspective="1000"
+  data-tilt-scale="1.05"
+  class="flex mb-6 flex-row p-3 md:p-0 md:py-3 md:pr-3 rounded-lg text-white group bg-opacity-0 bg-white scale-100 transform hover:bg-opacity-5 active:scale-100 focus:scale-100"
+>
+  <div
+    class="tilt-child mr-4 xs:mr-0 w-12 xs:w-16 h-8 flex items-center opacity-50 md:justify-center group-hover:opacity-100 group-hover:text-{{ item.color }}"
+  >
+    {{ item.icon }}
+  </div>
+  <div class="mt-1">
+    <h3 class="font-medium sm:text-lg mb-1 flex">
+      {{ item.title }}
+      <span
+        class="ml-auto transform -translate-x-4 scale-0 group-hover:scale-100 group-hover:-translate-x-2 transition duration-200 ease-out delay-150"
+        >↗</span
+      >
+    </h3>
+    <p class="text-sm xs:text-base sm:text-lg opacity-50">
+      {{ item.description }}
+    </p>
+  </div>
+</a>

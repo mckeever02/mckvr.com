@@ -9,6 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.0.1",
+    "@tailwindcss/typography": "^0.2.0",
     "autoprefixer": "^9.6.0",
     "postcss": "^6.0.22",
     "postcss-loader": "^2.1.5",
@@ -25,7 +26,7 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
-    "tailwindcss": "^0.5.1",
+    "tailwindcss": "^1.9.3",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^3.11.0"
   },

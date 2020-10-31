@@ -1,0 +1,206 @@
+---
+layout: case-study
+---
+{%- if page.intro -%}
+  {% include partials/case-study-intro.html %}
+{%- endif -%}
+
+{%- if page.section_1 -%}
+<section class="{% include classes/case-study-section.html bgColor='white' textColor='altGray-900' %}">
+  <div class="{% include classes/case-study-text-container.html %}">
+    {% include partials/case-study-h2.html title="UX Audit" color="altGray-1000" %}
+    {% include partials/case-study-p.html color="altGray-900" content="Before jumping in with the redesign it was important to get familiar with their current iteration of the product and start figuring out the pain points. Emotics was still in beta at this stage and hadn't yet been released to customers but the internal consultants were already utilising it for live projects. They proved to be invaluable for gathering feedback on current weaknesses in the product and discussing new features." %}
+  </div>
+
+  {%- if page.section_1.images -%}
+  <div class="{% include classes/case-study-scroller.html%}">
+    {%- for item in page.section_1.images -%}
+    <figure class="flex-none w-11/12 sm:w-2/3 xl:w-1/3">
+      <img class="shadow-xl md:shadow-2xl" loading="lazy" src="/images/emotics/{{item.image}}" alt="{{item.alt}}">
+    </figure>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+
+  <div class="{% include classes/case-study-text-container.html classes='mt-6 sm:mt-12' %}">
+    {% include partials/case-study-h2.html title="Some of the pain points" color="altGray-1000" %}
+
+    {%- if page.section_1.list_2 -%}
+    <div class="prose">
+      <ul class="{% include classes/case-study-list.html color='altGray-900' %}">
+          <li>Difficulty <span class="bg-yellow-300 font-edgy">uploading datasets</span></li>
+          <li>Sorting through uploaded data via the sidebar is impractical and inefficient.</li>
+          <li>Viewing <span class="bg-yellow-300 font-edgy">topics and snippets is confusing</span>, with no indication of where to access them or dig deeper for further analysis.</li>
+          <li>Too much functionality and actions were contained within the <span class="bg-yellow-300 font-edgy">small space of the sidebar.</span></li>
+      </ul>
+    </div>
+    {%- endif -%}
+  </div>
+
+</section>
+{%- endif -%}
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-900' textColor='white' %}">
+  <div class="{% include classes/case-study-text-container.html %}">
+    {% include partials/case-study-h2.html title="Low fidelity wireframing & mockups" %}
+
+    {% include partials/case-study-p.html color="white" content="Once I had spent time with the current product and gathered feedback on the aspects of the product that needed improved, I started storyboarding and creating low fidelity wireframes of the product." %}
+
+  </div>
+
+  <div class="{% include classes/case-study-scroller.html%}">
+      {% for i in (1..5) %}
+      <figure class="flex-none w-11/12 sm:w-10/12 md:w-8/12 lg:w-2/3 xl:w-2/5">
+        <img class="shadow-xl md:shadow-2xl" loading="lazy" src="/images/emotics/emotics-storyboard-{{i}}.png" alt="Adoreboard Emotics Storyboard">
+      </figure>
+      {% endfor %}
+    </div>
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='white' color='altGray-900' %}">
+  <div class="{% include classes/case-study-text-container.html%}">
+    {% include partials/case-study-h2.html color="altGray-1000" title="The uploading flow" %}
+
+      <div class="prose mb-8 md:mb-12">
+
+      {% include partials/case-study-p.html color="altGray-900" content="One of the most important aspects of Emotics is the uploading of data that can be analysed by the engine to process and analyse." %}
+
+      {% include partials/case-study-p.html color="altGray-900" content="In the current flow, this was done within the sidebar of the app &mdash; an area not well suited for such an important proponent of the business model." %}
+      </div>
+
+      {% include partials/case-study-h2.html title="Pain points to address" color="altGray-1000" %}
+
+      <div class="prose">
+        <ol class="{% include classes/case-study-list.html color='altGray-900' %}">
+          <li>Difficult to find where to upload data</li>
+          <li>Uploading within sidebar is poor use of space</li>
+          <li>Unclear which file types are supported</li>
+          <li>Adding and editing stop words is cumbersome</li>
+          <li>Inability to add frequently used stop words</li>
+          <li>No organisation for uploaded data i.e folders, grrouping</li>
+        </ol>
+      </div>
+  </div>
+
+  <div class="{% include classes/case-study-scroller.html%}">
+      {% for item in page.upload_flow %}
+      <figure class="flex-none w-11/12 sm:w/1/2 md:w-10/12 lg:w-7/12 xl:w-1/2">
+        <img class="shadow-xl md:shadow-2xl" loading="lazy" src="/images/emotics/{{item.image}}" alt="{{item.alt}}">
+        <figcaption class="py-6 lg:py-10 lg:text-lg">{{item.caption}}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+</section>
+
+<section class="{% include classes/case-study-section.html color='altGray-900' bgColor='altGray-100' %}">
+  <div class="{% include classes/case-study-text-container.html %}">
+    {% include partials/case-study-h2.html color="altGray-1000" title="Components" %}
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-0">
+    <img class="w-full" src="/images/emotics/emotics-components.jpg" alt="Adoreboard Emotics components">
+  </div>
+
+</section>
+
+<section class="{% include classes/case-study-section.html color='altGray-900' bgColor='altGray-300' %}">
+  <div class="{% include classes/case-study-text-container.html %}">
+    {% include partials/case-study-h2.html color="altGray-1000" title="Onboarding" %}
+
+      <div class="prose">
+
+      {% include partials/case-study-p.html color="altGray-900" content="One of the challenges with Emotics is that it is a complex product with terminology and methods that wouldn't be immediately apparent to a new user. They need to be learned." %}
+
+      {% include partials/case-study-p.html color="altGray-900" content="It was important to educate the user and showcase the value of the product without overwhelming or trapping them in an onboarding flow that overwhelms their mental model." %}
+
+      </div>
+
+  </div>
+
+    <div class="{% include classes/case-study-scroller.html%}">
+      {% for i in (1..3) %}
+      <figure class="flex-none w-11/12 lg:w-1/2">
+        <img class="shadow-xl md:shadow-2xl" loading="lazy" src="/images/emotics/onboarding-{{i}}.png" alt="Adoreboard emotics onboarding">
+      </figure>
+      {% endfor %}
+    </div>
+
+    <div class="{% include classes/case-study-text-container.html%}">
+      {% include partials/case-study-p.html color="altGray-900" content="Modals are used to introduce users to each section of the app. Users can take the optional tour, at which point they'll be guided through the key features of that page." %}
+    </div>
+
+    <div class="{% include classes/case-study-text-container.html%} mt-12">
+      {% include partials/case-study-h2.html color="altGray-1000" title="Guided tour" %}
+    </div>
+
+    <div class="{% include classes/case-study-scroller.html%}">
+      {% for item in page.guided_tour %}
+      <figure class="flex-none w-11/12 lg:w-2/3">
+        <img loading="lazy" class="shadow-xl md:shadow-2xl" loading="lazy" src="/images/emotics/{{item.image}}" alt="{{item.alt}}">
+      </figure>
+      {% endfor %}
+    </div>
+
+  </div>
+
+</section>
+
+<section class="{% include classes/case-study-section.html color='altGray-900' bgColor='white' %}">
+
+<div class="{% include classes/case-study-text-container.html%}">
+  {% include partials/case-study-h2.html title="Interviewing customers" %}
+
+      <div class="prose">
+        {% include partials/case-study-p.html color="altGray-900" content='One of the interesting things from talking directly with customers was discovering that conventions that you assume would be obvious to the average user turn out to be far from it. One of these such conventions was the "ellipsis menu" that was being used to group dataset actions within a dropdown menu.' %}
+
+        {% include partials/case-study-p.html color="altGray-900" content='It was important to educate the user and showcase the value of the product without overwhelming or trapping them in an onboarding flow that overwhelms their mental model.' %}
+      </div>
+
+  </div>
+
+  <div class="mx-auto max-w-6xl py-12 md:py-24">
+    <img src="/images/emotics/emotics-customer-feedback@2x.jpg" alt="Adoreboard Emotics customer feedback">
+  </div>
+
+  <div class="{% include classes/case-study-text-container.html %} prose">
+
+    {% include partials/case-study-p.html color="altGray-900" content="After speaking with numerous users and gaining their feedback, it became apparent that this action was too abstract. They weren't aware you could interact with it. So I redesigned it to make the actions more apparent." %}
+
+    {% include partials/case-study-p.html color="altGray-900" content='As Luke Wrobleski says, <a href="https://www.lukew.com/ff/entry.asp?1945">obvious always wins</a>' %}
+
+  </div>
+
+</section>
+
+<section class="{% include classes/case-study-section.html color='altGray-900' bgColor='altGray-100' %}">
+
+<div class="{% include classes/case-study-text-container.html %}">
+
+  {% include partials/case-study-h2.html color="altGray-1000" title="Redesigning the adorescore" %}
+
+
+      <div class="prose">
+
+        {% include partials/case-study-p.html color="altGray-900" content="The Adorescore (a metric scored from -100 to 100 which allows you to understand how well or badly your brand is performing) is a pivotal aspect of the Emotics product. Discussions within the team however and feedback from users concluded that too much emphasis was being placed on it and that the score, by itself, wasn't a key indicator of the data." %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="This was leading to confusion from users who felt that the score was too inaccurate and not reflective of the data." %}
+
+      </div>
+
+  </div>
+
+  <div class="mx-auto max-w-screen-xl py-12 md:py-24">
+    <img loading="lazy" src="/images/emotics/adorescore-redesign.jpg" alt="Adoreboard adorescore redesign">
+  </div>
+
+  <div class="{% include classes/case-study-text-container.html %} prose">
+
+    {% include partials/case-study-p.html color="altGray-900" content='To combat this, I tackled two things:' %}
+
+    <ol class="{% include classes/case-study-list.html %} text-altGray-900">
+      <li>Revisit the hierarchical layout to place less emphasis on the dataset's adorescores from a visual perspective.</li>
+      <li>Give a visual breakdown of each adorescore that will allow users, at a glance, to distingish if their datasets consists of mostly <strong>negative</strong>, <strong>neutral</strong> or <strong>positive</strong> data.</li>
+    </ol>
+
+  </div>
+</section>

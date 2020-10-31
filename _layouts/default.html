@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
+{%- assign color = page.color -%}
+<html class="text-white {% if color %}bg-{{color}}{%else%}bg-altGray-900{%endif%} font-sans" lang="en"
+>
+    <head>
+        {% include site/meta-info.html %}
+    </head>
 
-  <body>
-    <main id="main">
-      {{ content }}
-    </main>
-  </body>
+    <body class="font-sans relative">
+        {% include site/site-header.html %}
+
+        <main id="main-content" class="mx-auto">
+            {{content}}
+        </main>
+
+        <div class="fixed hidden sm:block bottom-0 right-0 p-6 z-50">
+          <button class="scroll-top appearance-none scale-0 hover:scale-100 transition transform duration-100 hover:bg-opacity-100 ease-in text-white rounded-full w-12 h-12 flex items-center justify-center bg-altGray-900 bg-opacity-25 focus:outline-none">
+            <svg class="w-6 h-6" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.258 10.008l.816.86c.215.214.559.214.73 0l6.704-6.661v14.652c0 .301.215.516.515.516h1.204a.522.522 0 00.515-.516V4.207l6.66 6.66c.172.215.516.215.73 0l.817-.86c.215-.171.215-.515 0-.73L9.97.297a.495.495 0 00-.73 0L.257 9.277c-.215.215-.215.559 0 .73z" fill="currentColor"/></svg>
+          </button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+        <script type="text/javascript" src="{{ '/js/bundle.js' | prepend: site.baseurl }}" charset="utf8" ></script>
+    </body>
 </html>

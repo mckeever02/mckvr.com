@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Studio Feixen Sans';
+  src: url('/fonts/StudioFeixenSans-Book.woff2')
+      format('woff2'),
+    url('/fonts/StudioFeixenSans-Book.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Studio Feixen Sans';
+  src: url('/fonts/StudioFeixenSans-Medium.woff2')
+      format('woff2'),
+    url('/fonts/StudioFeixenSans-Medium.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Studio Feixen Sans Edgy';
+  src: url('/fonts/StudioFeixenSans-EdgyMedium.woff2')
+      format('woff2'),
+    url('/fonts/StudioFeixenSans-EdgyMedium.woff') format('woff');
+  font-weight: 500;
+}

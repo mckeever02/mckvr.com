@@ -1,6 +1,9 @@
-@tailwind preflight;
+@tailwind base;
+
 @tailwind components;
 
-@import '_generic/_global';
-
 @tailwind utilities;
+
+@import 'fonts';
+@import 'animations';
+@import 'global';

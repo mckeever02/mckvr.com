@@ -1,0 +1,129 @@
+---
+layout: default
+---
+<article class="overflow-x-hidden">
+  <div
+    class="relative flex flex-col sm:flex-row sm:items-center max-w-5xl 2xl:max-w-screen-xl w-full mx-auto hero mb-12 px-4 sm:px-6 lg:px-8 xl:px-0"
+  >
+    <div class="hero--image sm:absolute sm:right-0 z-10 sm:w-7/12 md:w-2/3 2xl:w:8/12">
+      <img
+        class="w-full"
+        data-tilt
+        data-tilt-full-page-listening
+        data-tilt-reset="false"
+        data-tilt-max="5"
+        data-tilt-speed="750"
+        data-tilt-startX="4"
+        data-tilt-perspective="1000"
+        gyroscope="true"
+        src="/images/michael-mckeever-3.jpg"
+        alt="Photo of Michael McKeever"
+      />
+    </div>
+    <h1
+      class="relative flex-grow z-20 sm:py-24 text-2xl px-2 sm:px-0 leading-8 xs:leading-10 xs:text-4xl lg:text-5xl -mt-8 sm:leading-tight"
+    >
+      {{ page.intro.title }}
+    </h1>
+  </div>
+
+  <section
+    class="{% include classes/section.html %}"
+  >
+    <div class="sm:w-2/12">
+      {%- include partials/section-h2.html title="About" -%}
+    </div>
+    <div class="prose prose-lg text-lg md:text-xl 2xl:text-1xl text-white sm:w-10/12">{{ content }}</div>
+  </section>
+
+  <section
+    class="mx-auto lg:w-full relative img-grid grid grid-cols-3 gap-6 md:gap-12 mb-16 md:mb-32 sm:px-8 md:pt-24"
+  >
+    <img
+      class="grid-img"
+      data-tilt
+      data-tilt-glare
+      data-tilt-max-glare="1"
+      data-tilt-speed="750"
+      data-tilt-perspective="1000"
+      data-tilt-startX="-5"
+      data-tilt-startY="0"
+      src="/images/michael-mckeever-4.jpg"
+      alt="Photo of Michael McKeever"
+      width="900"
+      height="600"
+      loading="lazy"
+    />
+    <img
+      class="-mt-6 md:-mt-12 grid-img"
+      data-tilt
+      data-tilt-glare
+      data-tilt-max-glare="0.3"
+      data-tilt-speed="750"
+      data-tilt-perspective="1000"
+      data-tilt-startX="0"
+      data-tilt-startY="0"
+      src="/images/japan-1.jpg"
+      width="900"
+      height="600"
+      alt="Photo of Tori gates in Kyoto, Japan"
+      loading="lazy"
+    />
+    <img
+      class="-mt-12 md:-mt-24 grid-img"
+      data-tilt
+      data-tilt-glare
+      data-tilt-max-glare="0.3"
+      data-tilt-speed="750"
+      data-tilt-perspective="1000"
+      data-tilt-startX="5"
+      data-tilt-startY="0"
+      src="/images/michael-mckeever-5.jpg"
+      width="900"
+      height="600"
+      alt="Photo of Michael McKeever at the beach"
+      loading="lazy"
+    />
+  </section>
+
+  <section class="{% include classes/section.html %}">
+    <div class="sm:w-2/12 mb-4 sm:mb-0">
+      {%- include partials/section-h2.html title="Timeline" -%}
+    </div>
+    <div class="text-white sm:w-10/12 flex flex-col space-y-12">
+        {%- for item in page.timeline -%}
+        <div>
+        <h3 class="text-lg 2xl:text-xl font-medium font-edgy">{{item.job}}</h3>
+        <h4 class="text-lg 2xl:text-xl mb-1">{{item.title}}</h4>
+        <h5 class="font-medium opacity-50 tracking-tight">{{item.date}}</h5>
+        </div>
+        {%- endfor -%}
+    </div>
+  </section>
+
+  <section
+    class="{% include classes/section.html %}"
+  >
+    <div class="sm:w-2/12 mb-4 sm:mb-0">
+      {%- include partials/section-h2.html title="Links" -%}
+    </div>
+    <div class="text-white sm:w-10/12 sm:-mt-3">
+      {% for item in page.links %} {% include partials/link-block.html %} {% endfor
+      %}
+    </div>
+  </section>
+
+  <section class="{% include classes/section.html %}"
+  >
+    <div class="sm:w-2/12 mb-4 sm:mb-0">
+      {%- include partials/section-h2.html title="Social" -%}
+    </div>
+    <div class="text-white sm:w-10/12 -mt-3">
+      <ul class="grid xs:grid-cols-2 w-full gap-6 grid-img xs:gap-12">
+        {% for item in page.social %} {% include partials/social-link.html %} {%
+        endfor %}
+      </ul>
+    </div>
+  </section>
+
+</article>

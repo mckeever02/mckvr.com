@@ -1,0 +1,319 @@
+---
+layout: case-study
+---
+{%- if page.intro -%}
+  {% include partials/case-study-intro.html %}
+{%- endif -%}
+
+
+<section class="{% include classes/case-study-section.html bgColor='white' textColor='altGray-900' %}">
+  <div class="{% include classes/case-study-text-container.html %}">
+    {% include partials/case-study-h2.html title="Some wider context first..." color="altGray-1000" %}
+    <div class="prose prose-lg">
+    {% include partials/case-study-p.html color="altGray-900" content="At Sweepr, we are creating a method of self-diagnosing technology problems in your own home using a multitude of mediums. This is primarily on your smartphone but also using voice assistants and devices such as Google Home & Alexa Show. " %}
+
+    {% include partials/case-study-p.html color="altGray-900" content="These self-care 'interactions' are built with another Sweepr tool, the Interaction Editor (kinda like a CMS), to enable organisations to develop their own 'resolutions' for their customers. " %}
+
+    {% include partials/case-study-p.html color="altGray-900" content="For instance, Virgin Media may use our product to develop a series of self-care use cases around their service. One example being walking a user through how to help solve a problem if their internet is slow." %}
+    </div>
+
+  </div>
+
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-900' textColor='white' %}">
+  <div class="{% include classes/case-study-text-container.html %}">
+        {% include partials/case-study-h2.html title="How Sweepr works" color="white" %}
+        <div class="prose prose-lg">
+            {% include partials/case-study-p.html color="white" content="This video, starring my hand, shows an example interaction of Sweepr helping to solve a problem with Zoom." %}
+        </div>
+    </div>
+
+    {% include partials/video.html video="nuvo-zoom-buffering-confident.mp4" classes="max-w-6xl mx-auto py-12" %}
+
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-200' textColor='altGray-900' %}">
+  <div class="{% include classes/case-study-text-container.html %}">
+    {% include partials/case-study-h2.html title="The problems" color="altGray-900" %}
+    <div class="prose prose-lg">
+
+    <ol class="{% include classes/case-study-list.html color='altGray-900' %}">
+        <li>Our custom markup language, SweeprMarkup, was too restrictive and limiting for both design and client requirements. We required a more flexible language to enable these growing requirements.</li>
+        <li>There was no cohesive design language or styling framework in place, leading to inconsistencies between projects & clients and an unsatisfactory mobile experience.</li>
+        <li>No system in place for interactions other than with a smartphone device meant that our framework was limited.</li>
+    </ol>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-100' textColor='altGray-900' %}">
+  <div class="{% include classes/case-study-text-container.html %}">
+    {% include partials/case-study-h2.html title="The component library tree" color="altGray-900" %}
+  </div>
+
+  <div class="max-w-screen-xl mx-auto">
+        <img loading="lazy" src="/images/multimodal/design-system-map@2x.png" alt="Design system tree">
+  </div>
+
+  <div class="{% include classes/case-study-text-container.html %}">
+    <div class="prose lg mb-6 sm:mb-12">
+        {% include partials/case-study-p.html color="altGray-900" content="In Figma, our design tool of choice at Sweepr, you can create shared component libraries that are accessible within other libraries." %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="We took advantage of this amazing feature to create a hierarchy of libraries for use across our products." %}
+    </div>
+
+    {% include partials/case-study-h2.html title="The parent library" color="altGray-900" %}
+
+    {% include partials/case-study-p.html color="altGray-900" content="The parent or main library, our design system called 'Oasis', would contain components that could be used globally such as typography, colors, spacing, layout" %}
+  </div>
+
+  <div class="max-w-screen-lg mx-auto py-6 sm:my-12">
+        <img loading="lazy" src="/images/multimodal/oasis-ds-preview@2x.png" alt="Oasis Design system preview">
+  </div>
+
+  <div class="{% include classes/case-study-text-container.html %}">
+    {% include partials/case-study-h2.html title="Mobile and Voice UI libraries" color="altGray-900" %}
+    <div class="prose lg mb-6 sm:mb-12">
+        {% include partials/case-study-p.html color="altGray-900" content="This is where the parent components for the specific medium would be contained. For instance, in the mobile library, you would have:" %}
+
+    </div>
+
+  </div>
+
+  <div class="max-w-screen-xl mx-auto py-6 sm:my-12">
+    <img loading="lazy" src="/images/multimodal/mobile-ds-preview.png" alt="Mobile Design system preview">
+  </div>
+
+  <div class="{% include classes/case-study-text-container.html %}">
+    {% include partials/case-study-h2.html title="Customer libraries" color="altGray-900" %}
+    <div class="prose lg mb-6 sm:mb-12">
+        {% include partials/case-study-p.html color="altGray-900" content="These component libraries would be used for 'overwriting' components from the parent library. For instance, overwriting buttons or typography to fit the brand guidelines of the tenant." %}
+    </div>
+  </div>
+
+  <div class="mx-auto py-6 sm:my-12">
+    <img loading="lazy" src="/images/multimodal/customers.png" alt="Customer design systems">
+  </div>
+
+  <div class="{% include classes/case-study-text-container.html %}">
+    <div class="prose lg mb-6 sm:mb-12">
+        {% include partials/case-study-p.html color="altGray-900" content="The reason for all this modularity is so that our design system would be flexible and theme-able for various customers. If one customer had a specific request for a certain component, it wouldn't require having to change the whole system." %}
+    </div>
+  </div>
+
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-200' textColor='altGray-900' %}">
+  <div class="{% include classes/case-study-text-container.html %}">
+    {% include partials/case-study-h2.html title="Layout templates" color="altGray-900" %}
+
+    <div class="prose">
+        {% include partials/case-study-p.html color="altGray-900" content="Another problem was inconsistency between our step templates. To help combat this I created 3 layout templates based on the most common media sizes (4x3, 16x9 & 1x1)." %}
+    </div>
+
+  </div>
+
+    <div class="{% include classes/case-study-scroller.html%}">
+        <figure class="flex-none w-11/12 md:w-3/4">
+        <img loading="lazy" src="/images/multimodal/step-layouts-wireframes.png" alt="Sweepr step layouts">
+        <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">The layout template wireframes</figcaption>
+        </figure>
+        <figure class="flex-none w-11/12 md:w-3/4">
+        <img loading="lazy" src="/images/multimodal/step-layouts-content.jpg" alt="Sweepr step layouts">
+        <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">Using the layout templates 'in the wild'.</figcaption>
+        </figure>
+    </div>
+
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='white' textColor='altGray-900' %}">
+    <div class="{% include classes/case-study-text-container.html %} mb-12 sm:mb-24">
+        {% include partials/case-study-h2.html title="Persona based design" color="altGray-900" %}
+
+        <div class="prose">
+            {% include partials/case-study-p.html color="altGray-900" content="At Sweepr, one of our key product features is that we design self-care to fit the technical confidence of the user." %}
+
+            {% include partials/case-study-p.html color="altGray-900" content="We do this by providing self-care content to fit <strong>3 different personas</strong>, based on <a href='https://uxdesign.cc/when-less-is-more-minimalist-personas-in-ux-f2ba742f0634'>research</a> carried out by our head of UX, <a href='https://melaniepolkosky.com/'>Melanie Polkosky</a>." %}
+
+        </div>
+    </div>
+
+    {%- for item in page.personas -%}
+    <div class="mx-auto max-w-screen-lg mb-12 md:mb-24">
+        <h2 class="font-medium font-edgy text-xl xs:text-2xl sm:text-3xl mb-4 md:mb-6 text-altGray-900">{{item.title}}</h2>
+        <div class="flex flex-col space-x-12 md:space-x-16 sm:flex-row mt-6 sm:mt-12">
+            <div class="w-3/12">
+                <img loading="lazy" src="/images/multimodal/{{item.image}}.png" alt="{{item.image}} persona">
+            </div>
+            <div class="w-9/12 prose prose-lg">
+                <blockquote>
+                    <p class="xs:text-lg sm:text-xl md:text-2xl not-italic font-normal">{{item.quote}}</p>
+                    <cite class="font-edgy font-medium text-altGray-600 not-italic">&mdash; {{item.cite}}</cite>
+                </blockquote>
+                <ul class="{% include classes/case-study-list.html %} text-altGray-900">
+                    {%- for list in item.points -%}
+                    <li>{{list}}</li>
+                    {%- endfor -%}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {%- endfor -%}
+
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-900' textColor='white' %}">
+    <div class="{% include classes/case-study-text-container.html %}">
+        {% include partials/case-study-h2.html title="Differentiating the designs on persona" color="white" %}
+
+        <div class="prose prose-lg">
+            {% include partials/case-study-p.html color="white" content="Because we have these 3 personas, each with their own methods of interacting with technology, it was important to bring these learnings into the designs of our self-care." %}
+
+            {% include partials/case-study-p.html color="white" content="One of my first experiments was taking one of Sweepr's key offerings — diagnostics of a user's home network — and creating a new step type for these, based on the persona of the user." %}
+        </div>
+    </div>
+
+    {% include partials/video.html video="persona-diagnostics.mp4" classes="max-w-6xl mx-auto py-12" %}
+
+    <div class="{% include classes/case-study-text-container.html %}">
+        {% include partials/case-study-p.html color="white" content="Communicating the status of a user's network is hugely important but for avoidant user's all these metrics could be confusing and overwhelming. Therefore, for an avoidant user, we display a simplified version of the diagnostics." %}
+    </div>
+
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='white' textColor='altGray-900' %}">
+  <div class="{% include classes/case-study-text-container.html %}">
+    {% include partials/case-study-h2.html title="High-fidelity prototypes" color="altGray-900" %}
+
+    <div class="prose prose-lg">
+        {% include partials/case-study-p.html color="altGray-900" content="I started creating high-fidelity prototypes when I learned about <a href='https://protopie.io'>Protopie</a>. Since then, they've been a staple part of the process when presenting to clients, trialling new features or  carrying out user testing." %}
+
+
+        {% include partials/case-study-h2.html title="The benefits" color="altGray-900" %}
+
+        <ul class="{% include classes/case-study-list.html color='altGray-900' %}">
+            <li>You can create prototypes that look and feel like a real app without writing one line of code. You can even do voice recognition 🤯</li>
+            <li>More stable for demoing and testing than a build</li>
+            <li>Making changes on the fly was easier than if it were coded</li>
+        </ul>
+    </div>
+  </div>
+
+  {% include partials/video.html video="sweepr-early-prototype.mp4" classes="max-w-6xl mx-auto py-12" caption="An early, exploratory prototype I made that demonstrates some of the neat things you can do with Protopie." %}
+
+
+    <div class="{% include classes/case-study-text-container.html %} prose prose-lg">
+
+        {% include partials/case-study-h2.html title="The problems" color="altGray-900" %}
+
+        <ul class="{% include classes/case-study-list.html color='altGray-900' %}">
+            <li>Creating prototypes in protopie is very time consuming. It would take <span class="bg-yellow-300 font-edgy">50-100% more time</span> to create a prototype in Protopie than in Figma</li>
+            <li>Not ideal for customer projects where timelines were short</li>
+            <li>No component library in place means <span class="bg-yellow-300 font-edgy">inconsistency between prototypes</span> and more time spent recreating components</li>
+        </ul>
+
+        {% include partials/case-study-h2.html title="Solution: creating an interaction library" color="altGray-900" %}
+
+    </div>
+
+    </div>
+
+    {% include partials/video.html video="interactive-library.mp4" classes="max-w-6xl mx-auto py-12" controls="false" attributes="playsinline loop autoplay muted" %}
+
+
+    <div class="prose prose-lg mx-auto">
+        {% include partials/case-study-p.html color="altGray-900" content="Once Protopie added Figma-like component libraries, I jumped right on it and started developing our own for internal and customer use. The results spoke for themselves:" %}
+
+        <ul class="{% include classes/case-study-list.html color='altGray-900' %}">
+            <li>The length of time to create a prototype for a customer project was <span class="bg-yellow-300 font-edgy">reduced by 60%</span></li>
+            <li><span class="bg-yellow-300 font-edgy">Greater consistency between files</span> now using a shared library</li>
+            <li>Each library could now be duplicated for other customers or projects, <span class="bg-yellow-300 font-edgy">which reduced time to create prototypes</span> across the board</li>
+            <li>Using Protopie for timely customer projects went from a <span class="bg-yellow-300 font-edgy">'nice to have' to  'key process'</span></li>
+        </ul>
+    </div>
+
+
+</section>
+
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-300' textColor='altGray-900' %}">
+    <div class="{% include classes/case-study-text-container.html %}">
+        {% include partials/case-study-h2.html title="Designing and building an Alexa design system" color="altGray-900" %}
+
+        <div class="prose prose-lg">
+            {% include partials/case-study-p.html color="altGray-900" content="A client had requested a POC of Sweepr running an interaction on an Alexa Show device so I was responsible for designing our step templates to fit into Alexa's design language and then taking the designs and developing a Skill using APL &mdash; Alexa Presentation Language." %}
+        </div>
+    </div>
+
+    <div class="{% include classes/case-study-scroller.html%}">
+        {%- for item in page.alexa -%}
+        <figure class="flex-none w-11/12 sm:w-2/3 xl:w-7/12">
+            <img class="shadow-xl md:shadow-2xl" loading="lazy" src="/images/multimodal/{{item.image}}.png" alt="{{item.alt}}">
+            <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">{{item.caption}}</figcaption>
+        </figure>
+        {%- endfor -%}
+    </div>
+
+    <div class="{% include classes/case-study-text-container.html %}">
+        {% include partials/case-study-h2.html title="Constraints" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="Working with APL and Amazon's design language was interesting. There were a particular number of constraints and limitations to overcome and adapt to. When it came to creating the steps in APL, you were quite limited with what you could do. For instance, being limited to Amazon's typography, no animations, limited styling capabilities." %}
+    </div>
+
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-100' textColor='altGray-900' %}">
+    <div class="{% include classes/case-study-text-container.html %}">
+        {% include partials/case-study-h2.html title="Developing the front-end for our mobile design system" color="altGray-900" %}
+
+        <div class="prose prose-lg">
+            {% include partials/case-study-p.html color="altGray-900" content="I also worked as the front-end lead to play a key role in switching from SweeprMarkup to HTML for our step templates. This involved:" %}
+
+            <ul class="{% include classes/case-study-list.html color='altGray-900' %}">
+            <li>Creating compliant HTML for each of the step types on our framework</li>
+            <li>Writing ES6 Javascript to power the interaction layer</li>
+            <li>Creating a CSS system that is small, modern, flexible and themeable</li>
+            <li>Designing & developing a documentation site for our design system, Oasis</li>
+        </ul>
+
+
+        </div>
+    </div>
+
+    <div class="{% include classes/case-study-text-container.html %} mt-12 sm:mt-24">
+        {% include partials/case-study-h2.html title="Oasis documentation website" color="altGray-900" %}
+    </div>
+
+    {%- include partials/case-study-browser-frame.html image="oasis-home.jpg" alt="Oasis Homepage" -%}
+
+    <div class="{% include classes/case-study-text-container.html %} my-12 sm:my-24 prose prose-lg">
+        {% include partials/case-study-p.html color="altGray-900" content="I created a comphrehensive documentation website to showcase and explain the Oasis design system, its components and the step types." %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="For those nerdy enough to care, the tech stack was as follows:" %}
+
+        <ul class="{% include classes/case-study-list.html color='altGray-900' %}">
+            <li>Jekyll for static site generation and content management</li>
+            <li>Tailwind for powering both the CSS for the documentation and the framework</li>
+            <li>Gulp to browserwatch, minify and treeshake the CSS and compile JS</li>
+            <li>Localstorage-enabled theme switcher and device preview to view different customer themes at different phone sizes</li>
+            <li>Firebase auth for handling login</li>
+        </ul>
+    </div>
+
+    {%- include partials/case-study-browser-frame.html image="oasis-diagnostic-step.jpg" alt="Oasis Diagnostic Steps Page" -%}
+
+    <div class="{% include classes/case-study-text-container.html %} prose prose-lg">
+        {% include partials/case-study-p.html color="altGray-900" content="As a now fully-remote team, communication and staying in sync becomes more challenging. Especially when I was now working between both design & development teams. This meant that communicating my changes, feedback and process had to be vigilant. For each step I implemented: " %}
+
+        <ul class="{% include classes/case-study-list.html color='altGray-900' %}">
+            <li>Version control and changelog for tracking and documentating changes</li>
+            <li>A code preview for the HTML and JS for each step, along with the last time it was updated</li>
+            <li>Documentation outlining how the interaction of that particular step functions</li>
+            <li>A phone preview and theme switcher so developers can quickly switch themes and devices</li>
+        </ul>
+</section>
+
+{%- include partials/testimonial.html -%}

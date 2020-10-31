@@ -1,0 +1,20 @@
+<html
+  class="text-white antialiased {% if color %}bg-{{color}}{%else%}bg-altGray-900{%endif%} font-sans"
+  lang="en"
+>
+    <head>
+        {% include "layout/partials/meta-info.html" %}
+
+    </head>
+
+    <body class="font-sans">
+        {% include "layout/partials/site-header.html" %}
+
+        <main id="main-content" class="mx-auto">
+            {{content}}
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+        <script type="text/javascript" src="{{ '/js/bundle.js' | prepend: site.baseurl }}" charset="utf8" ></script>
+    </body>
+</html>

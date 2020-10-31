@@ -1,0 +1,25 @@
+<a
+  href="{{ item.url }}"
+  target="_blank"
+  rel="noopener noreferrer"
+  data-tilt
+  data-tilt-max="10"
+  data-tilt-speed="750"
+  data-tilt-perspective="1000"
+  data-tilt-scale="1.05"
+  class="flex mb-6 flex-col p-3 sm:-ml-3 rounded-lg text-white group bg-opacity-0 bg-white scale-100 transform hover:bg-opacity-10 active:scale-100 focus:scale-100"
+>
+  <!-- <div
+    class="tilt-child w-16 h-8 flex items-center opacity-50 justify-center group-hover:opacity-100 group-hover:text-{{ item.color }}"
+  >
+    {{ item.icon }}
+  </div> -->
+  <h3 class="text-lg 2xl:text-xl flex mb-1">
+    {{ item.title }}
+    <span
+      class="ml-auto transform -translate-x-4 scale-0 group-hover:scale-100 group-hover:-translate-x-2 transition duration-200 ease-out delay-150"
+      >↗</span
+    >
+  </h3>
+  <h4 class="text-base 2xl:text-lg font-edgy font-medium opacity-50">{{ item.site }}</h4>
+</a>
