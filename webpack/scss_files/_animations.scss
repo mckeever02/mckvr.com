@@ -78,6 +78,78 @@
   }
 }
 
+@keyframes logoShape1 {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes logoShape1Reverse {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes logoShape2 {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+@keyframes logoShape2Reverse {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: 0%;
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+@keyframes logoShape3 {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0
+  }
+}
+
+@keyframes logoShape3Reverse {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 .moveIn {
   animation: moveIn .5s ease-out;
   animation-fill-mode: forwards;
@@ -124,4 +196,35 @@
   animation: scribble .75s linear;
   animation-delay: 2s;
   animation-fill-mode: forwards;
+}
+
+.logo-shape {
+  @apply transition-all duration-100 transform ease-in absolute h-2 w-2;
+  &--1 {
+    left: 0;
+    animation: logoShape1Reverse .5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    //animation-delay: 1s;
+  }
+  &--2 {
+    left: 50%;
+    animation: logoShape2Reverse .5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    //animation-delay: 1s;
+  }
+  &--3 {
+    left: 100%;
+    animation: logoShape3Reverse .5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    //animation-delay: 1s;
+  }
+}
+
+.logo:hover {
+  .logo-shape--1 {
+    animation: logoShape1 .5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  .logo-shape--2 {
+    animation: logoShape2 .5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  .logo-shape--3 {
+    animation: logoShape3 .5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
 }

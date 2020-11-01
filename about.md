@@ -6,7 +6,7 @@ meta:
     'Michael McKeever is a multidisciplinary designer from Belfast'
 intro:
   title: |
-    <span class="moveIn inline-block">I like to build things,</span><br /><span class="moveIn2 neutralGray-700 inline-block">with design & code.</span>
+    <span class="moveIn inline-block">I like building things,</span><br /><span class="moveIn2 neutralGray-700 inline-block font-edgy">with design & code.</span>
 links:
   - title: 'Site of the day'
     url: 'https://www.typewolf.com/site-of-the-day/trying-to-work'
@@ -35,12 +35,9 @@ timeline:
     - job: Adoreboard
       title: Product designer
       date: Jul 2016 &mdash; Jun 2019
-    - job: AVBrowne
-      title: Frontend dev
-      date: Apr 2018 &mdash; Sep 2018 &middot; Contract
     - job: Rotor Videos
       title: Frontend dev
-      date: Nov 2016 &mdash; Oct 2017 &middot; Contract
+      date: Nov 2016 &mdash; Oct 2017
     - job: Little Thunder Co.
       title: Designer
       date: May 2014 &mdash; May 2015
@@ -53,4 +50,4 @@ Working as both a designer and developer has taught me how to empathise and unde
 
 Outside of work, I'm usually working on a side-project of some form or another. It helps me learn new skills at my own pace, without the constraints of budgets and timelines.
 
-Im my spare time, I’m either getting my ass kicked at Brazilian Jiu Jitsu, travelling to new places, listening to an audiobook, or taking photos on my film camera (Hipster AF).
+Im my spare time, I’m either getting my ass kicked at Brazilian Jiu Jitsu, travelling to new places, or taking photos.

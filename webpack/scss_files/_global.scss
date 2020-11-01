@@ -98,3 +98,10 @@
 .album-item:first-of-type {
   padding-left: 25%;
 }
+
+::-moz-selection {
+	@apply bg-altGray-400;
+}
+::selection {
+	@apply bg-altGray-400;
+}

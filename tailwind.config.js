@@ -49,6 +49,9 @@ module.exports = {
       lineHeight: {
         'extra-relaxed': '1.75'
       },
+      width: {
+        7: '1.75rem'
+      },
       colors: {
         altGray: {
           100: '#F9FAFA',
