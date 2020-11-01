@@ -249,6 +249,7 @@ DEPENDENCIES
   ffi (>= 1.9.24)
   github-pages
   jekyll (>= 3.7.4)
+  jekyll-redirect-from
   jekyll-turbolinks
   nokogiri (>= 1.8.5)
   rubyzip (>= 1.2.2)

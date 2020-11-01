@@ -61,4 +61,7 @@ guided_tour:
       alt: Adorebord emotics guided tour
     - image: guided-tour-3.png
       alt: Adorebord emotics guided tour
+
+redirect_from:
+    - /projects/emotics/
 ---

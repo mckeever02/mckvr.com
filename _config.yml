@@ -20,6 +20,7 @@ permalink: pretty
 
 plugins:
   - jekyll-turbolinks
+  - jekyll-redirect-from
 
 collections:
   case-studies:
