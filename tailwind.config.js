@@ -8,7 +8,7 @@ module.exports = {
     standardFontWeights: true,
   },
   purge: {
-    content: ['./src/**/*.html', './src/**/*.md'],
+    content: ['./**/*.html', './**/*.md'],
     options: {
       whitelist: []
     }

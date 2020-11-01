@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.0.1",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "@tailwindcss/typography": "^0.2.0",
     "autoprefixer": "^9.6.0",
     "postcss": "^6.0.22",
@@ -35,6 +35,6 @@
     "jekyll-server": "bundle exec jekyll serve --incremental --watch",
     "webpack-watch": "webpack -w",
     "webpack": "webpack",
-    "build": "yarn webpack"
+    "build": "NODE_ENV=production yarn webpack"
   }
 }

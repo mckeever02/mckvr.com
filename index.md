@@ -23,4 +23,15 @@ side_projects:
     color: 'purple-400'
     url: 'https://mailtolink.me'
     icon: '<svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.667 9.332h1.777V7.554h-1.777v1.778zM10.889 11.109h1.778V9.332h-1.778v1.777zM7.333 9.332v1.777h1.778V9.332H7.333zM7.333 9.332V7.554H5.556v1.778h1.777zM9.111 12.886h1.778v-1.777H9.11v1.777z" fill="currentColor"/><path d="M16.222 4H2v12.44h16V4h-1.778zm0 5.332v5.331H3.778V7.554h1.778V5.777h8.888v1.777h1.778v1.778z" fill="currentColor"/></svg>'
+redirect_from:
+    - /projects/
+    - /blog/
+    - /hire-me/
+    - /jekyll/liquid/2017/05/15/displaying-opening-times-in-jekyll/
+    - /jekyll/2017/05/15/about/
+    - /projects/conbody/
+    - /projects/visa/
+    - /projects/flyte/
+    - /projects/tryingtowork/
+    - /projects/usfolk/
 ---
