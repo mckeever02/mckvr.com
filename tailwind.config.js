@@ -7,7 +7,12 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     standardFontWeights: true,
   },
-  purge: ['./src/**/*.html', './src/**/*.md'],
+  purge: {
+    content: ['./src/**/*.html', './src/**/*.md'],
+    options: {
+      whitelist: []
+    }
+  },
   theme: {
     screens: {
       xs: '500px',

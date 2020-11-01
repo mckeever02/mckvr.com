@@ -34,6 +34,7 @@
     "start": "concurrently -n jekyll,webpack \"yarn run jekyll-server\" \"yarn run webpack-watch\"",
     "jekyll-server": "bundle exec jekyll serve --incremental --watch",
     "webpack-watch": "webpack -w",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "build": "yarn webpack"
   }
 }
