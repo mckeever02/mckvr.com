@@ -97,10 +97,7 @@ module.exports = {
               color: 'inherit',
               '&:hover': {
                 color: theme('colors.beryl-green'),
-              },
-              '&:visited': {
-                color: theme('colors.altGray.600'),
-              },
+              }
             },
           },
         },
