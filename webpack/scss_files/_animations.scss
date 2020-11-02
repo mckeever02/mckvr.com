@@ -150,24 +150,28 @@
   }
 }
 
-.moveIn {
-  animation: moveIn .5s ease-out;
-  animation-fill-mode: forwards;
-}
+@screen xs {
 
-.moveIn2 {
-  animation: moveIn2 .5s ease-out;
-  animation-fill-mode: forwards;
-}
-
-.moveIn, .moveIn2 {
-  transform: translateY(15px);
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: .3s;
-  &:nth-of-type(2) {
-    animation-delay: .5s;
+  .moveIn {
+    animation: moveIn .5s ease-out;
+    animation-fill-mode: forwards;
   }
+
+  .moveIn2 {
+    animation: moveIn2 .5s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  .moveIn, .moveIn2 {
+    transform: translateY(15px);
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: .3s;
+    &:nth-of-type(2) {
+      animation-delay: .5s;
+    }
+  }
+
 }
 
 .scaleFadeIn {

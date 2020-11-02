@@ -13,6 +13,7 @@ layout: default
         data-tilt-reset="false"
         data-tilt-max="5"
         data-tilt-speed="750"
+        data-tilt-reset="true"
         data-tilt-startX="4"
         data-tilt-perspective="1000"
         gyroscope="true"
@@ -21,7 +22,7 @@ layout: default
       />
     </div>
     <h1
-      class="relative flex-grow z-20 sm:py-24 text-2xl px-2 sm:px-0 leading-8 xs:leading-10 xs:text-4xl lg:text-5xl -mt-8 sm:leading-tight"
+      class="relative flex-grow z-20 sm:py-24 text-3xl px-2 sm:px-0 leading-10 xs:text-4xl lg:text-5xl sm:leading-tight"
     >
       {{ page.intro.title }}
     </h1>
@@ -33,34 +34,41 @@ layout: default
     <div class="sm:w-2/12">
       {%- include partials/section-h2.html title="About" -%}
     </div>
-    <div class="prose prose-lg text-lg md:text-xl 2xl:text-1xl text-white sm:w-10/12">{{ content }}</div>
+    <div class="prose xs:prose-lg xs:text-lg md:text-xl 2xl:text-1xl text-white sm:w-10/12">{{ content }}</div>
   </section>
 
   <section
-    class="mx-auto lg:w-full relative img-grid grid grid-cols-3 gap-6 md:gap-12 mb-16 md:mb-32 sm:px-8 md:pt-24"
+    class="mx-auto lg:w-full relative img-grid flex gap-6 md:gap-12 py-16 -mt-8 md:py-32 md:-mt-16 sm:px-8 overflow-x-auto scrolling-touch flex flex-no-wrap scroller"
   >
+    <div>
+        <img
+        class="grid-img"
+        data-tilt
+        data-tilt-glare
+        data-tilt-max-glare="1"
+        data-tilt-speed="750"
+        data-tilt-perspective="1000"
+        data-tilt-max="5"
+        data-tilt-startX="-5"
+        data-tilt-startY="0"
+        data-tilt-reset="true"
+        src="/images/michael-mckeever-4.jpg"
+        alt="Photo of Michael McKeever"
+        width="900"
+        height="600"
+        loading="lazy"
+        />
+    </div>
+    <div class="-mt-6 md:-mt-12 ">
     <img
       class="grid-img"
-      data-tilt
-      data-tilt-glare
-      data-tilt-max-glare="1"
-      data-tilt-speed="750"
-      data-tilt-perspective="1000"
-      data-tilt-startX="-5"
-      data-tilt-startY="0"
-      src="/images/michael-mckeever-4.jpg"
-      alt="Photo of Michael McKeever"
-      width="900"
-      height="600"
-      loading="lazy"
-    />
-    <img
-      class="-mt-6 md:-mt-12 grid-img"
       data-tilt
       data-tilt-glare
       data-tilt-max-glare="0.3"
       data-tilt-speed="750"
       data-tilt-perspective="1000"
+      data-tilt-max="5"
+      data-tilt-reset="true"
       data-tilt-startX="0"
       data-tilt-startY="0"
       src="/images/japan-1.jpg"
@@ -69,13 +77,17 @@ layout: default
       alt="Photo of Tori gates in Kyoto, Japan"
       loading="lazy"
     />
+    </div>
+    <div class="-mt-12 md:-mt-24">
     <img
-      class="-mt-12 md:-mt-24 grid-img"
+      class="grid-img"
       data-tilt
       data-tilt-glare
       data-tilt-max-glare="0.3"
       data-tilt-speed="750"
       data-tilt-perspective="1000"
+      data-tilt-max="5"
+      data-tilt-reset="true"
       data-tilt-startX="5"
       data-tilt-startY="0"
       src="/images/michael-mckeever-5.jpg"
@@ -84,6 +96,7 @@ layout: default
       alt="Photo of Michael McKeever at the beach"
       loading="lazy"
     />
+    </div>
   </section>
 
   <section class="{% include classes/section.html %}">
@@ -93,9 +106,9 @@ layout: default
     <div class="text-white sm:w-10/12 flex flex-col space-y-12">
         {%- for item in page.timeline -%}
         <div>
-        <h3 class="text-lg 2xl:text-xl font-medium font-edgy">{{item.job}}</h3>
-        <h4 class="text-lg 2xl:text-xl mb-1">{{item.title}}</h4>
-        <h5 class="font-medium opacity-50 tracking-tight">{{item.date}}</h5>
+        <h3 class="xs:text-lg 2xl:text-xl font-medium font-edgy">{{item.job}}</h3>
+        <h4 class="xs:text-lg 2xl:text-xl mb-1">{{item.title}}</h4>
+        <h5 class="text-sm sm:text-base font-medium opacity-50 tracking-tight">{{item.date}}</h5>
         </div>
         {%- endfor -%}
     </div>
@@ -113,8 +126,7 @@ layout: default
     </div>
   </section>
 
-  <section class="{% include classes/section.html %}"
-  >
+  <section class="{% include classes/section.html %}">
     <div class="sm:w-2/12 mb-4 sm:mb-0">
       {%- include partials/section-h2.html title="Social" -%}
     </div>

@@ -6,7 +6,7 @@ meta:
     'Michael McKeever is a multidisciplinary designer from Belfast'
 intro:
   title: |
-    <span class="moveIn inline-block">I like building things,</span><br /><span class="moveIn2 neutralGray-700 inline-block font-edgy">with design & code.</span>
+    <span class="moveIn inline-block">I like building things,</span><br /><span class="moveIn2 neutralGray-700 inline-block antialiased subpixel-antialiased font-medium font-edgy">with design & code.</span>
 links:
   - title: 'Site of the day'
     url: 'https://www.typewolf.com/site-of-the-day/trying-to-work'
