@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="overflow-x-hidden">
   <div
-    class="relative flex flex-col sm:flex-row sm:items-center max-w-5xl 2xl:max-w-screen-xl w-full mx-auto hero mb-12 px-4 sm:px-6 lg:px-8 xl:px-0"
+    class="relative flex flex-col sm:flex-row sm:items-center max-w-5xl 2xl:max-w-screen-xl w-full mx-auto hero sm:mt-0 mb-12 px-4 sm:px-6 lg:px-8 xl:px-0"
   >
     <div class="hero--image sm:absolute sm:right-0 z-10 sm:w-7/12 md:w-2/3 2xl:w:8/12">
       <img
@@ -16,14 +16,15 @@ layout: default
         data-tilt-reset="true"
         data-tilt-startX="4"
         data-tilt-perspective="1000"
+        width="1292"
+        height="822"
         gyroscope="true"
+        loading="lazy"
         src="/images/michael-mckeever-3.jpg"
         alt="Photo of Michael McKeever"
       />
     </div>
-    <h1
-      class="relative flex-grow z-20 sm:py-24 text-3xl px-2 sm:px-0 leading-10 xs:text-4xl lg:text-5xl sm:leading-tight"
-    >
+    <h1 class="relative -mt-8 sm:-mt-0 flex-grow z-20 sm:py-24 text-3xl px-2 sm:px-0 leading-10 xs:text-4xl lg:text-5xl sm:leading-tight">
       {{ page.intro.title }}
     </h1>
   </div>

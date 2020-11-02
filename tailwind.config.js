@@ -73,9 +73,6 @@ module.exports = {
         neutralGray: {
           700: '#8e8e90'
         },
-        rotate: {
-          12: '12deg'
-        },
         lavender: '#D8C9DD',
         'beryl-green': '#dce6c7',
         janna: '#f7ebd5',

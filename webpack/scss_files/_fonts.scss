@@ -4,6 +4,7 @@
       format('woff2'),
     url('/fonts/StudioFeixenSans-Book.woff') format('woff');
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,7 +13,16 @@
       format('woff2'),
     url('/fonts/StudioFeixenSans-Medium.woff') format('woff');
   font-weight: 500;
+  font-display: swap;
 }
+
+// @font-face {
+//   font-family: 'Studio Feixen Sans Edgy';
+//   src: url('/fonts/StudioFeixenSans-EdgyBook.woff2')
+//       format('woff2'),
+//     url('/fonts/StudioFeixenSans-EdgyBook.woff') format('woff');
+//   font-weight: 400;
+// }
 
 @font-face {
   font-family: 'Studio Feixen Sans Edgy';
@@ -20,4 +30,5 @@
       format('woff2'),
     url('/fonts/StudioFeixenSans-EdgyMedium.woff') format('woff');
   font-weight: 500;
+  font-display: swap;
 }
