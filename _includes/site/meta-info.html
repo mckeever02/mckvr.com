@@ -1,6 +1,8 @@
-{%- assign page_title = page.title | append: ' :: ' | append: site.name -%}
+{%- assign page_title = page.title | append: '&middot;' | append: site.title -%}
 
-{%- assign site_title = site.name -%}
+{%- assign description = page.meta.desc -%}
+
+{%- assign site_title = site.title -%}
 {%- assign current_url = site.url | append: page.url -%}
 
 {%- unless social_image -%}
@@ -27,22 +29,17 @@
 <meta property="og:url" content="{{ current_url }}" />
 
 {%- if social_image -%}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="{{ social_image }}" />
-  <meta name="twitter:image" content="{{ social_image }}" />
-  <meta property="og:image:alt" content="Page image for {{ site.name }}" />
-  <meta name="twitter:image:alt" content="Page image for {{ site.name }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="{{ social_image }}" />
+<meta name="twitter:image" content="{{ social_image }}" />
+<meta property="og:image:alt" content="Page image for {{ site_title }}" />
+<meta name="twitter:image:alt" content="Page image for {{ site_title }}" />
 {%- endif -%}
 
 {%- if meta.desc -%}
-  <meta name="description" content="{{ meta.desc }}" />
-  <meta name="twitter:description" content="{{ meta.desc }}" />
-  <meta property="og:description" content="{{ meta.desc }}" />
+<meta name="description" content="{{ description }}" />
+<meta name="twitter:description" content="{{ description }}" />
+<meta property="og:description" content="{{ description }}" />
 {%- endif -%}
-
-{%- if page.url == "/404.html" -%}
-    <meta http-equiv="refresh" content="3; url=/">
-{%- endif -%}
-
 
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
