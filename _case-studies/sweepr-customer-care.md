@@ -1,6 +1,6 @@
 ---
 tags: 'case-study'
-skills: ['Product design', 'UX']
+skills: ['Product design', 'Prototyping']
 title: 'Reinventing customer care for the home'
 thumb: 'sweepr-mobile-case-thumb.jpg'
 cover: 'sweepr-mobile-case-cover.jpg'

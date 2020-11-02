@@ -99,7 +99,7 @@ module.exports = {
                 color: theme('colors.beryl-green'),
               },
               '&:visited': {
-                color: theme('colors.purple.700'),
+                color: theme('colors.altGray.600'),
               },
             },
           },
