@@ -179,7 +179,7 @@ layout: case-study
     {% include partials/video.html video="persona-diagnostics.mp4" classes="max-w-6xl mx-auto py-12" %}
 
     <div class="{% include classes/case-study-text-container.html %}">
-        {% include partials/case-study-p.html color="white" content="Communicating the status of a user's network is hugely important but for avoidant user's all these metrics could be confusing and overwhelming. Therefore, for an avoidant user, we display a simplified version of the diagnostics." %}
+        {% include partials/case-study-p.html color="white" content="Communicating the status of a user's network is hugely important but for avoidant users all these metrics could be confusing and overwhelming. Therefore, for an avoidant user, we display a simplified version of the diagnostics." %}
     </div>
 
 </section>
@@ -257,11 +257,25 @@ layout: case-study
         {%- endfor -%}
     </div>
 
-    <div class="{% include classes/case-study-text-container.html %}">
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
         {% include partials/case-study-h2.html title="Constraints" color="altGray-900" %}
 
         {% include partials/case-study-p.html color="altGray-900" content="Working with APL and Amazon's design language was interesting. There were a particular number of constraints and limitations to overcome and adapt to. When it came to creating the steps in APL, you were quite limited with what you could do. For instance, being limited to Amazon's typography, no animations, limited styling capabilities." %}
+
+        {% include partials/case-study-h2.html title="Developing Voice UIs" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="Alongside our copywriter, I worked on designing and developing voice UIS to accompany our usecases to make them truly multimodal." %}
+
     </div>
+
+    {% include partials/figure.html directory="multimodal" image="voice-ui.png" alt="Alexa voice UI"  max-width="max-w-3xl"%}
+
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
+
+        {% include partials/case-study-p.html color="altGray-900" content="In conjunction with this, we also expanded our design system to support voice UIs, taking into account tone of voice, pacing, length etc for our 3 different persona groups." %}
+
+    </div>
+
 
 </section>
 

@@ -92,8 +92,9 @@ module.exports = {
             },
             a: {
               color: 'inherit',
+              textDecoration: 'underline',
               '&:hover': {
-                color: theme('colors.beryl-green'),
+                textDecoration: 'none',
               }
             },
           },

@@ -1,8 +1,7 @@
 ---
 layout: home
 meta:
-  desc:
-    'I'm a digital product designer from Belfast that likes solving problems with design and code.'
+  desc: "I'm a digital product designer from Belfast that likes solving problems with design and code."
 intro:
   title: 'Michael is a product designer, currently working at Sweepr'
   desc: 'I’m a digital product designer & front-end developer based in Belfast and currently working remotely  for Sweepr. I enjoy building things for the web -- with design & code.'
