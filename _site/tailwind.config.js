@@ -10,7 +10,7 @@ module.exports = {
   purge: {
     content: ['./**/*.html', './**/*.md'],
     options: {
-      whitelist: []
+      whitelist: ['scale-90']
     }
   },
   theme: {

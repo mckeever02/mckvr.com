@@ -2,8 +2,7 @@
 layout: 'about'
 title: 'About'
 meta:
-  desc:
-    'Michael McKeever is a multidisciplinary designer from Belfast'
+  desc: 'Michael McKeever is a product designer from Belfast'
 intro:
   title: |
     <span class="moveIn inline-block">I like building things,</span><br /><span class="moveIn text-neutralGray-700 inline-block antialiased font-medium font-edgy">with design & code.</span>
