@@ -1,6 +1,6 @@
 <header
   role="banner"
-  class="flex flex-col sm:flex-row items-center justify-between px-6 py-4 sm:py-8 md:px-8 lg:px-10 2xl:py-12 2xl:px-12 relative z-50"
+  class="flex flex-col sm:flex-row items-center justify-between px-6 py-6 sm:py-8 md:px-8 lg:px-10 2xl:py-12 2xl:px-12 relative z-50"
 >
   {% include partials/logo.html text="true" %}
   <nav class="sm:ml-auto pt-3 sm:pt-0">
@@ -22,7 +22,7 @@
       <li class="flex">
         <a
           href="{{ item.url }}"
-          class="inline-flex items-center px-1 text-sm sm:text-base 2xl:text-lg font-medium focus:outline-none transition duration-150 ease-in-out {{ highlight }}" {{ current }}
+          class="inline-flex items-center px-1 text-base 2xl:text-lg font-medium focus:outline-none transition duration-150 ease-in-out {{ highlight }}" {{ current }}
         >
           {{ item.text }}
         </a>

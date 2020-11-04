@@ -16,7 +16,7 @@ intro:
     title: "Intro"
     bgColor: "altGray-200"
     color: "altGray-1000"
-    content: "One of my main roles at Sweepr was leading the design for the mobile experience. This involved designing a customer support experience that user’s would use within their own homes to self-diagnose and fix their home technology problems."
+    content: "At a Dublin-based AI startup, I lead design of the mobile customer experience. We created an app that users would use in their homes to self-diagnose and fix their home technology problems."
 goals:
     - title: More value
       icon: 🎯

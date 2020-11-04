@@ -45,7 +45,7 @@ timeline:
 
 I'm Michael McKeever, a multidisciplinary designer from Ireland. Currently, I'm a senior product designer at <a class="text-white" href='https://sweepr.com'>Sweepr</a> where I lead the mobile design and cutomer experience. Before that, I was a freelance designer and front-end developer for 5 years.
 
-Working as both a designer and developer has taught me how to empathise and understand the needs of both disciplines. I think it's made me a better, more empathetic designer as a result.
+Working as both a designer and developer has taught me how to empathise and understand the needs of both disciplines. I think it's made me a better designer and developer as a result.
 
 Outside of work, I'm usually working on a <a href="/#side-projects">side-project</a> of some form or another. It helps me learn new skills at my own pace, without the constraints of budgets and timelines.
 

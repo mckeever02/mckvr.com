@@ -250,6 +250,7 @@ DEPENDENCIES
   github-pages
   jekyll (>= 3.7.4)
   jekyll-redirect-from
+  jekyll-sitemap
   jekyll-turbolinks
   nokogiri (>= 1.8.5)
   rubyzip (>= 1.2.2)

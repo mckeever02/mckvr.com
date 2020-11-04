@@ -9,3 +9,4 @@ gem "ffi", ">= 1.9.24"
 gem "nokogiri", ">= 1.8.5"
 gem 'jekyll-turbolinks'
 gem 'jekyll-redirect-from'
+gem 'jekyll-sitemap'

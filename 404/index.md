@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: 404
 title: 404
 permalink: /404/
 ---

@@ -5,7 +5,7 @@ layout: default
 <article class="mb-8 px-4 sm:px-6 lg:px-0">
   <div class="max-w-xl 2xl:max-w-2xl mx-auto mt-12 mb-24 sm:my-24 lg:my-40 xl:my-48 2xl:my-56">
     <h1 class="mb-4 md:mb-6 text-2xl sm:text-3xl lg:text-3-75xl 2xl:text-4xl leading-snug">
-      <span class="moveIn xs:inline-block">Michael is a digital product designer</span> <span class="moveIn xs:inline-block">from Belfast that <span class="relative"><span class="z-20 relative">likes to code</span><svg class="absolute z-10 text-white opacity-50 scribble transition-all duration-1000 ease-in" viewBox="0 0 209 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.608 4c56.793-.5 108.391-1.885 164.89-1.885 11.266 0 44.554-.497 33.753.573-7.215.714-16.784.333-24.214.613C152.533 4.335 138.663 5.639 111.009 6 78.136 6.43 33.069 8.5 2 8.5L207 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>.</span>
+      <span class="moveIn xs:inline-block">Michael is a digital product designer</span> <span class="moveIn xs:inline-block">from Belfast who <span class="relative"><span class="z-20 relative">likes to code</span><svg class="absolute z-10 text-white opacity-50 scribble transition-all duration-1000 ease-in" viewBox="0 0 209 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.608 4c56.793-.5 108.391-1.885 164.89-1.885 11.266 0 44.554-.497 33.753.573-7.215.714-16.784.333-24.214.613C152.533 4.335 138.663 5.639 111.009 6 78.136 6.43 33.069 8.5 2 8.5L207 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>.</span>
     </h1>
 
 
@@ -13,11 +13,7 @@ layout: default
 
   <div class="mx-auto">
     <section id="case-studies" class="pb-16 sm:pb-24 lg:pb-40 mx-auto">
-      <div class="max-w-2xl mx-auto">
-        <h2 class="font-medium font-edgy mb-6 sm:mb-8 lg:mb-10 scaleFadeIn">
-          <span class="opacity-50">01.</span> Case Studies
-        </h2>
-      </div>
+      {% include partials/home-section-h2.html title="Case studies" number="01" classes="scaleFadeIn" %}
 
       <ul class="grid xs:grid-cols-2 max-w-2xl mx-auto xl:max-w-3xl gap-6 sm:gap-8 md:gap-10">
         {% assign case-studies = site.case-studies | reverse %}
@@ -29,9 +25,8 @@ layout: default
     </section>
 
     <section id="side-projects" class="pb-16 sm:pb-24 lg:pb-40 mx-auto max-w-2xl">
-      <div class="max-w-2xl mx-auto">
-        <h2 class="font-medium font-edgy mb-6 sm:mb-8 lg:mb-10"><span class="opacity-50">02.</span> Side Projects</h2>
-      </div>
+      {% include partials/home-section-h2.html title="Side projects" number="02" %}
+
 
       {% for item in page.side_projects %}
       {% include partials/side-project.html %}
@@ -40,12 +35,9 @@ layout: default
     </section>
 
     <section id="contact" class="pb-12 sm:pb-24 lg:pb-40 mx-auto max-w-2xl">
-      <div class="max-w-2xl mx-auto">
-        <h2 class="font-medium font-edgy mb-6 sm:mb-8 lg:mb-10"><span class="opacity-50">03.</span> Contact</h2>
-      </div>
+      {% include partials/home-section-h2.html title="Contact" number="03" %}
 
       <div class="flex flex-row items-center">
-
         <a
           href="mailto:michael@mckvr.com"
           data-tilt

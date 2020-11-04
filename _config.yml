@@ -16,11 +16,19 @@ exclude: [
   'node_modules'
 ]
 
+defaults:
+  -
+    scope:
+      path: "*.pdf"
+    values:
+      sitemap: false
+
 permalink: pretty
 
 plugins:
   - jekyll-turbolinks
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 collections:
   case-studies:

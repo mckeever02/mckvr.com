@@ -94,7 +94,7 @@ module.exports = {
               color: 'inherit',
               textDecoration: 'underline',
               '&:hover': {
-                textDecoration: 'none',
+                opacity: '.75'
               }
             },
           },
