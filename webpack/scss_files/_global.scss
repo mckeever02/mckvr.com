@@ -32,6 +32,10 @@
   a {
     @apply transition duration-300;
   }
+  li::before {
+    background-color: theme('color.altGray.900') !important;
+    @apply bg-altGray-900;
+  }
 }
 
 .scroller {

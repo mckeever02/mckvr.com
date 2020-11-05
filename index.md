@@ -32,4 +32,5 @@ redirect_from:
     - /projects/flyte/
     - /projects/tryingtowork/
     - /projects/usfolk/
+    - /case-studies/
 ---

@@ -1,0 +1,243 @@
+---
+layout: case-study
+---
+{%- if page.intro -%}
+  {% include partials/case-study-intro.html %}
+{%- endif -%}
+
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-100' textColor='altGray-900' %}">
+
+    <div class="{% include classes/case-study-text-container.html %}">
+        <div class="{% include classes/prose.html %} mb-6">
+
+            {% include partials/case-study-h2.html title="The problem" %}
+
+            {% include partials/case-study-p.html content="When I first joined Sweepr, we had four web apps:" %}
+        </div>
+
+        <ul class="mb-6 pt-6 sm:mb-10 md:mb-14 lg:mb-16">
+            {%- for item in page.tools -%}
+            <li class="rounded-lg flex flex-row bg-white text-altGray-900 shadow-lg sm:shadow-xl space-x-4 items-center p-4 mb-6 sm:mb-10 last:mb-0" data-tilt data-tilt-max="5" data-tilt-scale="1.03" data-tilt-speed="750" data-tilt-perspective="1000">
+                <div class="rounded-lg p-4 bg-{{item.color}}-600 bg-opacity-10">
+                    <svg class="w-10 h-10 text-{{item.color}}-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">{{item.icon}}</svg>
+                </div>
+
+                <div>
+                    <h3 class="font-medium font-edgy text-2xl">{{item.title}}</h3>
+                    <p class="text-1xl opacity-75">{{item.description}}</p>
+                </div>
+            </li>
+            {%- endfor -%}
+
+        </ul>
+
+        <div class="{% include classes/prose.html %}">
+            {% include partials/case-study-p.html content="The problems here were the classic case of designing multiple products without a central design system:" %}
+
+            <ul class="{% include classes/case-study-list.html %}">
+                <li><span class="{% include classes/highlight.html %}">Inconsistent styling</span>, design language & patterns across the different products</li>
+                <li>More time spent on designing new components, patterns and <span class="{% include classes/highlight.html %}">less on the actual problem</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-900' textColor='altGray-900' %}">
+
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
+        {% include partials/case-study-h2.html title="User testing & research" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content='Working collaboratively with a researcher, we quantified the impact of usability problems to prioritize high-impact issues that would interfere with users’ desire to use the mobile app.' %}
+
+    </div>
+
+    {% include partials/figure.html directory="sweeprv2" image="usability-chart.svg" alt="Usability chart" max-width="max-w-4xl"  %}
+
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
+        {% include partials/case-study-p.html color="altGray-900" content='To rule out making changes based on either low severity or low frequency, only issues that scored high to moderate impact* were considered.' %}
+
+        {% include partials/case-study-p.html color="altGray-900" content='*Impact score is <span class="font-medium">severity of the usability error (1 &ndash; 4)</span> multiplied by <span class="font-medium">frequency of the usability error</span>' %}
+
+    </div>
+
+    <figure class="mx-auto max-w-5xl py-6 sm:py-12 px-4 xs:px-6 lg:px-0">
+        <img class="shadow-xl md:shadow-2xl" loading="lazy" src="/images/sweeprv2/user-testing.png" alt="User testing">
+        <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">An "Avoidant" user testing session I sat in on as a note-taker</figcaption>
+    </figure>
+
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
+        {% include partials/case-study-p.html color="altGray-900" content="One of our highest impact issues was users’ reluctance to use the voice interface to identify technology problems in their home. Our users said:" %}
+    </div>
+
+<div class="bg-{{page.color}} py-12 sm:py-24 md:py-32 lg:py-48 my-6 sm:my-24 md:my-32 px-6 sm:px-12 text-altGray-900 flex flex-col lg:flex-row items-start space-y-16 lg:space-y-0 lg:space-x-16 text-center">
+    {% include partials/blockquote.html classes="flex-1" x="-5" text="I'd probably type it because when I speak it, it always has a hard time recognising my voice." %}
+
+    {% include partials/blockquote.html classes="-mt-12 flex-1" text="It's concerning because of all the hacking stuff like listening & spying." %}
+
+    {% include partials/blockquote.html classes="flex-1" x="5" text="I wouldn't use it because I don't know how articulate it is, like if I say a codeword if it would actually understand." %}
+</div>
+
+
+    <div class="{% include classes/case-study-text-container.html %}">
+        <div class="bg-altGray-200 text-altGray-900 text-lg sm:text-xl rounded-lg px-4 py-4 mb-12 md:mb-24">
+            <p>* Impact score is <span class="font-medium">severity (1 &ndash; 4)</span> multiplied by <span class="font-medium">frequency</span></p>
+        </div>
+    </div>
+
+    <div class="max-w-screen-lg space-y-12 lg:space-x-12 lg:space-y-none mx-auto flex flex-col lg:flex-row px-4">
+
+        <div class="lg:flex-none">
+            <img src="/images/sweeprv2/how-can-i-help.png" loading="lazy" width="375" height="812" alt="Sweepr Utterance page">
+        </div>
+
+
+        <div class="{% include classes/prose.html %}">
+
+            {% include partials/case-study-h2.html title='&ldquo;WTF do I say?&rdquo;' color="altGray-900" %}
+
+            {% include partials/case-study-p.html color="altGray-900" content="A lack of visual prompts for utterances can lead to cognitive delay for users on how to interact with this channel." %}
+
+            {% include partials/case-study-h2.html title='&ldquo;WTF am I looking at?&rdquo;' color="altGray-900" %}
+
+            {% include partials/case-study-p.html color="altGray-900" content="Low user familiarity with this type of support page could lead to even more cognitive confusion." %}
+
+            {% include partials/case-study-h2.html title='&ldquo;WTF do I do now?&rdquo;' color="altGray-900" %}
+
+            {% include partials/case-study-p.html color="altGray-900" content="The non-modular design and sheer size that this one feature inhibits on the screen means that adding new features or client requirements can be difficult and needs to be 'shoed-in'. This hinders improvements and features that can be added to this page." %}
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-300' textColor='altGray-900' %}">
+    <div class="{% include classes/case-study-text-container.html %}">
+        {% include partials/case-study-h2.html title="Goals of the redesign" color="altGray-900" %}
+
+        <div class="mt-12">
+            {% for item in page.goals %}
+            <div class="rounded-lg bg-white shadow-lg sm:shadow-xl p-6 mb-12 sm:mb-16 last:mb-0"
+            data-tilt
+            data-tilt-max="5"
+            data-tilt-scale="1.03"
+            data-tilt-speed="750"
+            data-tilt-perspective="1000"
+            >
+                <div class="flex flex-row space-x-3 items-center">
+                    <span class="text-3xl sm:text-4xl">{{item.icon}}</span>
+                    <h3 class="text-altGray-900 font-medium text-1xl sm:text-2xl">{{item.title}}</h3>
+                </div>
+                <p class="text-altGray-700 leading-relaxed sm:text-lg sm:text-xl">{{item.content}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='white' textColor='altGray-900' %}">
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
+        {% include partials/case-study-h2.html title="Persona onboarding" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="Currently, we determine the persona of the user (avoidant, optimistic or confident) based on a technical confidence question rating from 1-7 on the likert scale. (You can read more about our personas <a href='/case-studies/multimodal-design-system#persona-based-design'>here.</a>)" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="This has generally been a good indicator for determining a user's technical confidence and therefore their persona." %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="However, this question usually gets push back from the client (wondering how we determine this with just one question) and from the user (wondering why this question is being asked)." %}
+
+    </div>
+
+    {% include partials/figure.html alt="Sweepr persona onboarding" directory="sweeprv2" image="onboarding.jpg" width="2500" height="1566" %}
+
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
+
+        {% include partials/case-study-p.html color="altGray-900" content="Rather than trying to gauge the technical confidence of the user through a likert scale question I instead wanted to first, show them each of the levels and then explicitly ask them which they would like, reinforcing that they can change this at anytime." %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="I wanted to be upfront and honest with the user. To reference one of Dieter Rams' 10 Commandments of Good Design: <span class='font-medium font-edgy bg-yellow-300'>Good design is honest.</span>" %}
+
+    </div>
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-300' textColor='altGray-900' %}">
+    <div class="{% include classes/case-study-text-container.html %}">
+        {% include partials/case-study-h2.html title="New utterance page" color="altGray-900" %}
+
+    </div>
+
+    {% include partials/figure.html alt="Sweepr utterance page design" directory="sweeprv2" image="new-utterance-page.jpg" width="2500" height="1224" %}
+
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
+
+        {% include partials/case-study-h2.html title="De-emphasise voice" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="Referring back to the user testing &mdash; most users understandably didn't want to use voice. Therefore, the emphasis on voice has been minimised, with the 'I'm listening' page now available by pressing the microphone button on the text input." %}
+
+        {% include partials/case-study-h2.html title="Context framing" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="Again, user testing showed that users needed prompting on what to say or type. Now, available commands are positioned throughout the app, as well as displaying 'Today's most common issues' to provide context and time-aware interactions." %}
+
+        {% include partials/case-study-h2.html title="Interactions in progress" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="Currently, once a user exits out of a self-help interaction they need to start over. There's no going back to where they left off. This could be a pain-point for larger interactions such as installing a router. I incorporated in a 'in progress' section so users could pick up where they left off."%}
+    </div>
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='white' textColor='altGray-900' %}">
+    <div class="{% include classes/case-study-text-container.html %}">
+        {% include partials/case-study-h2.html title="The Dashboard" color="altGray-900" %}
+    </div>
+
+    {% include partials/video.html video="sweeprv2-dashboard.mp4" classes="max-w-screen-xl mx-auto py-6 sm:py-12" controls="false" attributes="playsinline loop autoplay muted" %}
+
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
+
+        {% include partials/case-study-h2.html title="More modularity" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="A new dashboard was designed to bring a more functional and modular approach to our service. Now, rather than trying to 'shoe-in' client-specific features, customisable cards could be reordered, reworked or removed as necessary." %}
+
+        {% include partials/case-study-h2.html title="More proactive" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="The 'feature-piece' of the new dashboard design is the Network Summary, which provides a quick summary on how the user's network is performing, as well as network performance stats." %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="The general idea is to move away from our current 'reactive' approach (waiting for user to have a problem) and more into a 'proactive' approach (routintely diagnosing before it becomes a problem)." %}
+
+    </div>
+
+    {% include partials/figure.html alt="Sweepr dashboard alterations" directory="sweeprv2" image="dashboard-alterations.jpg" width="2500" height="1380" %}
+
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='altGray-200' textColor='altGray-900' %}">
+    <div class="{% include classes/case-study-text-container.html %}">
+        {% include partials/case-study-h2.html title="Your Support" color="altGray-900" %}
+    </div>
+
+    {% include partials/video.html video="your-support-v2.mp4" classes="max-w-screen-xl mx-auto py-6 sm:py-12" controls="false" attributes="playsinline loop autoplay muted" %}
+
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
+
+        {% include partials/case-study-h2.html title="Giving power to the user" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="I wanted to reflect to the user that this isn't just normal support it's support that is personalised and catered towards them." %}
+
+    </div>
+
+    {% include partials/figure.html alt="Sweepr Questions dashboard" directory="sweeprv2" image="your-questions.jpg" width="2500" height="1285" %}
+
+</section>
+
+<section class="{% include classes/case-study-section.html bgColor='lavender' textColor='altGray-900' %}">
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
+
+        {% include partials/case-study-h2.html title="Interactive prototype" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="I created a medium-fidelity prototype in Figma to demonstrate some of the interactions and flow of the product." %}
+
+    </div>
+
+    <iframe class="w-full max-w-screen-xl min-h-screen h-full my-12 mx-auto px-4 sm:px-6 lg:px-0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNnnUmR6wxtFBwXF0cmnx9u%2FHome-Phone-Application-1.6-Copy%3Fnode-id%3D1088%253A1%26viewport%3D486%252C56%252C0.07677784562110901%26scaling%3Dscale-down" allowfullscreen></iframe>
+
+</section>
