@@ -35,6 +35,6 @@
     "jekyll-server": "bundle exec jekyll serve --incremental --watch",
     "webpack-watch": "webpack -w",
     "webpack": "webpack",
-    "build": "NODE_ENV=production yarn webpack"
+    "build": "NODE_ENV=production JEKYLL_ENV=production bundle exec yarn webpack"
   }
 }
