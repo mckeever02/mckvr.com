@@ -17,8 +17,15 @@
           </button>
         </div>
 
-        <footer class="flex items-center justify-center bg-altGray-900">
+        <footer class="flex flex-col items-center justify-center bg-altGray-900">
+
           {% include partials/logo.html classes="p-6" %}
+
+          {% unless page.url contains 'case-studies' %}
+          <div id="wcb" class="wcb carbonbadge p-6"></div>
+          <script src="https://unpkg.com/website-carbon-badges@^1/b.min.js" defer></script>
+          {% endunless %}
+
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
