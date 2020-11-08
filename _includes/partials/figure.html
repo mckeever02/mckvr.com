@@ -1,3 +1,12 @@
 <figure class="{% unless include.max-width %}max-w-screen-xl{% endunless %} py-6 sm:py-12 md:py-24 mx-auto {{include.classes}}{% if include.max-width %} {{include.max-width}}{% endif %}">
-    <img class="w-full" width="{{include.width}}" height="{{include.height}}" loading="lazy" src="/images/{{include.directory}}/{{include.image}}" alt="{{include.alt}}">
+    <picture class="w-full">
+        {%- unless include.type == 'svg' -%}
+        <source type="image/webp" data-srcset="/images/{{include.directory}}/{{include.image}}.webp" />
+        <source type="image/{% if include.type == 'jpg' %}jpeg{% else %}{{include.type}}{% endif %}" data-srcset="/images/{{include.directory}}/{{include.image}}.{{include.type}}" />
+        {%- endunless -%}
+        <img class="w-full lazy" width="{{include.width}}" height="{{include.height}}" data-src="/images/{{include.directory}}/{{include.image}}.{{include.type}}" alt="{{include.alt}}">
+    </picture>
+    {%- if include.caption -%}
+    <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">{{include.caption}}</figcaption>
+    {%- endif -%}
 </figure>

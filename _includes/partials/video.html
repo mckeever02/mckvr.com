@@ -1,5 +1,5 @@
 <figure class="{{include.classes}}">
-    <video class="focus:outline-none w-full" {% if include.poster %}poster="/images/{{include.poster}}"{%endif%} {%- if include.controls != 'false' -%}controls{%- endif -%} {{include.attributes}} src="/videos/{{include.video}}">
+    <video class="focus:outline-none w-full lazy" {% if include.poster %}poster="/images/{{include.poster}}"{%endif%} {%- if include.controls != 'false' -%}controls{%- endif -%} {{include.attributes}} data-src="/videos/{{include.video}}">
     </video>
     {%- if include.caption -%}
     <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">{{include.caption}}</figcaption>

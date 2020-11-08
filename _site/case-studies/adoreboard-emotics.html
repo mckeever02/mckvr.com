@@ -6,7 +6,7 @@
 
 <title>Redesigning an emotion analysis platform &middot; Michael McKeever | Product Designer </title>
 
-<link rel="stylesheet" href="/css/main.css?1604848794">
+<link rel="stylesheet" href="/css/main.css?1604876362">
 <link rel="canonical" href="http://localhost:4000/case-studies/adoreboard-emotics">
 <link rel="alternate" type="application/rss+xml" title="Michael McKeever | Product Designer" href="http://localhost:4000/feed.xml">
 
@@ -112,7 +112,12 @@
         </h1>
       </div>
       <div class="absolute opacity-50 md:opacity-75 lg:opacity-100 bottom-0 z-10 right-0 w-full md:w-2/3 xl:w-1/2 h-1/2">
-        <img src="/images/adoreboard-cover.jpg" alt="Cover photo for Redesigning an emotion analysis platform case study by Michael McKeever">
+        <picture class="shadow-lg lg:shadow-xl xl:shadow-2xl">
+            <source type="image/webp" data-srcset="/images/adoreboard-cover.webp" />
+            <source type="image/jpeg" data-srcset="/images/adoreboard-cover.png" />
+            <img class="lazy" src="/images/adoreboard-cover-lq.jpg" data-src="/images/adoreboard-cover.jpg" alt="Cover photo for Redesigning an emotion analysis platform case study by Michael McKeever">
+        </picture>
+
       </div>
     </div>
   </div>
@@ -443,6 +448,7 @@
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.1.3/lazyload.min.js"></script>
         <script type="text/javascript" src="/js/bundle.js" charset="utf8" ></script>
     </body>
 </html>

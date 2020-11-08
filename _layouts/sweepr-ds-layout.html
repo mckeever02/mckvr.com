@@ -51,7 +51,7 @@ layout: case-study
         {% include partials/case-study-p.html content="We carried out a design audit on all of the existing products to get a sense of the polarity and inconsistencies between each of them." %}
     </div>
 
-    {% include partials/figure.html directory="oasis-ds" image="design-audit@2x.jpg" alt="Design Audit" max-width="max-w-screen-xl" width="1024" height="586"  %}
+    {% include partials/figure.html directory="oasis-ds" image="design-audit@2x" type="jpg" alt="Design Audit" max-width="max-w-screen-xl" width="1024" height="586"  %}
 
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
 
@@ -72,7 +72,7 @@ layout: case-study
         {% include partials/case-study-p.html content="Eventually, we settled on using <a href='https://rsms.me/inter/'>Inter</a> for its versatility, readability at smaller font sizes, and its numerous OpenType features." %}
     </div>
 
-    {% include partials/figure.html directory="oasis-ds" width="1640" height="665" image="inter.png" alt="Inter font family" max-width="max-w-5xl"  %}
+    {% include partials/figure.html directory="oasis-ds" width="1640" height="665" image="inter" type="png" alt="Inter font family" max-width="max-w-5xl"  %}
 
 </section>
 
@@ -93,7 +93,7 @@ layout: case-study
 
     </div>
 
-    {% include partials/figure.html directory="oasis-ds" image="colours.png" alt="Oasis Design System Colours" max-width="max-w-auto" classes="w-full"  %}
+    {% include partials/figure.html directory="oasis-ds" image="colours" type="png" alt="Oasis Design System Colours" max-width="max-w-auto" classes="w-full"  %}
 
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %} text-altGray-900">
 
@@ -121,8 +121,13 @@ layout: case-study
     <div class="{% include classes/case-study-scroller.html%}">
         {%- for item in page.components -%}
         <figure class="flex-none w-11/12 md:w-3/4 lg:w-5/12 px-4 sm:px-6 md:px-8 xl:px-12">
-            <img class="shadow-lg" loading="lazy" src="/images/oasis-ds/{{item | slugify}}.png" alt="{{item}}">
+            <picture>
+                <source type="image/webp" width="604" height="797" data-srcset="/images/oasis-ds/{{item | slugify}}.webp" />
+                <source type="image/png" width="604" height="797" data-srcset="/images/oasis-ds/{{item | slugify}}.png" />
+                <img class="w-full lazy shadow-lg" width="604" height="797" data-src="/images/oasis-ds/{{item | slugify}}.png" alt="{{item}}">
+            </picture>
         </figure>
+
         {%- endfor -%}
     </div>
 
@@ -148,8 +153,13 @@ layout: case-study
     <div class="{% include classes/case-study-scroller.html%}">
         {%- for i in (1..5) -%}
         <figure class="flex-none w-11/12 md:w-3/4 lg:w-7/12 px-4 sm:px-6 md:px-8 xl:px-12">
-            <img class="shadow-lg lg:shadow-xl xl:shadow-2xl" loading="lazy" src="/images/oasis-ds/documentation-{{i}}.png" alt="Oasis Design System Documentation" width="1680" height="1050">
+            <picture>
+                <source type="image/webp" width="1680" height="1050" data-srcset="/images/oasis-ds/documentation-{{i}}.webp" />
+                <source type="image/png" width="1680" height="1050" data-srcset="/images/oasis-ds/documentation-{{i}}.png" />
+                <img class="w-full lazy shadow-lg lg:shadow-xl xl:shadow-2xl" width="1680" height="1050" data-src="/images/oasis-ds/documentation-{{i}}.png" alt="Oasis Design System Documentation">
+            </picture>
         </figure>
+
         {%- endfor -%}
     </div>
 </section>
@@ -162,7 +172,7 @@ layout: case-study
         {% include partials/case-study-p.html content="The first product I started to work on after we had created the design system was the <span class='font-edgy font-medium bg-yellow-300'>Interaction Editor</span>." %}
     </div>
 
-    {% include partials/figure.html directory="oasis-ds" image="ie-editor-preview.jpg" alt="Sweepr Interaction Editor Preview" max-width="max-w-screen-xl" %}
+    {% include partials/figure.html directory="oasis-ds" image="ie-editor-preview" type="jpg" alt="Sweepr Interaction Editor Preview" max-width="max-w-screen-xl" %}
 
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %} text-altGray-900">
 
@@ -173,15 +183,17 @@ layout: case-study
     <div class="{% include classes/case-study-scroller.html%}">
         {%- for i in (1..5) -%}
         <figure class="flex-none w-11/12 md:w-3/4 lg:w-7/12 px-4 sm:px-6 md:px-8 xl:px-12">
-            <img class="shadow-lg lg:shadow-xl xl:shadow-2xl" loading="lazy" src="/images/oasis-ds/ie-editor-{{i}}.png" alt="Interaction editor" width="2400" height="1600">
+            <picture>
+                <source type="image/webp" data-srcset="/images/oasis-ds/ie-editor-{{i}}.webp" />
+                <source type="image/png" data-srcset="/images/oasis-ds/ie-editor-{{i}}.png" />
+                <img class="w-full lazy shadow-lg lg:shadow-xl xl:shadow-2xl" width="2400" height="1600" data-src="/images/oasis-ds/ie-editor-{{i}}.png" alt="Interaction editor">
+            </picture>
         </figure>
         {%- endfor -%}
     </div>
 
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %} text-altGray-900">
-
         {% include partials/case-study-p.html content="This meant more time could be shifted towards higher complexity tasks such as UX thinking, structure and design." %}
-
     </div>
 
 </section>

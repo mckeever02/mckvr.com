@@ -20,3 +20,7 @@ let scrollpos = window.scrollY
     else { remove_class_on_scroll() }
 
   })
+
+var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+});

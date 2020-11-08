@@ -22,7 +22,12 @@ layout: default
         </h1>
       </div>
       <div class="absolute opacity-50 md:opacity-75 lg:opacity-100 bottom-0 z-10 right-0 w-full md:w-2/3 xl:w-1/2 h-1/2">
-        <img src="/images/{{cover}}" alt="Cover photo for {{title}} case study by Michael McKeever">
+        <picture class="shadow-lg lg:shadow-xl xl:shadow-2xl">
+            <source type="image/webp" data-srcset="/images/{{cover}}.webp" />
+            <source type="image/jpeg" data-srcset="/images/{{cover}}.png" />
+            <img class="lazy" src="/images/{{cover}}-lq.jpg" data-src="/images/{{cover}}.jpg" alt="Cover photo for {{title}} case study by Michael McKeever">
+        </picture>
+
       </div>
     </div>
   </div>

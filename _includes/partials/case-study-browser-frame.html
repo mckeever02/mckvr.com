@@ -2,7 +2,11 @@
     <div class="shadow-xl md:shadow-2xl 2xl:max-w-screen-xl">
         <img src="/images/app-bar.png">
         <div class="overflow-y-auto max-h-screen rounded rounded-t-none">
-            <img loading="lazy" src="/images/multimodal/{{include.image}}" alt="{{include.alt}}">
+            <picture>
+                <source type="image/webp" data-srcset="/images/{{include.directory}}/{{include.image}}.webp" />
+                <source type="image/{% if include.type == 'jpg' %}jpeg{% else %}{{include.type}}{% endif %}" data-srcset="/images/{{include.directory}}/{{include.image}}.{{include.type}}" />
+                <img class="w-full lazy" data-src="/images/{{include.directory}}/{{include.image}}.{{include.type}}" alt="{{include.alt}}">
+            </picture>
         </div>
     </div>
 </div>

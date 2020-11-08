@@ -33,20 +33,15 @@ layout: case-study
 
     </div>
 
-    {% include partials/figure.html directory="sweeprv2" image="usability-chart.svg" alt="Usability chart" max-width="max-w-4xl"  %}
+    {% include partials/figure.html directory="sweeprv2" image="usability-chart" type="svg" alt="Usability chart" max-width="max-w-4xl"  %}
 
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
         {% include partials/case-study-p.html color="altGray-900" content='To rule out making changes based on either low severity or low frequency, only issues that scored high to moderate impact* were considered.' %}
 
-
         {% include partials/case-study-p.html color="altGray-900" content='<span class="bg-yellow-300 font-medium font-edgy">*Impact score is severity of the usability error (1 &ndash; 4) multiplied by frequency of the usability error</span>' %}
-
     </div>
 
-    <figure class="mx-auto max-w-5xl py-6 sm:py-12 px-4 xs:px-6 lg:px-0">
-        <img class="shadow-xl md:shadow-2xl" loading="lazy" src="/images/sweeprv2/user-testing.png" alt="User testing">
-        <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">An "Avoidant" user testing session I sat in on as a note-taker</figcaption>
-    </figure>
+    {% include partials/figure.html directory="sweeprv2" image="user-testing" type="png" alt="User testing" max-width="max-w-5xl" caption="An Avoidant user testing session I sat in on as a note-taker"  %}
 
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
         {% include partials/case-study-p.html color="altGray-900" content="One of our highest impact issues was users’ reluctance to use the voice interface to identify technology problems in their home. Our users said:" %}
@@ -134,7 +129,7 @@ layout: case-study
 
     </div>
 
-    {% include partials/figure.html alt="Sweepr persona onboarding" directory="sweeprv2" image="onboarding.jpg" width="2500" height="1566" %}
+    {% include partials/figure.html alt="Sweepr persona onboarding" directory="sweeprv2" image="onboarding" type="jpg" width="1280" height="800" %}
 
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
 
@@ -151,7 +146,7 @@ layout: case-study
 
     </div>
 
-    {% include partials/figure.html alt="Sweepr utterance page design" directory="sweeprv2" image="new-utterance-page.jpg" width="2500" height="1224" %}
+    {% include partials/figure.html alt="Sweepr utterance page design" directory="sweeprv2" image="new-utterance-page" type="jpg" width="2500" height="1224" %}
 
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
 
@@ -190,7 +185,7 @@ layout: case-study
 
     </div>
 
-    {% include partials/figure.html alt="Sweepr dashboard alterations" directory="sweeprv2" image="dashboard-alterations.jpg" width="2500" height="1380" %}
+    {% include partials/figure.html alt="Sweepr dashboard alterations" directory="sweeprv2" image="dashboard-alterations" type="jpg" width="2500" height="1380" %}
 
 </section>
 
@@ -209,7 +204,7 @@ layout: case-study
 
     </div>
 
-    {% include partials/figure.html alt="Sweepr Questions dashboard" directory="sweeprv2" image="your-questions.jpg" width="2500" height="1285" %}
+    {% include partials/figure.html alt="Sweepr Questions dashboard" directory="sweeprv2" image="your-questions" type="jpg" width="2500" height="1285" %}
 
 </section>
 
@@ -222,6 +217,6 @@ layout: case-study
 
     </div>
 
-    <iframe class="w-full max-w-screen-xl min-h-screen h-full my-12 mx-auto px-4 sm:px-6 lg:px-0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNnnUmR6wxtFBwXF0cmnx9u%2FHome-Phone-Application-1.6-Copy%3Fnode-id%3D1088%253A1%26viewport%3D486%252C56%252C0.07677784562110901%26scaling%3Dscale-down" allowfullscreen></iframe>
+    <iframe class="lazy w-full max-w-screen-xl min-h-screen h-full my-12 mx-auto px-4 sm:px-6 lg:px-0" data-src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNnnUmR6wxtFBwXF0cmnx9u%2FHome-Phone-Application-1.6-Copy%3Fnode-id%3D1088%253A1%26viewport%3D486%252C56%252C0.07677784562110901%26scaling%3Dscale-down" allowfullscreen></iframe>
 
 </section>

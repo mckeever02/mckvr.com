@@ -2,7 +2,7 @@
 tags: "case-study"
 title: "Redesigning an emotion analysis platform"
 thumb: "adoreboard-thumb-2.jpg"
-cover: "adoreboard-cover.jpg"
+cover: "adoreboard-cover"
 skills: ["Product design", "UX"]
 year: "2018&mdash;2019"
 platforms: "Web"

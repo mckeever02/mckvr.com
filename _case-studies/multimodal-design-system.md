@@ -2,7 +2,7 @@
 tags: 'case-study'
 title: 'Building a multimodal design system'
 thumb: 'sweepr-multimodal-ds-thumb.jpg'
-cover: 'sweepr-multimodal-ds-cover.jpg'
+cover: 'sweepr-multimodal-ds-cover'
 skills: ['Design systems', 'UX Engineering']
 year: "2019&mdash;2020"
 platforms: "Mobile, Alexa Show"

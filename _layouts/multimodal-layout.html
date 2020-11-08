@@ -28,7 +28,7 @@ layout: case-study
         {% include partials/case-study-p.html content="This video, that I prototyped & art directed, shows an example interaction of Sweepr helping to solve a problem with Zoom." %}
     </div>
 
-    {% include partials/video.html video="nuvo-zoom-buffering-confident.mp4" classes="max-w-6xl mx-auto py-12" %}
+    {% include partials/video.html video="nuvo-zoom-buffering-confident.mp4" poster="zoom-is-buffering-poster.jpg" classes="max-w-6xl mx-auto py-12" %}
 
 </section>
 
@@ -50,7 +50,7 @@ layout: case-study
     {% include partials/case-study-h2.html title="The component library tree" %}
   </div>
 
-    {% include partials/figure.html alt="Design system tree" directory="multimodal" image="design-system-map@2x.png" width="1280" height="753" %}
+    {% include partials/figure.html alt="Design system tree" directory="multimodal" image="design-system-map@2x" type="png" width="1280" height="753" %}
 
   <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %} text-altGray-900">
     {% include partials/case-study-p.html color="altGray-900" content="In Figma, our design tool of choice at Sweepr, you can create shared component libraries that are accessible within other libraries." %}
@@ -62,7 +62,7 @@ layout: case-study
     {% include partials/case-study-p.html color="altGray-900" content="The parent or main library, our design system called 'Oasis', would contain components that could be used globally such as typography, colors, spacing & layout." %}
   </div>
 
-  {% include partials/figure.html alt="Oasis Design system preview" directory="multimodal" image="oasis-ds-preview@2x.png" width="1280" height="674" %}
+  {% include partials/figure.html alt="Oasis Design system preview" directory="multimodal" image="oasis-ds-preview@2x" type="png" width="1280" height="674" %}
 
   <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
 
@@ -72,7 +72,7 @@ layout: case-study
 
   </div>
 
-  {% include partials/figure.html alt="Mobile Design system preview" directory="multimodal" image="mobile-ds-preview.jpg" width="1280" height="726" %}
+  {% include partials/figure.html alt="Mobile Design system preview" directory="multimodal" image="mobile-ds-preview" type="jpg" width="1280" height="726" max-width="max-w-screen-2xl" %}
 
   <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %} text-altGray-900">
     {% include partials/case-study-h2.html title="Customer libraries" color="altGray-900" %}
@@ -80,9 +80,7 @@ layout: case-study
     {% include partials/case-study-p.html color="altGray-900" content="These component libraries would be used for 'overwriting' components from the parent library. For instance, overwriting buttons or typography to fit the brand guidelines of the customer." %}
   </div>
 
-  <div class="mx-auto py-6 sm:my-12">
-    <img loading="lazy" src="/images/multimodal/customers.png" alt="Customer design systems">
-  </div>
+  {% include partials/figure.html alt="Customer design systems" directory="multimodal" image="customers" type="png" max-width="max-w-screen-2xl" %}
 
   <div class="{% include classes/case-study-text-container.html %}">
     <div class="prose lg mb-6 sm:mb-12">
@@ -106,12 +104,20 @@ layout: case-study
 
     <div class="{% include classes/case-study-scroller.html%}">
         <figure class="flex-none w-11/12 md:w-3/4 px-4 sm:px-6 md:px-8">
-        <img loading="lazy" src="/images/multimodal/step-layouts-wireframes.png" alt="Sweepr step layouts">
-        <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">The layout template wireframes</figcaption>
+          <picture class="shadow-lg lg:shadow-xl xl:shadow-2xl">
+            <source type="image/webp" data-srcset="/images/multimodal/step-layouts-wireframes.webp" />
+            <source type="image/png" data-srcset="/images/multimodal/step-layouts-wireframes.png" />
+            <img class="w-full lazy" data-src="/images/multimodal/step-layouts-wireframes.png" alt="Sweepr step layouts">
+          </picture>
+          <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">The layout template wireframes</figcaption>
         </figure>
         <figure class="flex-none w-11/12 md:w-3/4 px-4 sm:px-6 md:px-8">
-        <img loading="lazy" src="/images/multimodal/step-layouts-content.jpg" alt="Sweepr step layouts">
-        <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">Using the layout templates 'in the wild'.</figcaption>
+          <picture class="shadow-lg lg:shadow-xl xl:shadow-2xl">
+            <source type="image/webp" data-srcset="/images/multimodal/step-layouts-content.webp" />
+            <source type="image/png" data-srcset="/images/multimodal/step-layouts-content.png" />
+            <img class="w-full lazy" data-src="/images/multimodal/step-layouts-content.png" alt="Sweepr step layouts">
+          </picture>
+          <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">Using the layout templates 'in the wild'.</figcaption>
         </figure>
     </div>
 
@@ -227,7 +233,11 @@ layout: case-study
     <div class="{% include classes/case-study-scroller.html%}">
         {%- for item in page.alexa -%}
         <figure class="flex-none w-11/12 sm:w-2/3 xl:w-7/12 px-4 sm:px-6 md:px-8">
-            <img class="shadow-xl md:shadow-2xl" loading="lazy" src="/images/multimodal/{{item.image}}.png" alt="{{item.alt}}">
+            <picture class="shadow-lg lg:shadow-xl xl:shadow-2xl">
+              <source type="image/webp" data-srcset="/images/multimodal/{{item.image}}.webp" />
+              <source type="image/png" data-srcset="/images/multimodal/{{item.image}}.png" />
+              <img class="w-full lazy shadow-xl md:shadow-2xl" data-src="/images/multimodal/{{item.image}}.png" alt="{{item.alt}}">
+            </picture>
             <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">{{item.caption}}</figcaption>
         </figure>
         {%- endfor -%}
@@ -244,7 +254,7 @@ layout: case-study
 
     </div>
 
-    {% include partials/figure.html directory="multimodal" image="voice-ui.png" alt="Alexa voice UI"  max-width="max-w-3xl" %}
+    {% include partials/figure.html directory="multimodal" image="voice-ui" type="png" alt="Alexa voice UI"  max-width="max-w-3xl" %}
 
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
 
@@ -273,7 +283,7 @@ layout: case-study
         {% include partials/case-study-h2.html title="Oasis documentation website" %}
     </div>
 
-    {%- include partials/case-study-browser-frame.html image="oasis-home.jpg" alt="Oasis Homepage" classes="mt-6 md:mt-10 xl:mt-12" -%}
+    {%- include partials/case-study-browser-frame.html directory="multimodal" image="oasis-home" type="jpg" alt="Oasis Homepage" classes="mt-6 md:mt-10 xl:mt-12" -%}
 
     <div class="{% include classes/case-study-text-container.html %} my-12 sm:my-24 {% include classes/prose.html %} text-altGray-900">
         {% include partials/case-study-p.html content="I created a comphrehensive documentation website to showcase and explain the Oasis design system, its components and the step types." %}
@@ -289,7 +299,7 @@ layout: case-study
         </ul>
     </div>
 
-    {%- include partials/case-study-browser-frame.html image="oasis-diagnostic-step.jpg" alt="Oasis Diagnostic Steps Page" -%}
+    {%- include partials/case-study-browser-frame.html directory="multimodal" image="oasis-diagnostic-step" type="jpg" alt="Oasis Diagnostic Steps Page" -%}
 
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %} text-altGray-900">
         {% include partials/case-study-p.html content="As a now fully-remote team, communication and staying in sync becomes more challenging. Especially when I was now working between both design & development teams. This meant that communicating my changes, feedback and process had to be vigilant. For each step I implemented: " %}
