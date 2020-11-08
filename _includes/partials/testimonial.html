@@ -1,16 +1,16 @@
 <section class="{% include classes/case-study-section.html textColor='altGray-900' %} bg-{{page.color}}">
-    <div class="flex flex-row space-x-12 md:space-x-16 max-w-4xl mx-auto">
-        <svg class="w-16 h-16 mb-6 text-altGray-900" viewBox="0 0 53 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.151 44c-4.05 0-7.11-1.445-9.178-4.336C.991 36.688 0 32.564 0 27.293c0-6.037 1.508-11.351 4.524-15.942C7.541 6.759 12.151 2.976 18.356 0l4.137 8.162c-3.878 1.956-6.808 4.209-8.79 6.76-1.896 2.465-2.845 5.611-2.845 9.437.26-.085.69-.127 1.293-.127 2.758 0 5.085.85 6.98 2.55 1.983 1.616 2.974 3.87 2.974 6.76 0 3.23-.948 5.782-2.844 7.652S14.995 44 12.151 44zm30.507 0c-4.05 0-7.11-1.445-9.178-4.336-1.982-2.976-2.973-7.1-2.973-12.371 0-6.037 1.508-11.351 4.525-15.942C38.048 6.759 42.659 2.976 48.863 0L53 8.162c-3.878 1.956-6.808 4.209-8.79 6.76-1.896 2.465-2.844 5.611-2.844 9.437.258-.085.69-.127 1.292-.127 2.758 0 5.085.85 6.981 2.55 1.982 1.616 2.973 3.87 2.973 6.76 0 3.23-.948 5.782-2.844 7.652S45.502 44 42.658 44z" fill="currentColor"/></svg>
-        <div>
-            <div class="prose prose-lg text-altGray-900 xs:text-lg sm:text-xl md:text-2xl">
+    <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-12 md:space-x-16 max-w-4xl mx-auto">
+        <svg class="p-4 sm:p-0 w-16 h-16 text-altGray-900" viewBox="0 0 53 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.151 44c-4.05 0-7.11-1.445-9.178-4.336C.991 36.688 0 32.564 0 27.293c0-6.037 1.508-11.351 4.524-15.942C7.541 6.759 12.151 2.976 18.356 0l4.137 8.162c-3.878 1.956-6.808 4.209-8.79 6.76-1.896 2.465-2.845 5.611-2.845 9.437.26-.085.69-.127 1.293-.127 2.758 0 5.085.85 6.98 2.55 1.983 1.616 2.974 3.87 2.974 6.76 0 3.23-.948 5.782-2.844 7.652S14.995 44 12.151 44zm30.507 0c-4.05 0-7.11-1.445-9.178-4.336-1.982-2.976-2.973-7.1-2.973-12.371 0-6.037 1.508-11.351 4.525-15.942C38.048 6.759 42.659 2.976 48.863 0L53 8.162c-3.878 1.956-6.808 4.209-8.79 6.76-1.896 2.465-2.844 5.611-2.844 9.437.258-.085.69-.127 1.292-.127 2.758 0 5.085.85 6.981 2.55 1.982 1.616 2.973 3.87 2.973 6.76 0 3.23-.948 5.782-2.844 7.652S45.502 44 42.658 44z" fill="currentColor"/></svg>
+        <div class="{% include classes/case-study-text-container.html %} text-altGray-900">
+            <div class="{% include classes/prose.html %} xs:text-lg sm:text-xl md:text-2xl leading-extra-relaxed">
                 {{page.testimonial.content | markdownify}}
             </div>
 
             <div class="flex flex-row items-center mt-6 sm:mt-8 space-x-4">
-                <img class="w-20 h-20 rounded-full" src="/images/{{page.testimonial.image}}" alt="{{page.author}}">
+                <img class="w-12 h-12 sm:w-20 sm:h-20 rounded-full" src="/images/{{page.testimonial.image}}" alt="{{page.author}}">
                 <div>
-                    <h3 class="font-medium text-xl text-altGray-900">{{page.testimonial.author}}</h3>
-                    <h4 class="font-medium font-edgy text-xl text-altGray-900 opacity-50">{{page.testimonial.title}}</h4>
+                    <h3 class="font-medium sm:text-xl text-altGray-900">{{page.testimonial.author}}</h3>
+                    <h4 class="font-medium font-edgy sm:text-xl text-altGray-900 opacity-50">{{page.testimonial.title}}</h4>
                 </div>
             </div>
         </div>

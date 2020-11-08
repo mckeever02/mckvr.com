@@ -21,9 +21,18 @@
 
           {% include partials/logo.html classes="p-6" %}
 
+          <a href="/" aria-label="{{ site.name }}" class="focus:outline-none logo p-6 text-white">
+            <span class="relative block sm:inline-block mr-2 w-7 h-2 opacity-75">
+              <svg class="logo-shape logo-shape--1" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="10" width="14.1421" height="14.5441" transform="rotate(-45 0 10)" fill="currentColor"/></svg>
+              <svg class="logo-shape logo-shape--2" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10.2842" cy="10.1421" r="10" fill="currentColor"/></svg>
+              <svg class="logo-shape logo-shape--3" width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.2842 0.64209L22.2842 19.6421H0.28418L11.2842 0.64209Z" fill="currentColor"/></svg>
+            </span>
+          </a>
+
           {% unless page.url contains 'case-studies' %}
-          <div id="wcb" class="wcb carbonbadge p-6"></div>
-          <script src="https://unpkg.com/website-carbon-badges@^1/b.min.js" defer></script>
+          <!-- <div id="wcb" class="wcb carbonbadge p-6"></div>
+          <script src="https://unpkg.com/website-carbon-badges@^1/b.min.js" defer></script> -->
           {% endunless %}
 
         </footer>

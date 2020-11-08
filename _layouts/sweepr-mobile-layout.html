@@ -8,11 +8,19 @@ layout: case-study
 
 <section class="{% include classes/case-study-section.html bgColor='altGray-900' textColor='white' %}">
 
-    <div class="{% include classes/case-study-text-container.html %}">
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %} text-white">
         {% include partials/case-study-h2.html title="The current product" %}
+
+        {% include partials/case-study-p.html content='This video I prototyped and art-directed demonstrates how the product works to date.' %}
     </div>
 
-    {% include partials/video.html video="nuvo-zoom-buffering-confident.mp4" classes="max-w-6xl mx-auto py-12" %}
+    {% include partials/video.html video="nuvo-zoom-buffering-confident.mp4" poster="zoom-is-buffering-poster.jpg" classes="max-w-6xl mx-auto py-12" %}
+
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %} text-white">
+
+    {% include partials/case-study-p.html content='User research, feedback and product maturation had demonstrated some of <span class="bg-altGray-700 font-medium font-edgy">the flaws with this current approach</span>, so I started to <span class="bg-altGray-700 font-medium font-edgy">explore a new design</span>.' %}
+
+    </div>
 
 </section>
 
@@ -30,7 +38,8 @@ layout: case-study
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
         {% include partials/case-study-p.html color="altGray-900" content='To rule out making changes based on either low severity or low frequency, only issues that scored high to moderate impact* were considered.' %}
 
-        {% include partials/case-study-p.html color="altGray-900" content='*Impact score is <span class="font-medium">severity of the usability error (1 &ndash; 4)</span> multiplied by <span class="font-medium">frequency of the usability error</span>' %}
+
+        {% include partials/case-study-p.html color="altGray-900" content='<span class="bg-yellow-300 font-medium font-edgy">*Impact score is severity of the usability error (1 &ndash; 4) multiplied by frequency of the usability error</span>' %}
 
     </div>
 
@@ -51,11 +60,8 @@ layout: case-study
     {% include partials/blockquote.html classes="flex-1" x="5" text="I wouldn't use it because I don't know how articulate it is, like if I say a codeword if it would actually understand." %}
 </div>
 
-
-    <div class="{% include classes/case-study-text-container.html %}">
-        <div class="bg-altGray-200 text-altGray-900 text-lg sm:text-xl rounded-lg px-4 py-4 mb-12 md:mb-24">
-            <p>* Impact score is <span class="font-medium">severity (1 &ndash; 4)</span> multiplied by <span class="font-medium">frequency</span></p>
-        </div>
+    <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %} text-altGray-900 mb-6 sm:mb-12">
+        {% include partials/case-study-p.html content="In addition to issues with voice, there were also concerns regarding the voice interaction page as a whole. Such as:" %}
     </div>
 
     <div class="max-w-screen-lg space-y-12 lg:space-x-12 lg:space-y-none mx-auto flex flex-col lg:flex-row px-4">
@@ -64,20 +70,21 @@ layout: case-study
             <img src="/images/sweeprv2/how-can-i-help.png" loading="lazy" width="375" height="812" alt="Sweepr Utterance page">
         </div>
 
+        <div class="{% include classes/prose.html %} text-altGray-900">
 
-        <div class="{% include classes/prose.html %}">
 
-            {% include partials/case-study-h2.html title='&ldquo;WTF do I say?&rdquo;' color="altGray-900" %}
 
-            {% include partials/case-study-p.html color="altGray-900" content="A lack of visual prompts for utterances can lead to cognitive delay for users on how to interact with this channel." %}
+            {% include partials/case-study-h2.html title='&ldquo;WTF do I say?&rdquo;' %}
 
-            {% include partials/case-study-h2.html title='&ldquo;WTF am I looking at?&rdquo;' color="altGray-900" %}
+            {% include partials/case-study-p.html color="altGray-900" content="A lack of visual prompts for utterances can lead to <span class='bg-yellow-300 font-medium font-edgy'>cognitive delay for users</span> on how to interact with this channel." %}
 
-            {% include partials/case-study-p.html color="altGray-900" content="Low user familiarity with this type of support page could lead to even more cognitive confusion." %}
+            {% include partials/case-study-h2.html title='&ldquo;WTF am I looking at?&rdquo;' %}
 
-            {% include partials/case-study-h2.html title='&ldquo;WTF do I do now?&rdquo;' color="altGray-900" %}
+            {% include partials/case-study-p.html color="altGray-900" content="<span class='bg-yellow-300 font-medium font-edgy'>Low user familiarity</span> with this type of support page could lead to even more cognitive confusion." %}
 
-            {% include partials/case-study-p.html color="altGray-900" content="The non-modular design and sheer size that this one feature inhibits on the screen means that adding new features or client requirements can be difficult and needs to be 'shoed-in'. This hinders improvements and features that can be added to this page." %}
+            {% include partials/case-study-h2.html title='&ldquo;WTF do I do now?&rdquo;' %}
+
+            {% include partials/case-study-p.html color="altGray-900" content="The non-modular design and sheer size that this one feature inhibits on the screen means that adding new features or client requirements can be difficult and needs to be 'shoed-in'. This <span class='bg-yellow-300 font-medium font-edgy'>hinders improvements and features</span> that can be added to this page." %}
 
         </div>
 
@@ -87,7 +94,13 @@ layout: case-study
 
 <section class="{% include classes/case-study-section.html bgColor='altGray-300' textColor='altGray-900' %}">
     <div class="{% include classes/case-study-text-container.html %}">
+        <div class="{% include classes/prose.html %}">
+
         {% include partials/case-study-h2.html title="Goals of the redesign" color="altGray-900" %}
+
+        {% include partials/case-study-p.html color="altGray-900" content="Given the user research I outlined the goals for a redesign of the product as follows:" %}
+
+        </div>
 
         <div class="mt-12">
             {% for item in page.goals %}
@@ -113,7 +126,7 @@ layout: case-study
     <div class="{% include classes/case-study-text-container.html %} {% include classes/prose.html %}">
         {% include partials/case-study-h2.html title="Persona onboarding" color="altGray-900" %}
 
-        {% include partials/case-study-p.html color="altGray-900" content="Currently, we determine the persona of the user (avoidant, optimistic or confident) based on a technical confidence question rating from 1-7 on the likert scale. (You can read more about our personas <a href='/case-studies/multimodal-design-system#persona-based-design'>here.</a>)" %}
+        {% include partials/case-study-p.html color="altGray-900" content="Currently, we determine the persona of the user (avoidant, optimistic or confident) based on a technical confidence question rating from 1-7 on the likert scale." %}
 
         {% include partials/case-study-p.html color="altGray-900" content="This has generally been a good indicator for determining a user's technical confidence and therefore their persona." %}
 

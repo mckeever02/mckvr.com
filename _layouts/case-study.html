@@ -11,7 +11,7 @@ layout: default
 {%- assign nextPost = page.next %}
 <article>
   <div
-    class="relative flex flex-col justify-center hero bg-contain bg-no-repeat bg-right {% if page.textColor == 'dark' %}text-altGray-800{%else%}text-white{%endif%}">
+    class="relative flex flex-col justify-center hero h-1 bg-contain bg-no-repeat bg-right {% if page.textColor == 'dark' %}text-altGray-800{%else%}text-white{%endif%}">
     <div
       class="flex px-6 lg:px-10 xl:px-0 max-w-5xl 2xl:max-w-screen-xl w-full h-full mx-auto items-center -mt-6 sm:-mt-12 md:-mt-24"
     >
@@ -28,29 +28,29 @@ layout: default
   </div>
 
 <div class="px-4 sm:px-6 xl:px-0">
-  <aside class="bg-white relative z-10 space-x-12 text-altGray-900 p-6 mx-auto max-w-6xl overflow-x-auto scrolling-touch flex-no-wrap flex flex-row xs:text-lg 2xl:text-xl 2xl:max-w-screen-xl">
+  <aside class="bg-white relative z-10 text-altGray-900 py-6 mx-auto max-w-6xl overflow-x-auto scrolling-touch flex-no-wrap flex flex-row xs:text-lg 2xl:text-xl 2xl:max-w-screen-xl">
     {%- if skills -%}
-    <div class="flex-none w-auto md:flex-auto">
+    <div class="flex-none w-auto md:flex-auto px-6">
       {%- assign skills = skills | join: ',&nbsp; ' -%}
       <h3 class="font-medium mb-1 font-edgy">Expertise</h3>
       <h4 class="opacity-75">{%- for item in skills -%} {{ item }} {%- endfor -%}</h4>
     </div>
     {%- endif -%}
     {%- if platforms -%}
-    <div class="flex-none w-auto md:flex-auto">
+    <div class="flex-none w-auto md:flex-auto px-6">
       {%- assign platforms = platforms | join: ',&nbsp; ' -%}
       <h3 class="font-medium mb-1 font-edgy">Platforms</h3>
       <h4 class="opacity-75">{%- for item in platforms -%} {{ item }} {%- endfor -%}</h4>
     </div>
     {%- endif -%}
     {%- if role -%}
-    <div class="flex-none w-auto md:flex-auto">
+    <div class="flex-none w-auto md:flex-auto px-6">
       <h3 class="font-medium mb-1 font-edgy">Role</h3>
       <h4 class="opacity-75">{{role}}</h4>
     </div>
     {%- endif -%}
     {%- if year -%}
-    <div class="flex-none w-auto md:flex-auto">
+    <div class="flex-none w-auto md:flex-auto px-6">
       <h3 class="font-medium mb-1 font-edgy">Year</h3>
       <h4 class="opacity-75">{{year}}</h4>
     </div>

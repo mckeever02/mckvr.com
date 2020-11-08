@@ -39,8 +39,14 @@
   h2 {
     color: inherit!important;
   }
-  li:before {
+  ul>li:before {
     background-color: currentColor!important;
+  }
+  ol>li:before {
+    color: currentColor!important;
+  }
+  blockquote {
+    border-left-color: currentColor!important;
   }
 }
 
@@ -50,6 +56,10 @@
   &::-webkit-scrollbar {
     @apply hidden;
   }
+}
+
+.hero {
+  min-height: 40vh;
 }
 
 @screen sm {
