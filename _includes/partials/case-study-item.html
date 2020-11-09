@@ -42,19 +42,23 @@
     <svg class="text-white w-14 h-14 transform scale-0 group-hover:scale-100 transition duration-300 ease-in" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
     {% endif %}
     </a>
-    <div class="absolute w-full bottom-0 left-0 p-6 tilt-child">
-        <h3
-        class="tilt-child text-altGray-800 xs:text-xs sm:text-sm xl:text-base font-medium font-edgy opacity-75 mb-1"
-        >
-        {%- for item
-        in skills -%} {{ item }} {%- endfor -%}
-        </h3>
-        <h2
-        class="tilt-child font-medium text-2xl xs:text-lg sm:text-xl xl:text-2xl text-altGray-800 leading-tight"
-        >
-        {{- title -}}
-        </h2>
-    </div>
-    <img width="578" height="810" loading="lazy" src="/images/{{ thumb }}" alt="{{ title }}" />
+        <div class="absolute w-full bottom-0 left-0 p-6 tilt-child">
+            <h3
+            class="tilt-child text-altGray-800 xs:text-xs sm:text-sm xl:text-base font-medium font-edgy opacity-75 mb-1"
+            >
+            {%- for item
+            in skills -%} {{ item }} {%- endfor -%}
+            </h3>
+            <h2
+            class="tilt-child font-medium text-2xl xs:text-lg sm:text-xl xl:text-2xl text-altGray-800 leading-tight"
+            >
+            {{- title -}}
+            </h2>
+        </div>
+        <picture>
+            <source type="image/webp" data-srcset="/images/{{ thumb }}.webp" />
+            <source type="image/jpeg" data-srcset="/images/{{ thumb }}.jpg" />
+            <img width="578" height="810" class="lazy" src="/images/{{ thumb }}-lq.jpg" data-src="/images/{{ thumb }}.jpg" alt="{{ title }}">
+        </picture>
     </div>
 </li>

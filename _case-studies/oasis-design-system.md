@@ -2,7 +2,7 @@
 tags: 'case-study'
 skills: ['Design systems', 'UX']
 title: 'Creating a design system for a suite of products'
-thumb: 'sweepr-tools-ds-thumb-2.jpg'
+thumb: 'sweepr-tools-ds-thumb-2'
 cover: 'sweepr-tools-ds-cover'
 year: 2019&mdash;2020
 platforms: ['Web']
