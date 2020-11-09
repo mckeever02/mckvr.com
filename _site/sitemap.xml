@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>{{site.url}}/case-studies/adoreboard-emotics</loc>
+<loc>https://mckvr.com/case-studies/adoreboard-emotics</loc>
 <lastmod>2020-11-05T22:11:12+00:00</lastmod>
 </url>
 <url>
-<loc>{{site.url}}/case-studies/multimodal-design-system</loc>
+<loc>https://mckvr.com/case-studies/multimodal-design-system</loc>
 <lastmod>2020-11-05T22:11:12+00:00</lastmod>
 </url>
 <url>
-<loc>{{site.url}}/case-studies/oasis-design-system</loc>
+<loc>https://mckvr.com/case-studies/oasis-design-system</loc>
 <lastmod>2020-11-05T22:11:12+00:00</lastmod>
 </url>
 <url>
-<loc>{{site.url}}/case-studies/sweepr-customer-care</loc>
+<loc>https://mckvr.com/case-studies/sweepr-customer-care</loc>
 <lastmod>2020-11-05T22:11:12+00:00</lastmod>
 </url>
 <url>
-<loc>{{site.url}}/about/</loc>
+<loc>https://mckvr.com/about/</loc>
 </url>
 <url>
-<loc>{{site.url}}/404/</loc>
+<loc>https://mckvr.com/404/</loc>
 </url>
 <url>
-<loc>{{site.url}}/</loc>
+<loc>https://mckvr.com/</loc>
 </url>
 </urlset>
