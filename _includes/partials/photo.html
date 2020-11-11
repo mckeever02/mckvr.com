@@ -1,0 +1,5 @@
+<picture>
+    <source type="image/webp" data-srcset="/images/photos/{{item.image}}.webp" />
+    <source type="image/jpeg" data-srcset="/images/photos/{{item.image}}.jpg" />
+    <img data-zoomable src="/images/photos/{{item.image}}-lq.jpg" class="w-full mb-8 transition duration-150 ease-in transform scale-100 lazy hover:scale-102" width="{{item.width}}" height="{{item.height}}" data-src="/images/photos/{{item.image}}.jpg" data-zoom-src="/images/photos/{{item.image}}-lg.jpg" alt="{{item.alt}}">
+</picture>

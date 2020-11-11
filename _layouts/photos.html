@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article>
+  <div class="relative flex flex-col w-full max-w-5xl py-32 mx-auto 2xl:max-w-screen-xl">
+    <h1 class="relative text-3xl leading-tight moveIn xs:text-4xl lg:text-5xl">
+      {{ page.intro.title }},
+    </h1>
+    <h2 class="relative text-3xl font-medium leading-tight opacity-50 moveIn2 font-edgy xs:text-5xl">
+      it's memories & shit.
+    </h2>
+  </div>
+
+  <section class="grid grid-cols-3 gap-8 px-8">
+    {% for columns in site.data.photos.columns %}
+    <div>
+        {%- for item in columns.column -%}
+        {% include partials/photo.html %}
+        {%- endfor -%}
+    </div>
+    {% endfor %}
+  </section>
+
+</article>

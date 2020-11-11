@@ -779,6 +779,11 @@ base@^0.11.1:
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
 
+basiclightbox@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/basiclightbox/-/basiclightbox-5.0.3.tgz#e8bd60b7d2156422c249860416353c0a553dfae3"
+  integrity sha512-COJH2kwhXJrOD3FH+aF25SKykH5PwDNng1U2QpKfZgGjaUI3O2ExB3tsXphrDo4tSfAuCn5jSKCq7DNp4iHQlQ==
+
 bcrypt-pbkdf@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz#a4301d389b6a43f9b67ff3ca11a3f6637e360e9e"
@@ -2231,6 +2236,11 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
+glightbox@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/glightbox/-/glightbox-3.0.5.tgz#f251e523d48b01a2056822cf3afac57100540c3c"
+  integrity sha512-MhBbUh1raU5tuvmhZMB5M4n+d2elLg1zFzIE5XhpvNRGdFzSzQCapW3XH9ghicYo3LEfp656buzkLo+/pO3HCQ==
+
 glob-parent@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-3.1.0.tgz#9e6af6299d8d3bd2bd40430832bd113df906c5ae"
@@ -3040,6 +3050,11 @@ md5.js@^1.3.4:
     hash-base "^3.0.0"
     inherits "^2.0.1"
     safe-buffer "^5.1.2"
+
+medium-zoom@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.6.tgz#9247f21ca9313d8bbe9420aca153a410df08d027"
+  integrity sha512-UdiUWfvz9fZMg1pzf4dcuqA0W079o0mpqbTnOz5ip4VGYX96QjmbM+OgOU/0uOzAytxC0Ny4z+VcYQnhdifimg==
 
 mem@^1.1.0:
   version "1.1.0"
@@ -5567,3 +5582,8 @@ yargs@~3.10.0:
     cliui "^2.1.0"
     decamelize "^1.0.0"
     window-size "0.1.0"
+
+zoomwall.js@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/zoomwall.js/-/zoomwall.js-2.0.2.tgz#3058d81ad3d398e42d6664efc1caa349cfe3c0f8"
+  integrity sha512-b89m9y2OOqbUD/qMWhb157nq1Zcc6R+zccAMyeEblKowFI1pQ4da22BwIcRirKw4BTi1EDajEa3uRiMhoaaR7g==

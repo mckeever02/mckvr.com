@@ -57,6 +57,9 @@ module.exports = {
       width: {
         7: '1.75rem'
       },
+      scale: {
+        102: '1.02'
+      },
       colors: {
         altGray: {
           100: '#F9FAFA',
