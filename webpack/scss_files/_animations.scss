@@ -56,6 +56,17 @@
   }
 }
 
+@keyframes moveInSlow {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes moveIn2 {
   0% {
     transform: translateY(20px);
@@ -139,7 +150,6 @@
   }
 }
 
-@screen xs {
 
   .moveIn {
     animation: moveIn .8s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -161,7 +171,20 @@
     }
   }
 
+.moveInSlow {
+  transform: translateY(40px);
+  opacity: 0;
+  animation: moveInSlow 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+  animation-delay: .7s;
+  &:nth-of-type(2) {
+    animation-delay: .9s;
+  }
+  &:nth-of-type(3) {
+    animation-delay: 1.1s;
+  }
 }
+
 
 .scaleFadeIn {
   transform: translate3d(0, 50px, 0) scale3d(.9, .9, .9);

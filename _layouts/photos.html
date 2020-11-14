@@ -10,7 +10,7 @@ layout: default
 
   <section class="grid gap-8 px-4 sm:mt-0 sm:px-6 lg:px-8 lg:grid-cols-3">
     {% for columns in site.data.photos.columns %}
-    <div>
+    <div class="moveInSlow">
         {%- for item in columns.column -%}
         {% include partials/photo.html %}
         {%- endfor -%}
