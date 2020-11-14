@@ -36,6 +36,14 @@ columns:
         width: 900
         height: 600
         alt: "A crowd gathered outside a temple in Kyoto"
+      - image: "r001-025"
+        width: 900
+        height: 600
+        alt: "Young adults sitting and watching a fountain in Yoyogi Park, Tokyo"
+      - image: "r001-026-2"
+        width: 900
+        height: 600
+        alt: "Resevoir at daylight"
   - column:
       - image: "r001-019-2"
         width: 600
@@ -69,6 +77,14 @@ columns:
         width: 900
         height: 600
         alt: "A couple embrace on a ferry to Strangford"
+      - image: "r001-026"
+        width: 900
+        height: 600
+        alt: "View of Tokyo's skyline"
+      - image: "scan015"
+        width: 900
+        height: 600
+        alt: "Two hikers descending the Mourne Mountains"
   - column:
       - image: "florida-1"
         width: 900
@@ -106,3 +122,11 @@ columns:
         width: 600
         height: 900
         alt: "A tokyo street surounded by high rise buildings "
+      - image: "r001-023"
+        width: 900
+        height: 600
+        alt: "A tokyo street surounded by high rise buildings "
+      - image: "r001-027"
+        width: 900
+        height: 600
+        alt: "Osaka street scene at night"

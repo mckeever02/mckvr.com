@@ -119,11 +119,12 @@
   padding-left: 25%;
 }
 
-::-moz-selection {
-	@apply bg-altGray-400;
-}
 ::selection {
 	@apply bg-altGray-400;
+}
+
+.text-neutralGray-700::selection {
+  @apply text-white;
 }
 
 #wcb_2 {
