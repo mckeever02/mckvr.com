@@ -19,7 +19,7 @@
           {% endif %}
           {% assign current = '' %}
         {% endif %}
-      <li class="flex">
+      <li class="{% if forloop.last %}hidden sm:flex{% else %}flex{%endif%}">
         <a
           href="{{ item.url }}"
           class="inline-flex items-center px-1 text-base 2xl:text-lg font-medium focus:outline-none transition duration-150 ease-in-out {{ highlight }}" {{ current }}

@@ -113,6 +113,7 @@ module.exports = {
     backgroundOpacity: ['responsive', 'hover', 'focus', 'group-hover'],
     translate: ['responsive', 'hover', 'focus', 'group-hover'],
     margin: ['responsive', 'last'],
+    gap: ['responsive']
   },
   plugins: [require('@tailwindcss/typography')],
 };
