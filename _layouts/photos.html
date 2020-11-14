@@ -2,16 +2,13 @@
 layout: default
 ---
 <article>
-  <div class="relative flex flex-col w-full max-w-5xl py-32 mx-auto 2xl:max-w-screen-xl">
+  <div class="relative flex flex-col w-full max-w-5xl px-4 py-32 mx-auto 2xl:max-w-screen-xl sm:mt-0 sm:px-6 lg:px-8 xl:px-0">
     <h1 class="relative text-3xl leading-tight moveIn xs:text-4xl lg:text-5xl">
-      {{ page.intro.title }},
+      {{ page.intro.title }}, <br /> <span class="inline-block antialiased font-medium moveIn text-neutralGray-700 font-edgy">it's memories & shit.</span>
     </h1>
-    <h2 class="relative text-3xl font-medium leading-tight opacity-50 moveIn2 font-edgy xs:text-5xl">
-      it's memories & shit.
-    </h2>
   </div>
 
-  <section class="grid grid-cols-3 gap-8 px-8">
+  <section class="grid gap-8 px-4 sm:mt-0 sm:px-6 lg:px-8 lg:grid-cols-3">
     {% for columns in site.data.photos.columns %}
     <div>
         {%- for item in columns.column -%}

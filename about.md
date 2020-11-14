@@ -5,7 +5,8 @@ meta:
   desc: 'Michael McKeever is a product designer from Belfast'
 intro:
   title: |
-    <span class="moveIn inline-block">I like building things,</span><br /><span class="moveIn text-neutralGray-700 inline-block antialiased font-medium font-edgy">with design & code.</span>
+    <span class="inline-block moveIn">I like solving problems,</span><br /><span class="inline-block antialiased font-medium moveIn text-neutralGray-700 font-edgy">with design & code.</span>
+  image: "michael-mckeever-3"
 links:
   - title: 'Site of the day'
     url: 'https://www.typewolf.com/site-of-the-day/trying-to-work'

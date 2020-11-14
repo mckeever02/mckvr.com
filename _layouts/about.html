@@ -3,12 +3,12 @@ layout: default
 ---
 <article class="overflow-x-hidden">
   <div
-    class="relative flex flex-col sm:flex-row sm:items-center max-w-5xl 2xl:max-w-screen-xl w-full mx-auto hero sm:mt-0 mb-12 px-4 sm:px-6 lg:px-8 xl:px-0"
+    class="relative flex flex-col w-full max-w-5xl px-6 mx-auto mb-12 sm:flex-row sm:items-center 2xl:max-w-screen-xl hero sm:mt-0 sm:px-6 lg:px-8 xl:px-0"
   >
-    <div class="hero--image sm:absolute sm:right-0 z-10 sm:w-7/12 md:w-2/3 2xl:w:8/12">
+    <div class="z-10 hero--image sm:absolute sm:right-0 sm:w-7/12 md:w-2/3 2xl:w:8/12">
       <picture>
-        <source type="image/webp" data-srcset="/images/michael-mckeever-3.webp" />
-        <source type="image/jpeg" data-srcset="/images/michael-mckeever-3.jpg" />
+        <source type="image/webp" data-srcset="/images/{{page.intro.image}}.webp" />
+        <source type="image/jpeg" data-srcset="/images/{{page.intro.image}}.jpg" />
         <img
         class="w-full lazy"
         data-tilt
@@ -21,12 +21,12 @@ layout: default
         data-tilt-perspective="1000"
         width="1292"
         height="822"
-        src="/images/michael-mckeever-3-lq.webp"
-        data-src="/images/michael-mckeever-3.jpg"
+        src="/images/{{page.intro.image}}-lq.webp"
+        data-src="/images/{{page.intro.image}}.jpg"
         alt="Photo of Michael McKeever">
       </picture>
     </div>
-    <h1 class="relative -mt-14 sm:-mt-0 flex-grow z-20 sm:py-24 text-3xl px-2 sm:px-0 xs:text-4xl lg:text-5xl leading-tight">
+    <h1 class="relative z-20 flex-grow px-2 text-3xl leading-tight -mt-14 sm:-mt-0 sm:py-24 sm:px-0 xs:text-4xl lg:text-5xl">
       {{ page.intro.title }}
     </h1>
   </div>
@@ -37,11 +37,11 @@ layout: default
     <div class="sm:w-2/12">
       {%- include partials/section-h2.html title="About" -%}
     </div>
-    <div class="prose xs:prose-lg xs:text-lg md:text-xl 2xl:text-1xl text-white sm:w-10/12">{{ content }}</div>
+    <div class="prose text-white xs:prose-lg xs:text-lg md:text-xl 2xl:text-1xl sm:w-10/12">{{ content }}</div>
   </section>
 
   <section
-    class="mx-auto lg:w-full relative img-grid flex py-16 -mt-8 md:py-32 md:-mt-16 overflow-x-auto scrolling-touch flex-no-wrap scroller px-3 md:px-6"
+    class="relative flex flex-no-wrap px-3 py-16 mx-auto -mt-8 overflow-x-auto scrolling-touch lg:w-full img-grid md:py-32 md:-mt-16 scroller md:px-6"
   >
     <div class="px-3 md:px-6">
       <picture>
@@ -65,7 +65,7 @@ layout: default
         alt="Photo of Michael McKeever">
       </picture>
     </div>
-    <div class="-mt-6 md:-mt-12 px-3 md:px-6">
+    <div class="px-3 -mt-6 md:-mt-12 md:px-6">
       <picture>
         <source type="image/webp" data-srcset="/images/japan-1.webp" />
         <source type="image/jpeg" data-srcset="/images/japan-1.jpg" />
@@ -87,7 +87,7 @@ layout: default
         alt="Photo of Tori gates in Kyoto, Japa">
       </picture>
     </div>
-    <div class="-mt-12 md:-mt-24 px-3 md:px-6">
+    <div class="px-3 -mt-12 md:-mt-24 md:px-6">
       <picture>
         <source type="image/webp" data-srcset="/images/michael-mckeever-5.webp" />
         <source type="image/jpeg" data-srcset="/images/michael-mckeever-5.jpg" />
@@ -112,15 +112,15 @@ layout: default
   </section>
 
   <section class="{% include classes/section.html %}">
-    <div class="sm:w-2/12 mb-4 sm:mb-0">
+    <div class="mb-4 sm:w-2/12 sm:mb-0">
       {%- include partials/section-h2.html title="Timeline" -%}
     </div>
-    <div class="text-white sm:w-10/12 flex flex-col space-y-12">
+    <div class="flex flex-col space-y-12 text-white sm:w-10/12">
         {%- for item in page.timeline -%}
         <div>
-        <h3 class="xs:text-lg 2xl:text-xl font-medium font-edgy">{{item.job}}</h3>
-        <h4 class="xs:text-lg 2xl:text-xl mb-1">{{item.title}}</h4>
-        <h5 class="text-sm sm:text-base font-medium opacity-50 tracking-tight">{{item.date}}</h5>
+        <h3 class="font-medium xs:text-lg 2xl:text-xl font-edgy">{{item.job}}</h3>
+        <h4 class="mb-1 xs:text-lg 2xl:text-xl">{{item.title}}</h4>
+        <h5 class="text-sm font-medium tracking-tight opacity-50 sm:text-base">{{item.date}}</h5>
         </div>
         {%- endfor -%}
     </div>
@@ -129,7 +129,7 @@ layout: default
   <section
     class="{% include classes/section.html %}"
   >
-    <div class="sm:w-2/12 mb-4 sm:mb-0">
+    <div class="mb-4 sm:w-2/12 sm:mb-0">
       {%- include partials/section-h2.html title="Links" -%}
     </div>
     <div class="text-white sm:w-10/12 sm:-mt-3">
@@ -139,11 +139,11 @@ layout: default
   </section>
 
   <section class="{% include classes/section.html %}">
-    <div class="sm:w-2/12 mb-4 sm:mb-0">
+    <div class="mb-4 sm:w-2/12 sm:mb-0">
       {%- include partials/section-h2.html title="Social" -%}
     </div>
-    <div class="text-white sm:w-10/12 -mt-3">
-      <ul class="grid xs:grid-cols-2 w-full gap-6 grid-img xs:gap-12">
+    <div class="-mt-3 text-white sm:w-10/12">
+      <ul class="grid w-full gap-6 xs:grid-cols-2 grid-img xs:gap-12">
         {% for item in page.social %} {% include partials/social-link.html %} {%
         endfor %}
       </ul>
