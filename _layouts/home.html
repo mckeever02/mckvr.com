@@ -2,20 +2,20 @@
 layout: default
 ---
 
-<article class="mb-8 px-4 sm:px-6 lg:px-0">
-  <div class="max-w-xl 2xl:max-w-2xl mx-auto mt-12 mb-24 sm:my-24 lg:my-40 xl:my-48 2xl:my-56">
-    <h1 class="mb-4 md:mb-6 text-2xl sm:text-3xl lg:text-3-75xl 2xl:text-4xl leading-snug">
-      <span class="moveIn xs:inline-block">Michael is a digital product designer</span> <span class="moveIn xs:inline-block">from Belfast who <span class="relative"><span class="z-20 relative">likes to code</span><svg class="absolute z-10 text-white opacity-50 scribble transition-all duration-1000 ease-in" viewBox="0 0 209 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.608 4c56.793-.5 108.391-1.885 164.89-1.885 11.266 0 44.554-.497 33.753.573-7.215.714-16.784.333-24.214.613C152.533 4.335 138.663 5.639 111.009 6 78.136 6.43 33.069 8.5 2 8.5L207 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>.</span>
+<article class="px-4 mb-8 sm:px-6 lg:px-0">
+  <div class="max-w-xl mx-auto mt-12 mb-24 2xl:max-w-2xl sm:my-24 lg:my-40 xl:my-48 2xl:my-56">
+    <h1 class="mb-4 text-2xl leading-snug md:mb-6 sm:text-3xl lg:text-3-75xl 2xl:text-4xl">
+      <span class="moveIn xs:inline-block">Michael is a digital product designer</span> <span class="moveIn xs:inline-block">from Belfast who <span class="relative"><span class="relative z-20">likes to code</span><svg class="absolute z-10 text-white transition-all duration-1000 ease-in opacity-50 scribble" viewBox="0 0 209 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.608 4c56.793-.5 108.391-1.885 164.89-1.885 11.266 0 44.554-.497 33.753.573-7.215.714-16.784.333-24.214.613C152.533 4.335 138.663 5.639 111.009 6 78.136 6.43 33.069 8.5 2 8.5L207 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>.</span>
     </h1>
 
 
   </div>
 
   <div class="mx-auto">
-    <section id="case-studies" class="pb-16 sm:pb-24 lg:pb-40 mx-auto">
+    <section id="case-studies" class="pb-16 mx-auto sm:pb-24 lg:pb-40">
       {% include partials/home-section-h2.html title="Case studies" number="01" classes="scaleFadeIn" %}
 
-      <ul class="grid xs:grid-cols-2 max-w-2xl mx-auto xl:max-w-3xl gap-6 sm:gap-8 md:gap-10">
+      <ul class="grid max-w-2xl gap-6 mx-auto xs:grid-cols-2 xl:max-w-3xl sm:gap-8 md:gap-10">
         {% assign case-studies = site.case-studies | reverse %}
         {%- for item in case-studies -%}
         {% include partials/case-study-item.html %}
@@ -24,7 +24,7 @@ layout: default
       </ul>
     </section>
 
-    <section id="side-projects" class="pb-16 sm:pb-24 lg:pb-40 mx-auto max-w-2xl">
+    <section id="side-projects" class="max-w-2xl pb-16 mx-auto sm:pb-24 lg:pb-40">
       {% include partials/home-section-h2.html title="Side projects" number="02" %}
 
 
@@ -34,7 +34,7 @@ layout: default
 
     </section>
 
-    <section id="contact" class="pb-12 sm:pb-24 lg:pb-40 mx-auto max-w-2xl">
+    <section id="contact" class="max-w-2xl pb-12 mx-auto sm:pb-24 lg:pb-40">
       {% include partials/home-section-h2.html title="Contact" number="03" %}
 
       <div class="flex flex-row items-center">
@@ -45,15 +45,15 @@ layout: default
           data-tilt-speed="750"
           data-tilt-perspective="1000"
           data-tilt-scale="1.03"
-          class="flex-1 flex p-3 rounded-lg text-white bg-opacity-0 bg-white scale-100 transform hover:bg-opacity-10 active:scale-100 focus:scale-100 font-medium sm:text-lg group"
+          class="flex flex-1 p-3 font-medium text-white transform scale-100 bg-white bg-opacity-0 rounded-lg hover:bg-opacity-10 active:scale-100 focus:scale-100 sm:text-lg group"
         >
           <span class="flex-1 text-center">
-            <svg class="opacity-50 inline mr-1 w-5 h-5 tilt-child group-hover:opacity-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            <svg class="inline w-5 h-5 mr-1 opacity-50 tilt-child group-hover:opacity-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
             Email me
           </span>
-          <span class="ml-auto transform -translate-x-4 scale-0 group-hover:scale-100 group-hover:-translate-x-2 transition duration-200 ease-out delay-150">↗</span>
+          <span class="ml-auto transition duration-200 ease-out delay-150 transform scale-0 -translate-x-4 group-hover:scale-100 group-hover:-translate-x-2">↗</span>
         </a>
-        <span class="relative z-20 font-edgy font-medium w-10 h-10 flex items-center justify-center text-lg xs:text-xl sm:text-2xl rounded-full bg-altGray-900">or</span>
+        <span class="relative z-20 flex items-center justify-center w-16 h-16 font-medium rounded-full font-edgy sm:text-lg bg-altGray-900">or</span>
         <a
           href="https://twitter.com/mmckvr"
           target="_blank"
@@ -63,13 +63,13 @@ layout: default
           data-tilt-speed="750"
           data-tilt-perspective="1000"
           data-tilt-scale="1.05"
-          class="flex-1 flex p-3 rounded-lg text-white bg-opacity-0 bg-white scale-100 transform hover:bg-opacity-10 active:scale-100 focus:scale-100 font-medium sm:text-lg group"
+          class="flex flex-1 p-3 font-medium text-white transform scale-100 bg-white bg-opacity-0 rounded-lg hover:bg-opacity-10 active:scale-100 focus:scale-100 sm:text-lg group"
         >
           <span class="flex-1 text-center">
-            <svg class="opacity-50 inline mr-1 w-5 h-5 tilt-child group-hover:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            <svg class="inline w-5 h-5 mr-1 opacity-50 tilt-child group-hover:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
           DM me</span>
 
-          <span class="ml-auto transform -translate-x-4 scale-0 group-hover:scale-100 group-hover:-translate-x-2 transition duration-200 ease-out delay-150">↗</span>
+          <span class="ml-auto transition duration-200 ease-out delay-150 transform scale-0 -translate-x-4 group-hover:scale-100 group-hover:-translate-x-2">↗</span>
         </a>
 
 
