@@ -48,6 +48,6 @@ I'm Michael McKeever, a multidisciplinary designer from Ireland. Currently, I'm 
 
 Working as both a designer and developer has taught me how to empathise and understand the needs of both disciplines. I think it's made me a better designer and developer as a result.
 
-Outside of work, I'm usually working on a <a href="/#side-projects">side-project</a> of some form or another. It helps me learn new skills at my own pace, without the constraints of budgets and timelines. Some side-projects I've created lately are <a href="https://whatsthegood.news">What's The Good News?</a>, <a href="https://tryingtowork.in">Trying to Work</a> and <a href="https://mailtolink.me">mailtolink.me</a>.
+Outside of work, I'm usually working on a <a href="/#side-projects">side-project</a> of some form or another. It helps me learn new skills at my own pace, without the constraints of budgets and timelines.
 
 Im my spare time, I’m either getting my ass kicked at Brazilian Jiu Jitsu, travelling to new places, or <a href="/photos">taking photos</a>.
