@@ -44,10 +44,10 @@ timeline:
 
 ---
 
-I'm Michael McKeever, a multidisciplinary designer from Ireland. Currently, I'm a senior product designer at <a class="text-white" href='https://sweepr.com'>Sweepr</a> where I lead the mobile design and cutomer experience. Before that, I was a freelance designer and front-end developer for 5 years.
+I'm Michael McKeever, a multidisciplinary designer from Ireland. Currently, I'm a senior product designer at <a href='https://sweepr.com'>Sweepr</a> where I lead the mobile design and cutomer experience. Before that, I was a freelance designer and front-end developer for 5 years.
 
 Working as both a designer and developer has taught me how to empathise and understand the needs of both disciplines. I think it's made me a better designer and developer as a result.
 
-Outside of work, I'm usually working on a <a href="/#side-projects">side-project</a> of some form or another. It helps me learn new skills at my own pace, without the constraints of budgets and timelines.
+Outside of work, I'm usually working on a <a href="/#side-projects">side-project</a> of some form or another. It helps me learn new skills at my own pace, without the constraints of budgets and timelines. Some side-projects I've created lately are <a href="https://whatsthegood.news">What's The Good News?</a>, <a href="https://tryingtowork.in">Trying to Work</a> and <a href="https://mailtolink.me">mailtolink.me</a>.
 
-Im my spare time, I’m either getting my ass kicked at Brazilian Jiu Jitsu, travelling to new places, or taking photos.
+Im my spare time, I’m either getting my ass kicked at Brazilian Jiu Jitsu, travelling to new places, or <a href="/photos">taking photos</a>.
