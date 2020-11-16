@@ -5,7 +5,7 @@ meta:
   desc: 'Michael McKeever is a product designer from Belfast'
 intro:
   title: |
-    <span class="inline-block moveIn">I like solving problems,</span><br /><span class="inline-block antialiased font-medium moveIn text-neutralGray-700 font-edgy">with design & code.</span>
+    <span class="inline-block moveIn">I like solving problems,</span><br /><span class="inline-block antialiased moveIn text-neutralGray-700 font-edgy">with design & code.</span>
   image: "michael-mckeever-3"
 links:
   - title: 'Site of the day'
@@ -44,10 +44,10 @@ timeline:
 
 ---
 
-I'm Michael McKeever, a multidisciplinary designer from Ireland. Currently, I'm a senior product designer at <a href='https://sweepr.com'>Sweepr</a> where I lead the mobile design and cutomer experience. Before that, I was a freelance designer and front-end developer for 5 years.
+I'm Michael McKeever, a multidisciplinary designer from Ireland. Currently, I'm a senior product designer at <a href='https://sweepr.com'>Sweepr</a>, where I lead the mobile design and customer experience. Before that, I was a freelance designer and front-end developer for 4 years.
 
-Working as both a designer and developer has taught me how to empathise and understand the needs of both disciplines. I think it's made me a better designer and developer as a result.
+Working as both a designer and developer has taught me how to empathise and understand the needs of both disciplines. I think it's made me a better designer as a result.
 
 Outside of work, I'm usually working on a <a href="/#side-projects">side-project</a> of some form or another. It helps me learn new skills at my own pace, without the constraints of budgets and timelines.
 
-Im my spare time, I’m either getting my ass kicked at Brazilian Jiu Jitsu, travelling to new places, or <a href="/photos">taking photos</a>.
+Im my spare time, you'll either find me getting my ass kicked at Brazilian Jiu Jitsu, travelling to new places, listening to an audiobook, or <a href="/photos">taking photos</a>.

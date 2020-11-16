@@ -26,6 +26,15 @@
 
 @font-face {
   font-family: 'Studio Feixen Sans Edgy';
+  src: url('/fonts/StudioFeixenSans-EdgyRegular.woff2')
+      format('woff2'),
+    url('/fonts/StudioFeixenSans-EdgyRegular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Studio Feixen Sans Edgy';
   src: url('/fonts/StudioFeixenSans-EdgyMedium.woff2')
       format('woff2'),
     url('/fonts/StudioFeixenSans-EdgyMedium.woff') format('woff');
