@@ -3,9 +3,39 @@ layout: default
 ---
 {% include partials/hero-sm.html %}
 
-<section class="max-w-xl mx-auto">
-<div class="text-white moveInSlow">
-    <h3 class="block mb-2 text-2xl font-medium md:text-3xl">So what happens when we die?</h3>
-    <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas gravida odio et blandit. Nullam aliquet odio in urna lacinia aliquet. Mauris aliquet magna hendrerit lacus convallis, eu sollicitudin lectus molestie. Etiam accumsan est sit amet velit elementum, at hendrerit neque lobortis. Nunc tincidunt et urna tincidunt imperdiet. </p>
-</div>
+<section class="relative w-full max-w-5xl mx-auto mb-24">
+<div class="absolute top-0 left-0 z-10 w-px h-full ml-4 font-medium transform bg-white opacity-10 scaleInY"></div>
+    {%- assign thoughts = site.thoughts | reverse -%}
+    {% for item in thoughts %}
+    <article data-trigger class="relative flex max-w-2xl py-20 thought">
+        <div class="relative z-20 flex flex-col items-center justify-center flex-shrink-0 w-8 h-8 p-4 rounded-full bg-altGray-900">
+            <div class="flex-shrink-0 w-2 h-2 p-1 transition duration-200 ease-in-out transform scale-100 bg-white rounded-full opacity-25 thought__bubble"></div>
+        </div>
+
+        <div class="ml-8 transition duration-500 ease-out origin-top-left transform scale-100 opacity-50 thought__container">
+            <span class="inline-block mt-1 mb-6 text-sm font-medium transition duration-200 ease-out opacity-50 thought__date font-edgy">{{item.date | date: '%b %d %Y'}}</span>
+            <h3 class="block mb-2 text-2xl font-medium">{{item.title}}</h3>
+            <div class="prose text-white opacity-75 xs:prose-lg xs:text-lg md:text-xl 2xl:text-1xl">
+                {{item.content | markdownify}}
+            </div>
+
+        </div>
+    </article>
+    {% endfor %}
+    {% for item in thoughts %}
+    <article data-trigger class="relative flex max-w-2xl py-20 thought">
+        <div class="relative z-20 flex flex-col items-center justify-center flex-shrink-0 w-8 h-8 p-4 rounded-full bg-altGray-900">
+            <div class="flex-shrink-0 w-2 h-2 p-1 transition duration-200 ease-in-out transform scale-100 bg-white rounded-full opacity-25 thought__bubble"></div>
+        </div>
+
+        <div class="ml-8 transition duration-500 ease-in-out origin-top-left transform scale-100 opacity-50 thought__container">
+            <span class="inline-block mt-1 mb-3 text-sm font-medium transition duration-200 ease-in-out opacity-50 thought__date font-edgy">{{item.date | date: '%b %d %Y'}}</span>
+            <h3 class="block mb-2 text-2xl font-medium">{{item.title}}</h3>
+            <div class="prose text-white opacity-75 xs:prose-lg xs:text-lg md:text-xl 2xl:text-1xl">
+                {{item.content | markdownify}}
+            </div>
+
+        </div>
+    </article>
+    {% endfor %}
 </section>

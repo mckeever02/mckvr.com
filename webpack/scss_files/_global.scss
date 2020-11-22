@@ -156,6 +156,19 @@
   opacity: 1;
 }
 
+.thought.active {
+  @apply opacity-100;
+  .thought__container {
+    @apply opacity-100;
+  }
+  .thought__container {
+    @apply scale-110;
+  }
+  .thought__bubble {
+    @apply scale-110;
+  }
+}
+
 // .medium-zoom-overlay {
 //   @apply opacity-75;
 // }

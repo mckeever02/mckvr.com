@@ -5,7 +5,7 @@ meta:
   desc: 'Michael McKeever is a product designer from Belfast'
 intro:
   title: |
-    <span class="inline-block moveIn">I like solving problems,</span><br /><span class="inline-block antialiased moveIn text-neutralGray-700 font-edgy">with design & code.</span>
+    <span class="inline-block moveIn">I like solving problems,</span><br /><span class="inline-block moveIn text-neutralGray-700 font-edgy">with design & code.</span>
   image: "michael-mckeever-3"
 links:
   - title: 'Site of the day'

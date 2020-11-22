@@ -34,6 +34,9 @@ collections:
   case-studies:
     output: true
     permalink: /:collection/:name
+  thoughts:
+    output: true
+    permalink: /:collection/:name
 
 sass:
   style: compressed

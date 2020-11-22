@@ -2,6 +2,28 @@
 // Turbolinks.start()
 
 import './scss_files/main.scss';
+import "intersection-observer";
+import ScrollTrigger from '@terwanerik/scrolltrigger'
+
+
+const trigger = new ScrollTrigger({
+  trigger: {
+    once: false,
+    offset: {
+      element: {
+          y: 0.4
+      }
+    },
+    toggle: {
+      class: {
+        in: 'active',
+        out: 'inactive'
+      },
+    }
+  },
+
+})
+trigger.add('[data-trigger]')
 
 /*! medium-zoom 1.0.6 | MIT License | https://github.com/francoischalifour/medium-zoom */
 var _extends = Object.assign || function (target) {

@@ -34,6 +34,15 @@
   }
 }
 
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @keyframes scaleFadeIn {
   0% {
     transform: translate3d(0, 50px, 0) scale3d(.9, .9, .9);
@@ -148,6 +157,27 @@
   100% {
     left: 100%;
   }
+}
+
+@keyframes scaleY {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.scaleInY {
+  animation: scaleY 2s ease;
+  animation-delay: .8s;
+  animation-fill-mode: forwards;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.popIn {
+
 }
 
 

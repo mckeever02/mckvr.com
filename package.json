@@ -10,12 +10,16 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "@tailwindcss/typography": "^0.2.0",
+    "@terwanerik/scrolltrigger": "^1.0.5",
     "autoprefixer": "^9.6.0",
     "basiclightbox": "^5.0.3",
+    "enter-view": "^2.0.0",
     "glightbox": "^3.0.5",
+    "intersection-observer": "^0.11.0",
     "medium-zoom": "^1.0.6",
     "postcss": "^6.0.22",
     "postcss-loader": "^2.1.5",
+    "scrollama": "^2.2.1",
     "turbolinks": "^5.1.1",
     "zoomwall.js": "^2.0.2"
   },
