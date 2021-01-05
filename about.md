@@ -29,9 +29,12 @@ social:
     url: 'https://instagram.com/mmckvr'
 
 timeline:
+    - job: 1Password
+      title: Senior product designer
+      date: Jan 2021 &mdash; Present
     - job: Sweepr
       title: Senior product designer
-      date: Oct 2019 &mdash; Present
+      date: Oct 2019 &mdash; Dec 2019
     - job: Adoreboard
       title: Product designer
       date: Jul 2016 &mdash; Jun 2019
@@ -44,7 +47,7 @@ timeline:
 
 ---
 
-I'm Michael McKeever, a multidisciplinary designer from Ireland. Currently, I'm a senior product designer at <a href='https://sweepr.com'>Sweepr</a>, where I lead the mobile design and customer experience. Before that, I was a freelance designer and front-end developer for 4 years.
+I'm Michael McKeever, a multidisciplinary designer from Ireland. Currently, I'm a senior product designer at <a href='https://1passsword.com'>1Password</a>. Before that, I was a freelance designer and front-end developer for 4 years.
 
 Working as both a designer and developer has taught me how to empathise and understand the needs of both disciplines. I think it's made me a better designer as a result.
 
