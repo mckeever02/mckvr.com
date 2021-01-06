@@ -34,7 +34,7 @@ timeline:
       date: Jan 2021 &mdash; Present
     - job: Sweepr
       title: Senior product designer
-      date: Oct 2019 &mdash; Dec 2019
+      date: Oct 2019 &mdash; Dec 2020
     - job: Adoreboard
       title: Product designer
       date: Jul 2016 &mdash; Jun 2019
