@@ -15,7 +15,7 @@ layout: default
     <section id="case-studies" class="pb-16 mx-auto sm:pb-24 lg:pb-40">
       {% include partials/home-section-h2.html title="Case studies" number="01" classes="scaleFadeIn" %}
 
-      <ul class="grid max-w-2xl gap-6 mx-auto xs:grid-cols-2 xl:max-w-3xl sm:gap-8 md:gap-10">
+      <ul class="grid max-w-2xl mx-auto gap-7 xs:grid-cols-2 xl:max-w-3xl">
         {% assign case-studies = site.case-studies | reverse %}
         {%- for item in case-studies -%}
         {% include partials/case-study-item.html %}

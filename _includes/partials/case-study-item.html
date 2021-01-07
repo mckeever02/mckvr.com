@@ -25,7 +25,7 @@
 
 <li class="case-study--item scaleFadeIn">
     <div
-    class="w-full bg-{{ bgColor }} tilt relative rounded-lg overflow-hidden group cursor-pointer active:scale-100 {% if forloop.index == 2 %}md:mt-20{%endif%} {% if forloop.index == 3 %}md:-mt-20{%endif%}"
+    class="w-full bg-{{ bgColor }} tilt relative rounded-xl overflow-hidden group cursor-pointer active:scale-100 {% if forloop.index == 2 %}md:mt-16{%endif%} {% if forloop.index == 3 %}md:-mt-16{%endif%}"
     data-tilt
     {% if forloop.index != 1 or item.locked != 'true' %}
     data-tilt-glare
@@ -34,23 +34,23 @@
     data-tilt-max="10"
     data-tilt-speed="750"
     data-tilt-perspective="1000"
-    data-tilt-scale="1.075"
+    data-tilt-scale="1.05"
     gyroscope="true"
     >
     <a class="absolute {% if locked == 'true' %}bg-altGray-900 bg-opacity-0 transition duration-300 group-hover:bg-opacity-75{% endif %} top-0 left-0 w-full h-full z-30 flex items-center justify-center" {% unless locked == 'true'%} href="{{ url }}"{% endunless %}>
     {% if locked == 'true' %}
-    <svg class="text-white w-14 h-14 transform scale-0 group-hover:scale-100 transition duration-300 ease-in" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+    <svg class="text-white transition duration-300 ease-in transform scale-0 w-14 h-14 group-hover:scale-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
     {% endif %}
     </a>
-        <div class="absolute w-full bottom-0 left-0 p-6 tilt-child">
+        <div class="absolute bottom-0 left-0 w-full p-6 tilt-child">
             <h3
-            class="tilt-child text-altGray-800 xs:text-xs sm:text-sm xl:text-base font-medium font-edgy opacity-75 mb-1"
+            class="mb-1 font-medium opacity-75 tilt-child text-altGray-800 xs:text-xs sm:text-sm xl:text-base font-edgy"
             >
             {%- for item
             in skills -%} {{ item }} {%- endfor -%}
             </h3>
             <h2
-            class="tilt-child font-medium text-2xl xs:text-lg sm:text-xl xl:text-2xl text-altGray-800 leading-tight"
+            class="text-2xl font-medium leading-tight tilt-child xs:text-lg sm:text-xl xl:text-2xl text-altGray-800"
             >
             {{- title -}}
             </h2>
