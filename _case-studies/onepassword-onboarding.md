@@ -195,5 +195,11 @@ negative_findings:
       active: 0
     - name: "Adam"
       active: 0
+testimonial:
+    content: |
+        Michael was integral to the success of our intiative. He couldn't have done much more for the team and our mission. One of the best collaborators in the whole design team.
+    author: "Max Applin"
+    title: "Senior Staff Product Manager"
+    image: "max-small.jpg"
 ---
 
