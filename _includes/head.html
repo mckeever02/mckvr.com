@@ -19,6 +19,10 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  {% if page.hidden %}
+  <meta name="robots" content="noindex">
+  {% endif %}
+
 
   <script type="text/javascript" src="{{ '/js/bundle.js' | prepend: site.baseurl }}" charset="utf8" ></script>
 </head>

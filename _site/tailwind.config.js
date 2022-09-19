@@ -81,6 +81,7 @@ module.exports = {
         'beryl-green': '#dce6c7',
         janna: '#f7ebd5',
         cosmos: '#C9E8E3',
+        skeptic: '#c1e6cf',
         'water-leaf': '#a3f4de',
         'gray-nurse': '#ebe9e4',
       },

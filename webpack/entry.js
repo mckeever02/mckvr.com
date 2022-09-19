@@ -672,10 +672,38 @@ var lazyLoadInstance = new LazyLoad({
   // Your custom settings go here
 });
 
-
-
 mediumZoom('[data-zoomable]', {
   margin: 100,
   background: '#1d1e21',
   scrollOffset: 160
 })
+
+var ticker = document.querySelectorAll('.ticker')
+
+ticker.forEach(element => {
+  var list = element.querySelector('.ticker-list'),
+  clone = list.cloneNode(true);
+  element.append(clone)
+});
+//   , list = document.querySelector('.ticker-list')
+//   , clone = list.cloneNode(true)
+
+// ticker.append(clone)
+
+
+(function() {
+
+  var floatyBois = document.getElementsByClassName("card-flip");
+  var previousFloatyBoi = null
+  
+  function repeatOften() {
+    if (previousFloatyBoi) previousFloatyBoi.classList.toggle('hover')
+    var random = Math.floor(Math.random() * (floatyBois.length - 1)) + 0;
+    var randomFloatyBoi = floatyBois[random];
+    randomFloatyBoi.classList.toggle('hover');
+    previousFloatyBoi = randomFloatyBoi;
+    setTimeout(repeatOften, 5000);
+  }
+  repeatOften();
+  
+  })();

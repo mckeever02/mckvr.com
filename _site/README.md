@@ -22,5 +22,7 @@ $ yarn
 ## Run Build Process
 
 ```
+## Make sure you're using Node v12
+nvm use 12
 $ yarn start
 ```

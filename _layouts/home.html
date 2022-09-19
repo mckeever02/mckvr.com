@@ -18,7 +18,9 @@ layout: default
       <ul class="grid max-w-2xl mx-auto gap-7 xs:grid-cols-2 xl:max-w-3xl">
         {% assign case-studies = site.case-studies | reverse %}
         {%- for item in case-studies -%}
+        {% unless item.hidden == true %}
         {% include partials/case-study-item.html %}
+        {% endunless %}
         {%- assign i = i | plus:1 -%}
         {%- endfor -%}
       </ul>

@@ -1,0 +1,13 @@
+<div class="card-flip md:absolute card-{{include.type}}">
+    <div class="flip">
+      <div class="front absolute top-0 left-0 z-20 rounded-full overflow-hidden border-2 border-altGray-300 text-center flex flex-col items-center justify-center p-4">
+        <!-- front content -->
+            <h3 class="text-2xl font-bold leading-snug">{{include.name}}</h3>
+            <h4 class="text-xk font-edgy opacity-75">{{include.role}}</h4>
+      </div>
+      <div class="back absolute top-0 left-0 rounded-full overflow-hidden">
+        <!-- back content -->
+          <img class="h-full m-0" src="/images/1password-onboarding/{{include.name | slugify}}.jpg" alt="Photo of {{include.name}}">
+      </div>
+    </div>
+  </div>

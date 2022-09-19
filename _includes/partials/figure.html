@@ -4,7 +4,7 @@
         <source type="image/webp" data-srcset="/images/{{include.directory}}/{{include.image}}.webp" />
         <source type="image/{% if include.type == 'jpg' %}jpeg{% else %}{{include.type}}{% endif %}" data-srcset="/images/{{include.directory}}/{{include.image}}.{{include.type}}" />
         {%- endunless -%}
-        <img class="w-full lazy" width="{{include.width}}" height="{{include.height}}" data-src="/images/{{include.directory}}/{{include.image}}.{{include.type}}" alt="{{include.alt}}">
+        <img class="w-full lazy {{include.img_classes}}" width="{{include.width}}" height="{{include.height}}" data-src="/images/{{include.directory}}/{{include.image}}.{{include.type}}" alt="{{include.alt}}">
     </picture>
     {%- if include.caption -%}
     <figcaption class="py-6 lg:py-10 lg:text-lg text-altGray-900">{{include.caption}}</figcaption>
