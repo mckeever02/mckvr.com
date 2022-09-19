@@ -40,6 +40,10 @@
 <meta name="twitter:description" content="{{ description }}" />
 <meta property="og:description" content="{{ description }}" />
 
+{% if page.hidden -%}
+<meta name="robots" content="noindex">
+{%- endif %}
+
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
 
 <!-- PReload webfonts -->
@@ -56,3 +60,5 @@
 
   gtag('config', 'G-QE11GHCYHT');
 </script>
+
+
